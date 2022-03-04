@@ -1,0 +1,3 @@
+source/ip/chipscope_ila/xlx_zup_vivado_debug.xci
+source/ip/chipscope_vio/xlx_zup_vio.xci
+source/ip/jtagCtrl_gbtfpgaTest/jtagCtrl_gbtfpgaTest.xci

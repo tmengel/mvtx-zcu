@@ -1,0 +1,4 @@
+source/rtl/fabric_top_pkg.vhd
+source/rtl/fabric_top.vhd
+source/rtl/clock_generator.vhd
+source/rtl/RUv1_top.vhd

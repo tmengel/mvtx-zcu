@@ -1,0 +1,5 @@
+#source/bench/glbl.v
+#source/ip/SEM_IP/sim/SEM_IP.v
+#source/rtl/hamming/assertions/h3_correct_n_k_assertions.sv
+source/rtl/mmr_registers/assertions/mmr_general_assertions.sv
+source/rtl/mmr_registers/assertions/majority_voter_assertions.sv

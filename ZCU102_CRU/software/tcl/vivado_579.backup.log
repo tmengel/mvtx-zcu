@@ -1,0 +1,247 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Tue Sep 21 09:40:14 2021
+# Process ID: 579
+# Current directory: /home/yj6/ALICE/ZCU102_CRU/software/tcl
+# Command line: vivado -mode tcl -source xilinx_tcpserv.tcl
+# Log file: /home/yj6/ALICE/ZCU102_CRU/software/tcl/vivado.log
+# Journal file: /home/yj6/ALICE/ZCU102_CRU/software/tcl/vivado.jou
+#-----------------------------------------------------------
+source xilinx_tcpserv.tcl
+# proc GBTFPGA_SOFT_Server {port} {
+#     global forever
+#     set s [socket -server GBTFPGA_SOFTAccept $port]
+#     vwait forever
+# }
+# proc GBTFPGA_SOFTAccept {sock addr port} {
+#     global gbtfpga
+# 
+#     # Record the client's information
+# 
+#     puts "Accept $sock from $addr port $port"
+#     set gbtfpga(addr,$sock) [list $addr $port]
+# 
+#     # Ensure that each "puts" by the server
+#     # results in a network transmission
+# 
+#     fconfigure $sock -buffering line
+# 
+#     # Set up a callback for when the client sends data
+# 
+#     fileevent $sock readable [list LPGBT_SOFT $sock]
+# }
+# proc LPGBT_SOFT {sock} {
+#     global gbtfpga
+#     global forever
+# 
+#     set gpio_rt gpio_rt
+#     set gpio_wt gpio_wt
+# 
+#     # Check end of file or abnormal connection drop,
+#     # then gbtfpga data back to the client.
+# 
+#     if {[eof $sock] || [catch {gets $sock line}]} {
+# 
+#         close $sock
+#         exit 0
+# 
+#     } else {
+#         ################################ Process Data #################################
+#         puts "line received:"
+#         puts $line
+#         set rcvd_cmd $line
+#         puts "received command list:"
+#         puts $rcvd_cmd
+#         set ope [lindex $rcvd_cmd 0]
+#         set addr [lindex $rcvd_cmd 1]
+#         set data [lindex $rcvd_cmd 2]
+# 
+#         puts "operator"
+#         puts $ope
+#         puts "address"
+#         puts $addr
+#         puts "data"
+#         puts $data
+# 
+#         switch $ope {
+#           "r" {
+#               puts "Read register command"
+#               set_property CMD.ADDR $addr [get_hw_axi_txns $gpio_rt]
+#               run_hw_axi [get_hw_axi_txns $gpio_rt]
+#               set data [get_property DATA [get_hw_axi_txns $gpio_rt]]
+#               puts $sock $data
+#           }
+# 
+#           "w" {
+#               puts "Write register command"
+#               set_property CMD.ADDR $addr [get_hw_axi_txns $gpio_wt]
+#               set_property DATA $data [get_hw_axi_txns $gpio_wt]
+#               run_hw_axi [get_hw_axi_txns $gpio_wt]
+#               puts $sock 1
+#           }
+# 
+#           "wvio" {
+#               puts "Write VIO"
+# 
+#               set dataDec [expr $data]
+# 
+#               startgroup
+#               set_property OUTPUT_VALUE $dataDec [get_hw_probes $addr -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+#               commit_hw_vio [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]
+#               endgroup
+# 
+#               puts $sock 1
+#           }
+# 
+#           "rvio" {
+#               puts "Read VIO"
+# 
+#               startgroup
+#               set data [get_property INPUT_VALUE [get_hw_probes $addr]]
+#               endgroup
+# 
+#               puts $sock $data
+#           }
+# 
+#           "ping" {
+#               puts $sock 1
+#           }
+# 
+#           "configure" {
+#               open_project $addr
+#               open_hw
+#               connect_hw_server -url localhost:3121
+# 
+#               open_hw_target
+# 
+#               current_hw_device [lindex [get_hw_devices] 0]
+#               refresh_hw_device [lindex [get_hw_devices] 0]
+# 
+#               set current_hw_device [lindex [get_hw_devices] 0]
+# 
+#               set_property PROGRAM.FILE $data $current_hw_device
+#               program_hw_devices $current_hw_device
+# 
+#               refresh_hw_device [lindex [get_hw_devices] 0]
+#               refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]
+#               set gpio_rt gpio_rt
+#               set gpio_wt gpio_wt
+#               create_hw_axi_txn $gpio_rt [get_hw_axis hw_axi_1] -type read -address 0x00000000
+#               create_hw_axi_txn $gpio_wt [get_hw_axis hw_axi_1] -type write -address 0x00000000 -data {00000000}
+# 
+#               puts $sock 1
+# 
+#           }
+# 
+#           "exit" {
+#             exit 0
+#           }
+# 
+#           default {
+#               puts "Command not recognizable"
+#               puts $sock -1
+#           }
+#         }
+# 
+#         ################################# End Process Data #################################
+#         # puts "Finished data processing"
+#         # puts $sock $line
+#         # puts $line
+#     }
+# }
+# puts "############## GTFPGA_SOFT - TEST CONTROL ###############"
+############## GTFPGA_SOFT - TEST CONTROL ###############
+# puts "# Socket Port: 8555                                     #"
+# Socket Port: 8555                                     #
+# puts "# IP Address (localhost): 127.0.0.1                     #"
+# IP Address (localhost): 127.0.0.1                     #
+# puts "#########################################################"
+#########################################################
+# GBTFPGA_SOFT_Server 8555
+Accept sock4 from 127.0.0.1 port 57494
+line received:
+configure /home/yj6/ALICE/ZCU102_CRU/vivado/ZCU102_CRU/ZCU102_CRU.xpr /home/yj6/ALICE/ZCU102_CRU/ZCU102_CRU_top_210920_1540_1c4b4f39.bit
+received command list:
+configure /home/yj6/ALICE/ZCU102_CRU/vivado/ZCU102_CRU/ZCU102_CRU.xpr /home/yj6/ALICE/ZCU102_CRU/ZCU102_CRU_top_210920_1540_1c4b4f39.bit
+operator
+configure
+address
+/home/yj6/ALICE/ZCU102_CRU/vivado/ZCU102_CRU/ZCU102_CRU.xpr
+data
+/home/yj6/ALICE/ZCU102_CRU/ZCU102_CRU_top_210920_1540_1c4b4f39.bit
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/yj6/ALICE/ZCU102_CRU/vivado/ZCU102_CRU/ZCU102_CRU.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+open_project: Time (s): cpu = 00:01:25 ; elapsed = 00:01:59 . Memory (MB): peak = 2922.891 ; gain = 605.809 ; free physical = 2233 ; free virtual = 13134
+WARNING: 'open_hw' is deprecated, please use 'open_hw_manager' instead.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2020.2
+  **** Build date : Nov 18 2020 at 09:50:49
+    ** Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+******** Xilinx cs_server v2020.2
+  ****** Build date   : Nov 03 2020-16:02:56
+    **** Build number : 2020.2.1604437376
+      ** Copyright 2017-2020 Xilinx, Inc. All Rights Reserved.
+
+
+
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308AE6FB4
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+INFO: [Labtools 27-3164] End of startup status: HIGH
+program_hw_devices: Time (s): cpu = 00:00:15 ; elapsed = 00:00:15 . Memory (MB): peak = 4337.734 ; gain = 1.000 ; free physical = 710 ; free virtual = 11650
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+line received:
+rvio countWordReceived
+received command list:
+rvio countWordReceived
+operator
+rvio
+address
+countWordReceived
+data
+
+Read VIO
+line received:
+
+received command list:
+
+operator
+
+address
+
+data
+
+Command not recognizable
+INFO: [Common 17-206] Exiting Vivado at Tue Sep 21 09:43:14 2021...

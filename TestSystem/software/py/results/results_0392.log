@@ -1,0 +1,1126 @@
+2020-11-04 12:59:52,347 - root - INFO - Start testAll
+2020-11-04 12:59:52,347 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 12:59:54,354 - root - INFO - CRU Version: AC12387
+2020-11-04 12:59:54,354 - root - INFO - RDO Version: BED27B3
+2020-11-04 12:59:54,357 - root - INFO - DNA = 0x40020001012947641d3083c5
+2020-11-04 12:59:55,912 - root - INFO - Fixedpattern GBTx0(address=374)=0xa5
+2020-11-04 12:59:55,914 - root - INFO - Fixedpattern GBTx1(address=374)=0xa5
+2020-11-04 12:59:55,915 - root - INFO - Fixedpattern GBTx2(address=374)=0xa5
+2020-11-04 13:00:23,198 - root - INFO - GBTx0 locked to CRU
+2020-11-04 13:00:23,199 - root - INFO - GBTx2 locked to CRU
+2020-11-04 13:00:23,201 - root - INFO - GBTx0(adres=367=testFuse1) = 0x82
+2020-11-04 13:00:23,202 - root - INFO - GBTx0(adres=368=testFuse2) = 0xbb
+2020-11-04 13:00:23,204 - root - INFO - GBTx1(adres=367=testFuse1) = 0xb8
+2020-11-04 13:00:23,204 - root - INFO - GBTx1(adres=368=testFuse2) = 0xbb
+2020-11-04 13:00:23,206 - root - INFO - GBTx2(adres=367=testFuse1) = 0x6f
+2020-11-04 13:00:23,206 - root - INFO - GBTx2(adres=368=testFuse2) = 0xbb
+2020-11-04 13:00:23,207 - root - INFO - Number of FEC Errors at start of test = 0
+2020-11-04 13:00:25,212 - root - INFO - MGT status: (8, {'init_done': 0, 'reset_rx_done': 0, 'link_status': 0, 'link_down_latched': 1})
+2020-11-04 13:00:25,213 - root - INFO - MGT errors: 0
+2020-11-04 13:00:25,213 - root - INFO - read_prbs_locked: MGT locked 0xfffffff
+2020-11-04 13:00:25,214 - root - INFO - Disable DCLK
+2020-11-04 13:00:25,214 - root - INFO - reset all prbs  receivers
+2020-11-04 13:00:25,215 - root - INFO - clear all prbs error counters
+2020-11-04 13:00:25,215 - root - INFO - inject errors
+2020-11-04 13:00:25,215 - root - INFO - wait 5.0 seconds
+2020-11-04 13:00:30,221 - root - INFO - sleep done
+2020-11-04 13:00:30,222 - root - INFO - OK, smaError 6
+2020-11-04 13:00:30,222 - root - INFO - OK, headerJ13Error0 6
+2020-11-04 13:00:30,223 - root - INFO - OK, headerJ13Error1 12
+2020-11-04 13:00:30,224 - root - INFO - OK, headerJ13Error2 18
+2020-11-04 13:00:30,224 - root - INFO - OK, headerJ13Error3 24
+2020-11-04 13:00:30,225 - root - INFO - OK, headerJ13Error4 30
+2020-11-04 13:00:30,225 - root - INFO - OK, PA3headerJ14Error0 6
+2020-11-04 13:00:30,226 - root - INFO - OK, PA3headerJ14Error1 12
+2020-11-04 13:00:30,226 - root - INFO - OK, PA3headerJ14Error2 18
+2020-11-04 13:00:30,226 - root - INFO - OK, PA3headerJ14Error3 24
+2020-11-04 13:00:30,226 - root - INFO - OK, PA3headerJ14Error4 30
+2020-11-04 13:00:30,227 - root - INFO - OK, PA3Error0 6
+2020-11-04 13:00:30,227 - root - INFO - OK, PA3Error1 12
+2020-11-04 13:00:30,227 - root - INFO - OK, PA3Error2 18
+2020-11-04 13:00:30,227 - root - INFO - OK, PA3Error3 24
+2020-11-04 13:00:30,227 - root - INFO - OK, PA3Error4 30
+2020-11-04 13:00:30,227 - root - INFO - OK, PA3Error5 6
+2020-11-04 13:00:30,227 - root - INFO - OK, PA3Error6 12
+2020-11-04 13:00:30,228 - root - INFO - OK, PA3Error7 18
+2020-11-04 13:00:30,228 - root - INFO - OK, PA3Error8 24
+2020-11-04 13:00:30,228 - root - INFO - OK, PA3Error9 30
+2020-11-04 13:00:30,228 - root - INFO - OK, DCTRLerror0 6
+2020-11-04 13:00:30,228 - root - INFO - OK, DCTRLerror1 12
+2020-11-04 13:00:30,228 - root - INFO - OK, DCTRLerror2 18
+2020-11-04 13:00:30,228 - root - INFO - OK, DCTRLerror3 24
+2020-11-04 13:00:30,229 - root - INFO - OK, DCTRLerror4 30
+2020-11-04 13:00:30,229 - root - INFO - OK, DCLKBerror0 0
+2020-11-04 13:00:30,229 - root - INFO - OK, DCLKBerror1 0
+2020-11-04 13:00:30,229 - root - INFO - OK, DCLKBerror2 0
+2020-11-04 13:00:30,229 - root - INFO - OK, DCLKBerror3 0
+2020-11-04 13:00:30,229 - root - INFO - OK, DCLKBerror4 0
+2020-11-04 13:00:30,230 - root - INFO - OK, DCLKCerror0 0
+2020-11-04 13:00:30,230 - root - INFO - OK, DCLKCerror1 0
+2020-11-04 13:00:30,230 - root - INFO - OK, DCLKCerror2 0
+2020-11-04 13:00:30,230 - root - INFO - OK, DCLKCerror3 0
+2020-11-04 13:00:30,230 - root - INFO - OK, DCLKCerror4 0
+2020-11-04 13:00:30,230 - root - INFO - OK, AUXerror0 6
+2020-11-04 13:00:30,230 - root - INFO - OK, AUXerror1 12
+2020-11-04 13:00:30,231 - root - INFO - OK, AUXerror2 18
+2020-11-04 13:00:30,231 - root - INFO - OK, AUXerror3 24
+2020-11-04 13:00:30,231 - root - INFO - OK, PUerror0 6
+2020-11-04 13:00:30,231 - root - INFO - OK, PUerror1 12
+2020-11-04 13:00:30,231 - root - INFO - OK, PUerror2 18
+2020-11-04 13:00:30,231 - root - INFO - OK, PUerror3 24
+2020-11-04 13:00:30,231 - root - INFO - OK, PUerror4 30
+2020-11-04 13:00:30,231 - root - INFO - OK, PUerror5 36
+2020-11-04 13:00:30,232 - root - INFO - OK, PUerror6 42
+2020-11-04 13:00:30,232 - root - INFO - OK, PUerror7 48
+2020-11-04 13:00:30,232 - root - INFO - Enable DCLK
+2020-11-04 13:00:30,232 - root - INFO - reset all prbs  receivers
+2020-11-04 13:00:30,232 - root - INFO - clear all prbs error counters
+2020-11-04 13:00:30,232 - root - INFO - inject errors
+2020-11-04 13:00:30,232 - root - INFO - wait 300 seconds
+2020-11-04 13:00:30,232 - root - INFO - Number of GPIO Errors so far = 0
+2020-11-04 13:00:30,232 - root - INFO - Number of MGT errors so far = 0
+2020-11-04 13:05:30,903 - root - INFO - sleep done
+2020-11-04 13:05:30,904 - root - INFO - OK, smaError 6
+2020-11-04 13:05:30,905 - root - INFO - OK, headerJ13Error0 6
+2020-11-04 13:05:30,906 - root - INFO - OK, headerJ13Error1 12
+2020-11-04 13:05:30,907 - root - INFO - OK, headerJ13Error2 18
+2020-11-04 13:05:30,907 - root - INFO - OK, headerJ13Error3 24
+2020-11-04 13:05:30,908 - root - INFO - OK, headerJ13Error4 30
+2020-11-04 13:05:30,908 - root - INFO - OK, PA3headerJ14Error0 6
+2020-11-04 13:05:30,908 - root - INFO - OK, PA3headerJ14Error1 12
+2020-11-04 13:05:30,908 - root - INFO - OK, PA3headerJ14Error2 18
+2020-11-04 13:05:30,908 - root - INFO - OK, PA3headerJ14Error3 24
+2020-11-04 13:05:30,909 - root - INFO - OK, PA3headerJ14Error4 30
+2020-11-04 13:05:30,909 - root - INFO - OK, PA3Error0 6
+2020-11-04 13:05:30,909 - root - INFO - OK, PA3Error1 12
+2020-11-04 13:05:30,909 - root - INFO - OK, PA3Error2 18
+2020-11-04 13:05:30,909 - root - INFO - OK, PA3Error3 24
+2020-11-04 13:05:30,909 - root - INFO - OK, PA3Error4 30
+2020-11-04 13:05:30,909 - root - INFO - OK, PA3Error5 6
+2020-11-04 13:05:30,909 - root - INFO - OK, PA3Error6 12
+2020-11-04 13:05:30,910 - root - INFO - OK, PA3Error7 18
+2020-11-04 13:05:30,910 - root - INFO - OK, PA3Error8 24
+2020-11-04 13:05:30,910 - root - INFO - OK, PA3Error9 30
+2020-11-04 13:05:30,910 - root - INFO - OK, DCTRLerror0 6
+2020-11-04 13:05:30,910 - root - INFO - OK, DCTRLerror1 12
+2020-11-04 13:05:30,910 - root - INFO - OK, DCTRLerror2 18
+2020-11-04 13:05:30,910 - root - INFO - OK, DCTRLerror3 24
+2020-11-04 13:05:30,911 - root - INFO - OK, DCTRLerror4 30
+2020-11-04 13:05:30,911 - root - INFO - OK, DCLKBerror0 6
+2020-11-04 13:05:30,911 - root - INFO - OK, DCLKBerror1 12
+2020-11-04 13:05:30,911 - root - INFO - OK, DCLKBerror2 18
+2020-11-04 13:05:30,911 - root - INFO - OK, DCLKBerror3 24
+2020-11-04 13:05:30,911 - root - INFO - OK, DCLKBerror4 30
+2020-11-04 13:05:30,911 - root - INFO - OK, DCLKCerror0 6
+2020-11-04 13:05:30,912 - root - INFO - OK, DCLKCerror1 12
+2020-11-04 13:05:30,912 - root - INFO - OK, DCLKCerror2 18
+2020-11-04 13:05:30,912 - root - INFO - OK, DCLKCerror3 24
+2020-11-04 13:05:30,912 - root - INFO - OK, DCLKCerror4 30
+2020-11-04 13:05:30,912 - root - INFO - OK, AUXerror0 6
+2020-11-04 13:05:30,912 - root - INFO - OK, AUXerror1 12
+2020-11-04 13:05:30,912 - root - INFO - OK, AUXerror2 18
+2020-11-04 13:05:30,912 - root - INFO - OK, AUXerror3 24
+2020-11-04 13:05:30,913 - root - INFO - OK, PUerror0 6
+2020-11-04 13:05:30,913 - root - INFO - OK, PUerror1 12
+2020-11-04 13:05:30,913 - root - INFO - OK, PUerror2 18
+2020-11-04 13:05:30,913 - root - INFO - OK, PUerror3 24
+2020-11-04 13:05:30,913 - root - INFO - OK, PUerror4 30
+2020-11-04 13:05:30,913 - root - INFO - OK, PUerror5 36
+2020-11-04 13:05:30,913 - root - INFO - OK, PUerror6 42
+2020-11-04 13:05:30,914 - root - INFO - OK, PUerror7 48
+2020-11-04 13:05:30,914 - root - INFO - OK, PRBS counter 0 = 1
+2020-11-04 13:05:30,914 - root - INFO - OK, PRBS counter 1 = 1
+2020-11-04 13:05:30,914 - root - INFO - OK, PRBS counter 2 = 1
+2020-11-04 13:05:30,914 - root - INFO - OK, PRBS counter 3 = 1
+2020-11-04 13:05:30,915 - root - INFO - OK, PRBS counter 4 = 1
+2020-11-04 13:05:30,915 - root - INFO - OK, PRBS counter 5 = 1
+2020-11-04 13:05:30,915 - root - INFO - OK, PRBS counter 6 = 1
+2020-11-04 13:05:30,915 - root - INFO - OK, PRBS counter 7 = 1
+2020-11-04 13:05:30,915 - root - INFO - OK, PRBS counter 8 = 0, BUSY loopback
+2020-11-04 13:05:30,916 - root - INFO - OK, PRBS counter 9 = 1
+2020-11-04 13:05:30,916 - root - INFO - OK, PRBS counter 10 = 1
+2020-11-04 13:05:30,916 - root - INFO - OK, PRBS counter 11 = 1
+2020-11-04 13:05:30,916 - root - INFO - OK, PRBS counter 12 = 1
+2020-11-04 13:05:30,917 - root - INFO - OK, PRBS counter 13 = 1
+2020-11-04 13:05:30,917 - root - INFO - OK, PRBS counter 14 = 1
+2020-11-04 13:05:30,917 - root - INFO - OK, PRBS counter 15 = 1
+2020-11-04 13:05:30,917 - root - INFO - OK, PRBS counter 16 = 1
+2020-11-04 13:05:30,917 - root - INFO - OK, PRBS counter 17 = 1
+2020-11-04 13:05:30,918 - root - INFO - OK, PRBS counter 18 = 1
+2020-11-04 13:05:30,918 - root - INFO - OK, PRBS counter 19 = 1
+2020-11-04 13:05:30,918 - root - INFO - OK, PRBS counter 20 = 1
+2020-11-04 13:05:30,918 - root - INFO - OK, PRBS counter 21 = 1
+2020-11-04 13:05:30,919 - root - INFO - OK, PRBS counter 22 = 1
+2020-11-04 13:05:30,919 - root - INFO - OK, PRBS counter 23 = 1
+2020-11-04 13:05:30,919 - root - INFO - OK, PRBS counter 24 = 1
+2020-11-04 13:05:30,919 - root - INFO - OK, PRBS counter 25 = 1
+2020-11-04 13:05:30,919 - root - INFO - OK, PRBS counter 26 = 1
+2020-11-04 13:05:30,920 - root - INFO - OK, PRBS counter 27 = 1
+2020-11-04 13:05:30,920 - root - INFO - CRU status flags:
+2020-11-04 13:05:30,920 - root - INFO - MGTLinkReady           0
+2020-11-04 13:05:30,920 - root - INFO - RxWordClockReady       1
+2020-11-04 13:05:30,920 - root - INFO - RxFrameClockReady      0
+2020-11-04 13:05:30,920 - root - INFO - GbtRxReady             0
+2020-11-04 13:05:30,920 - root - INFO - RxIsData               0
+2020-11-04 13:05:30,920 - root - INFO - GbtRxReadyLostFlag     0
+2020-11-04 13:05:30,920 - root - INFO - GbtRxDataErrorseenFlag 0
+2020-11-04 13:05:30,920 - root - INFO - Number of FEC Errors = 0
+2020-11-04 13:05:30,921 - root - INFO - No Data errors and link errors
+2020-11-04 13:05:30,921 - root - INFO - Number of GPIO Errors = 0
+2020-11-04 13:05:30,921 - root - INFO - Number of faulty MGT channels = 0
+2020-11-04 13:05:49,377 - root - INFO - ok
+2020-11-04 13:06:26,155 - root - INFO - Start testAll
+2020-11-04 13:06:26,155 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 13:06:28,162 - root - INFO - CRU Version: AC12387
+2020-11-04 13:06:28,162 - root - INFO - RDO Version: BED27B3
+2020-11-04 13:06:28,165 - root - INFO - DNA = 0x40020001012947641d3083c5
+2020-11-04 13:06:29,719 - root - INFO - Fixedpattern GBTx0(address=374)=0xa5
+2020-11-04 13:06:29,720 - root - INFO - Fixedpattern GBTx1(address=374)=0xa5
+2020-11-04 13:06:29,722 - root - INFO - Fixedpattern GBTx2(address=374)=0xa5
+2020-11-04 13:06:33,762 - root - INFO - GBTx0 locked to CRU
+2020-11-04 13:06:33,763 - root - INFO - GBTx2 locked to CRU
+2020-11-04 13:06:33,765 - root - INFO - GBTx0(adres=367=testFuse1) = 0x82
+2020-11-04 13:06:33,765 - root - INFO - GBTx0(adres=368=testFuse2) = 0xbb
+2020-11-04 13:06:33,768 - root - INFO - GBTx1(adres=367=testFuse1) = 0xb8
+2020-11-04 13:06:33,768 - root - INFO - GBTx1(adres=368=testFuse2) = 0xbb
+2020-11-04 13:06:33,770 - root - INFO - GBTx2(adres=367=testFuse1) = 0x6f
+2020-11-04 13:06:33,771 - root - INFO - GBTx2(adres=368=testFuse2) = 0xbb
+2020-11-04 13:06:33,772 - root - INFO - Number of FEC Errors at start of test = 0
+2020-11-04 13:06:35,778 - root - INFO - MGT status: (8, {'init_done': 0, 'reset_rx_done': 0, 'link_status': 0, 'link_down_latched': 1})
+2020-11-04 13:06:35,779 - root - INFO - MGT errors: 0
+2020-11-04 13:06:35,779 - root - INFO - read_prbs_locked: MGT locked 0xfffffff
+2020-11-04 13:06:35,780 - root - INFO - Disable DCLK
+2020-11-04 13:06:35,780 - root - INFO - reset all prbs  receivers
+2020-11-04 13:06:35,781 - root - INFO - clear all prbs error counters
+2020-11-04 13:06:35,781 - root - INFO - inject errors
+2020-11-04 13:06:35,783 - root - INFO - wait 5.0 seconds
+2020-11-04 13:06:40,788 - root - INFO - sleep done
+2020-11-04 13:06:40,789 - root - INFO - OK, smaError 6
+2020-11-04 13:06:40,790 - root - INFO - OK, headerJ13Error0 6
+2020-11-04 13:06:40,791 - root - INFO - OK, headerJ13Error1 12
+2020-11-04 13:06:40,792 - root - INFO - OK, headerJ13Error2 18
+2020-11-04 13:06:40,793 - root - INFO - OK, headerJ13Error3 24
+2020-11-04 13:06:40,793 - root - INFO - OK, headerJ13Error4 30
+2020-11-04 13:06:40,794 - root - INFO - OK, PA3headerJ14Error0 6
+2020-11-04 13:06:40,794 - root - INFO - OK, PA3headerJ14Error1 12
+2020-11-04 13:06:40,795 - root - INFO - OK, PA3headerJ14Error2 18
+2020-11-04 13:06:40,796 - root - INFO - OK, PA3headerJ14Error3 24
+2020-11-04 13:06:40,796 - root - INFO - OK, PA3headerJ14Error4 30
+2020-11-04 13:06:40,797 - root - INFO - OK, PA3Error0 6
+2020-11-04 13:06:40,797 - root - INFO - OK, PA3Error1 12
+2020-11-04 13:06:40,798 - root - INFO - OK, PA3Error2 18
+2020-11-04 13:06:40,798 - root - INFO - OK, PA3Error3 24
+2020-11-04 13:06:40,799 - root - INFO - OK, PA3Error4 30
+2020-11-04 13:06:40,800 - root - INFO - OK, PA3Error5 6
+2020-11-04 13:06:40,801 - root - INFO - OK, PA3Error6 12
+2020-11-04 13:06:40,801 - root - INFO - OK, PA3Error7 18
+2020-11-04 13:06:40,802 - root - INFO - OK, PA3Error8 24
+2020-11-04 13:06:40,803 - root - INFO - OK, PA3Error9 30
+2020-11-04 13:06:40,804 - root - INFO - OK, DCTRLerror0 6
+2020-11-04 13:06:40,804 - root - INFO - OK, DCTRLerror1 12
+2020-11-04 13:06:40,805 - root - INFO - OK, DCTRLerror2 18
+2020-11-04 13:06:40,806 - root - INFO - OK, DCTRLerror3 24
+2020-11-04 13:06:40,807 - root - INFO - OK, DCTRLerror4 30
+2020-11-04 13:06:40,807 - root - INFO - OK, DCLKBerror0 0
+2020-11-04 13:06:40,808 - root - INFO - OK, DCLKBerror1 0
+2020-11-04 13:06:40,809 - root - INFO - OK, DCLKBerror2 0
+2020-11-04 13:06:40,809 - root - INFO - OK, DCLKBerror3 0
+2020-11-04 13:06:40,810 - root - INFO - OK, DCLKBerror4 0
+2020-11-04 13:06:40,810 - root - INFO - OK, DCLKCerror0 0
+2020-11-04 13:06:40,811 - root - INFO - OK, DCLKCerror1 0
+2020-11-04 13:06:40,811 - root - INFO - OK, DCLKCerror2 0
+2020-11-04 13:06:40,812 - root - INFO - OK, DCLKCerror3 0
+2020-11-04 13:06:40,812 - root - INFO - OK, DCLKCerror4 0
+2020-11-04 13:06:40,813 - root - INFO - OK, AUXerror0 6
+2020-11-04 13:06:40,813 - root - INFO - OK, AUXerror1 12
+2020-11-04 13:06:40,814 - root - INFO - OK, AUXerror2 18
+2020-11-04 13:06:40,814 - root - INFO - OK, AUXerror3 24
+2020-11-04 13:06:40,815 - root - INFO - OK, PUerror0 6
+2020-11-04 13:06:40,815 - root - INFO - OK, PUerror1 12
+2020-11-04 13:06:40,815 - root - INFO - OK, PUerror2 18
+2020-11-04 13:06:40,815 - root - INFO - OK, PUerror3 24
+2020-11-04 13:06:40,815 - root - INFO - OK, PUerror4 30
+2020-11-04 13:06:40,815 - root - INFO - OK, PUerror5 36
+2020-11-04 13:06:40,816 - root - INFO - OK, PUerror6 42
+2020-11-04 13:06:40,816 - root - INFO - OK, PUerror7 48
+2020-11-04 13:06:40,816 - root - INFO - Enable DCLK
+2020-11-04 13:06:40,816 - root - INFO - reset all prbs  receivers
+2020-11-04 13:06:40,816 - root - INFO - clear all prbs error counters
+2020-11-04 13:06:40,816 - root - INFO - inject errors
+2020-11-04 13:06:40,817 - root - INFO - wait 300 seconds
+2020-11-04 13:06:40,817 - root - INFO - Number of GPIO Errors so far = 0
+2020-11-04 13:06:40,817 - root - INFO - Number of MGT errors so far = 0
+2020-11-04 13:11:41,477 - root - INFO - sleep done
+2020-11-04 13:11:41,478 - root - INFO - OK, smaError 6
+2020-11-04 13:11:41,479 - root - INFO - OK, headerJ13Error0 6
+2020-11-04 13:11:41,480 - root - INFO - OK, headerJ13Error1 12
+2020-11-04 13:11:41,481 - root - INFO - OK, headerJ13Error2 18
+2020-11-04 13:11:41,481 - root - INFO - OK, headerJ13Error3 24
+2020-11-04 13:11:41,482 - root - INFO - OK, headerJ13Error4 30
+2020-11-04 13:11:41,482 - root - INFO - OK, PA3headerJ14Error0 6
+2020-11-04 13:11:41,483 - root - INFO - OK, PA3headerJ14Error1 12
+2020-11-04 13:11:41,484 - root - INFO - OK, PA3headerJ14Error2 18
+2020-11-04 13:11:41,484 - root - INFO - OK, PA3headerJ14Error3 24
+2020-11-04 13:11:41,485 - root - INFO - OK, PA3headerJ14Error4 30
+2020-11-04 13:11:41,486 - root - INFO - OK, PA3Error0 6
+2020-11-04 13:11:41,486 - root - INFO - OK, PA3Error1 12
+2020-11-04 13:11:41,487 - root - INFO - OK, PA3Error2 18
+2020-11-04 13:11:41,488 - root - INFO - OK, PA3Error3 24
+2020-11-04 13:11:41,488 - root - INFO - OK, PA3Error4 30
+2020-11-04 13:11:41,489 - root - INFO - OK, PA3Error5 6
+2020-11-04 13:11:41,489 - root - INFO - OK, PA3Error6 12
+2020-11-04 13:11:41,489 - root - INFO - OK, PA3Error7 18
+2020-11-04 13:11:41,489 - root - INFO - OK, PA3Error8 24
+2020-11-04 13:11:41,490 - root - INFO - OK, PA3Error9 30
+2020-11-04 13:11:41,490 - root - INFO - OK, DCTRLerror0 6
+2020-11-04 13:11:41,490 - root - INFO - OK, DCTRLerror1 12
+2020-11-04 13:11:41,490 - root - INFO - OK, DCTRLerror2 18
+2020-11-04 13:11:41,490 - root - INFO - OK, DCTRLerror3 24
+2020-11-04 13:11:41,491 - root - INFO - OK, DCTRLerror4 30
+2020-11-04 13:11:41,491 - root - INFO - OK, DCLKBerror0 6
+2020-11-04 13:11:41,491 - root - INFO - OK, DCLKBerror1 12
+2020-11-04 13:11:41,491 - root - INFO - OK, DCLKBerror2 18
+2020-11-04 13:11:41,491 - root - INFO - OK, DCLKBerror3 24
+2020-11-04 13:11:41,491 - root - INFO - OK, DCLKBerror4 30
+2020-11-04 13:11:41,491 - root - INFO - OK, DCLKCerror0 6
+2020-11-04 13:11:41,492 - root - INFO - OK, DCLKCerror1 12
+2020-11-04 13:11:41,492 - root - INFO - OK, DCLKCerror2 18
+2020-11-04 13:11:41,492 - root - INFO - OK, DCLKCerror3 24
+2020-11-04 13:11:41,492 - root - INFO - OK, DCLKCerror4 30
+2020-11-04 13:11:41,492 - root - INFO - OK, AUXerror0 6
+2020-11-04 13:11:41,493 - root - INFO - OK, AUXerror1 12
+2020-11-04 13:11:41,493 - root - INFO - OK, AUXerror2 18
+2020-11-04 13:11:41,493 - root - INFO - OK, AUXerror3 24
+2020-11-04 13:11:41,493 - root - INFO - OK, PUerror0 6
+2020-11-04 13:11:41,493 - root - INFO - OK, PUerror1 12
+2020-11-04 13:11:41,493 - root - INFO - OK, PUerror2 18
+2020-11-04 13:11:41,493 - root - INFO - OK, PUerror3 24
+2020-11-04 13:11:41,494 - root - INFO - OK, PUerror4 30
+2020-11-04 13:11:41,494 - root - INFO - OK, PUerror5 36
+2020-11-04 13:11:41,494 - root - INFO - OK, PUerror6 42
+2020-11-04 13:11:41,494 - root - INFO - OK, PUerror7 48
+2020-11-04 13:11:41,494 - root - INFO - OK, PRBS counter 0 = 1
+2020-11-04 13:11:41,494 - root - INFO - OK, PRBS counter 1 = 1
+2020-11-04 13:11:41,495 - root - INFO - OK, PRBS counter 2 = 1
+2020-11-04 13:11:41,495 - root - INFO - OK, PRBS counter 3 = 1
+2020-11-04 13:11:41,495 - root - INFO - OK, PRBS counter 4 = 1
+2020-11-04 13:11:41,495 - root - INFO - OK, PRBS counter 5 = 1
+2020-11-04 13:11:41,495 - root - INFO - OK, PRBS counter 6 = 1
+2020-11-04 13:11:41,496 - root - INFO - OK, PRBS counter 7 = 1
+2020-11-04 13:11:41,496 - root - INFO - OK, PRBS counter 8 = 0, BUSY loopback
+2020-11-04 13:11:41,496 - root - INFO - OK, PRBS counter 9 = 1
+2020-11-04 13:11:41,496 - root - INFO - OK, PRBS counter 10 = 1
+2020-11-04 13:11:41,496 - root - INFO - OK, PRBS counter 11 = 1
+2020-11-04 13:11:41,497 - root - INFO - OK, PRBS counter 12 = 1
+2020-11-04 13:11:41,497 - root - INFO - OK, PRBS counter 13 = 1
+2020-11-04 13:11:41,497 - root - INFO - OK, PRBS counter 14 = 1
+2020-11-04 13:11:41,497 - root - INFO - OK, PRBS counter 15 = 1
+2020-11-04 13:11:41,498 - root - INFO - OK, PRBS counter 16 = 1
+2020-11-04 13:11:41,498 - root - INFO - OK, PRBS counter 17 = 1
+2020-11-04 13:11:41,498 - root - INFO - OK, PRBS counter 18 = 1
+2020-11-04 13:11:41,498 - root - INFO - OK, PRBS counter 19 = 1
+2020-11-04 13:11:41,498 - root - INFO - OK, PRBS counter 20 = 1
+2020-11-04 13:11:41,499 - root - INFO - OK, PRBS counter 21 = 1
+2020-11-04 13:11:41,499 - root - INFO - OK, PRBS counter 22 = 1
+2020-11-04 13:11:41,499 - root - INFO - OK, PRBS counter 23 = 1
+2020-11-04 13:11:41,499 - root - INFO - OK, PRBS counter 24 = 1
+2020-11-04 13:11:41,500 - root - INFO - OK, PRBS counter 25 = 1
+2020-11-04 13:11:41,500 - root - INFO - OK, PRBS counter 26 = 1
+2020-11-04 13:11:41,500 - root - INFO - OK, PRBS counter 27 = 1
+2020-11-04 13:11:41,500 - root - INFO - CRU status flags:
+2020-11-04 13:11:41,500 - root - INFO - MGTLinkReady           1
+2020-11-04 13:11:41,500 - root - INFO - RxWordClockReady       1
+2020-11-04 13:11:41,500 - root - INFO - RxFrameClockReady      1
+2020-11-04 13:11:41,500 - root - INFO - GbtRxReady             1
+2020-11-04 13:11:41,500 - root - INFO - RxIsData               0
+2020-11-04 13:11:41,500 - root - INFO - GbtRxReadyLostFlag     0
+2020-11-04 13:11:41,500 - root - INFO - GbtRxDataErrorseenFlag 0
+2020-11-04 13:11:41,501 - root - INFO - Number of FEC Errors = 0
+2020-11-04 13:11:41,501 - root - INFO - No Data errors and link errors
+2020-11-04 13:11:41,501 - root - INFO - Number of GPIO Errors = 0
+2020-11-04 13:11:41,501 - root - INFO - Number of faulty MGT channels = 0
+2020-11-04 13:11:54,290 - root - INFO - ok
+2020-11-04 13:12:28,220 - root - INFO - Start testSCA
+2020-11-04 13:12:28,220 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 13:12:30,753 - root - INFO - GBTx0 locked to CRU
+2020-11-04 13:12:30,775 - root - INFO - Now testing SCA-I2C  lines to Xilinx
+2020-11-04 13:12:30,875 - root - INFO - Expected = 63, received = 63
+2020-11-04 13:12:30,973 - root - INFO - Expected = 127, received = 127
+2020-11-04 13:12:31,071 - root - INFO - Expected = 191, received = 191
+2020-11-04 13:12:31,169 - root - INFO - Expected = 255, received = 255
+2020-11-04 13:12:31,169 - root - INFO - Now testing SCA-GPIO lines to Xilinx
+2020-11-04 13:12:31,169 - root - INFO - read = 0xfff00000
+2020-11-04 13:12:31,170 - root - INFO - read = 0xfff00041
+2020-11-04 13:12:31,170 - root - INFO - read = 0xfff00082
+2020-11-04 13:12:31,171 - root - INFO - read = 0xfff00104
+2020-11-04 13:12:31,171 - root - INFO - read = 0xfff00208
+2020-11-04 13:12:31,172 - root - INFO - read = 0xfff00410
+2020-11-04 13:12:31,172 - root - INFO - read = 0xfff00820
+2020-11-04 13:12:31,172 - root - INFO - Now testing SCA-GPIO lines to PA3
+2020-11-04 13:12:31,173 - root - INFO - read = 0
+2020-11-04 13:12:31,173 - root - INFO - read = 1
+2020-11-04 13:12:31,174 - root - INFO - read = 2
+2020-11-04 13:12:31,174 - root - INFO - read = 3
+2020-11-04 13:12:31,175 - root - INFO - read = 4
+2020-11-04 13:12:31,175 - root - INFO - read = 5
+2020-11-04 13:12:31,175 - root - INFO - read = 6
+2020-11-04 13:12:31,176 - root - INFO - read = 7
+2020-11-04 13:12:31,176 - root - INFO - read = 8
+2020-11-04 13:12:31,177 - root - INFO - read = 9
+2020-11-04 13:12:31,177 - root - INFO - read = 10
+2020-11-04 13:12:31,178 - root - INFO - read = 11
+2020-11-04 13:12:31,178 - root - INFO - read = 12
+2020-11-04 13:12:31,179 - root - INFO - read = 13
+2020-11-04 13:12:31,179 - root - INFO - read = 14
+2020-11-04 13:12:31,180 - root - INFO - read = 15
+2020-11-04 13:12:31,180 - root - INFO - Now reading Ultrascale IDCODE via SCA JTAG
+2020-11-04 13:12:31,182 - root - INFO - IDCODE = 0x13919093
+2020-11-04 13:12:31,182 - root - INFO - I_INT = 1.0146520146520146
+2020-11-04 13:12:31,182 - root - INFO - I_MGT = 2.2014652014652016
+2020-11-04 13:12:31,182 - root - INFO - I_1V2 = 1.398046398046398
+2020-11-04 13:12:31,182 - root - INFO - I_1V5 = 2.1025641025641026
+2020-11-04 13:12:31,182 - root - INFO - I_1V8 = 0.8766788766788767
+2020-11-04 13:12:31,182 - root - INFO - I_2V5 = 0.7301587301587301
+2020-11-04 13:12:31,182 - root - INFO - I_3V3 = 0.5128205128205128
+2020-11-04 13:12:31,182 - root - INFO - I_IN  = 2.916971916971917
+2020-11-04 13:12:31,182 - root - INFO - V_INT = 0.9562881562881563
+2020-11-04 13:12:31,182 - root - INFO - V_MGT = 1.0173382173382173
+2020-11-04 13:12:31,182 - root - INFO - V_1V2 = 1.2107448107448107
+2020-11-04 13:12:31,182 - root - INFO - V_1V5 = 1.5174603174603174
+2020-11-04 13:12:31,182 - root - INFO - V_1V8 = 1.791941391941392
+2020-11-04 13:12:31,183 - root - INFO - V_2V5 = 2.4835164835164836
+2020-11-04 13:12:31,183 - root - INFO - V_3V3 = 3.2979242979242978
+2020-11-04 13:12:31,183 - root - INFO - V_IN  = 5.0717948717948715
+2020-11-04 13:12:31,183 - root - INFO - I_VTRx1 = 10.236999999999966
+2020-11-04 13:12:31,183 - root - INFO - I_VTRx2 = 211.70499999999998
+2020-11-04 13:12:31,183 - root - INFO - T1    = 24.420127999999977
+2020-11-04 13:12:31,183 - root - INFO - T2    = 21.88298400000002
+2020-11-04 13:12:31,183 - root - ERROR - I_VTRx1 out of range!!!
+2020-11-04 13:17:06,412 - root - INFO - Start testSCA
+2020-11-04 13:17:06,412 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 13:17:08,945 - root - INFO - GBTx0 locked to CRU
+2020-11-04 13:17:08,980 - root - INFO - Now testing SCA-I2C  lines to Xilinx
+2020-11-04 13:17:09,156 - root - INFO - Expected = 63, received = 63
+2020-11-04 13:17:09,327 - root - INFO - Expected = 127, received = 127
+2020-11-04 13:17:09,499 - root - INFO - Expected = 191, received = 191
+2020-11-04 13:17:09,672 - root - INFO - Expected = 255, received = 255
+2020-11-04 13:17:09,672 - root - INFO - Now testing SCA-GPIO lines to Xilinx
+2020-11-04 13:17:09,674 - root - INFO - read = 0xfff00000
+2020-11-04 13:17:09,675 - root - INFO - read = 0xfff00041
+2020-11-04 13:17:09,677 - root - INFO - read = 0xfff00082
+2020-11-04 13:17:09,678 - root - INFO - read = 0xfff00104
+2020-11-04 13:17:09,680 - root - INFO - read = 0xfff00208
+2020-11-04 13:17:09,681 - root - INFO - read = 0xfff00410
+2020-11-04 13:17:09,683 - root - INFO - read = 0xfff00820
+2020-11-04 13:17:09,683 - root - INFO - Now testing SCA-GPIO lines to PA3
+2020-11-04 13:17:09,684 - root - INFO - read = 0
+2020-11-04 13:17:09,685 - root - INFO - read = 1
+2020-11-04 13:17:09,687 - root - INFO - read = 2
+2020-11-04 13:17:09,687 - root - INFO - read = 3
+2020-11-04 13:17:09,688 - root - INFO - read = 4
+2020-11-04 13:17:09,689 - root - INFO - read = 5
+2020-11-04 13:17:09,690 - root - INFO - read = 6
+2020-11-04 13:17:09,691 - root - INFO - read = 7
+2020-11-04 13:17:09,692 - root - INFO - read = 8
+2020-11-04 13:17:09,692 - root - INFO - read = 9
+2020-11-04 13:17:09,693 - root - INFO - read = 10
+2020-11-04 13:17:09,694 - root - INFO - read = 11
+2020-11-04 13:17:09,695 - root - INFO - read = 12
+2020-11-04 13:17:09,695 - root - INFO - read = 13
+2020-11-04 13:17:09,696 - root - INFO - read = 14
+2020-11-04 13:17:09,697 - root - INFO - read = 15
+2020-11-04 13:17:09,697 - root - INFO - Now reading Ultrascale IDCODE via SCA JTAG
+2020-11-04 13:17:09,699 - root - INFO - IDCODE = 0x13919093
+2020-11-04 13:17:09,700 - root - INFO - I_INT = 0.800976800976801
+2020-11-04 13:17:09,700 - root - INFO - I_MGT = 2.1648351648351647
+2020-11-04 13:17:09,700 - root - INFO - I_1V2 = 1.424908424908425
+2020-11-04 13:17:09,700 - root - INFO - I_1V5 = 1.5335775335775337
+2020-11-04 13:17:09,700 - root - INFO - I_1V8 = 0.8437118437118437
+2020-11-04 13:17:09,700 - root - INFO - I_2V5 = 0.7387057387057387
+2020-11-04 13:17:09,700 - root - INFO - I_3V3 = 0.5213675213675214
+2020-11-04 13:17:09,700 - root - INFO - I_IN  = 2.7106227106227108
+2020-11-04 13:17:09,700 - root - INFO - V_INT = 0.9577533577533578
+2020-11-04 13:17:09,700 - root - INFO - V_MGT = 1.0173382173382173
+2020-11-04 13:17:09,700 - root - INFO - V_1V2 = 1.2126984126984126
+2020-11-04 13:17:09,700 - root - INFO - V_1V5 = 1.5194139194139193
+2020-11-04 13:17:09,700 - root - INFO - V_1V8 = 1.791941391941392
+2020-11-04 13:17:09,700 - root - INFO - V_2V5 = 2.4884004884004884
+2020-11-04 13:17:09,700 - root - INFO - V_3V3 = 3.3003663003663
+2020-11-04 13:17:09,701 - root - INFO - V_IN  = 5.0717948717948715
+2020-11-04 13:17:09,701 - root - INFO - I_VTRx1 = 199.80599999999998
+2020-11-04 13:17:09,701 - root - INFO - I_VTRx2 = 10.562999999999988
+2020-11-04 13:17:09,701 - root - INFO - T1    = 18.71155399999998
+2020-11-04 13:17:09,701 - root - INFO - T2    = 17.442981999999972
+2020-11-04 13:20:46,548 - root - INFO - Start testSCA
+2020-11-04 13:20:46,548 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 13:21:33,356 - root - INFO - Start testSCA
+2020-11-04 13:21:33,356 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 13:21:35,889 - root - INFO - GBTx0 locked to CRU
+2020-11-04 13:21:35,928 - root - INFO - Now testing SCA-I2C  lines to Xilinx
+2020-11-04 13:21:36,108 - root - INFO - Expected = 63, received = 63
+2020-11-04 13:21:36,286 - root - INFO - Expected = 127, received = 127
+2020-11-04 13:21:36,460 - root - INFO - Expected = 191, received = 191
+2020-11-04 13:21:36,639 - root - INFO - Expected = 255, received = 255
+2020-11-04 13:21:36,639 - root - INFO - Now testing SCA-GPIO lines to Xilinx
+2020-11-04 13:21:36,641 - root - INFO - read = 0xfff00000
+2020-11-04 13:21:36,643 - root - INFO - read = 0xfff00041
+2020-11-04 13:21:36,645 - root - INFO - read = 0xfff00082
+2020-11-04 13:21:36,646 - root - INFO - read = 0xfff00104
+2020-11-04 13:21:36,648 - root - INFO - read = 0xfff00208
+2020-11-04 13:21:36,649 - root - INFO - read = 0xfff00410
+2020-11-04 13:21:36,651 - root - INFO - read = 0xfff00820
+2020-11-04 13:21:36,651 - root - INFO - Now testing SCA-GPIO lines to PA3
+2020-11-04 13:21:36,652 - root - INFO - read = 0
+2020-11-04 13:21:36,653 - root - INFO - read = 1
+2020-11-04 13:21:36,654 - root - INFO - read = 2
+2020-11-04 13:21:36,655 - root - INFO - read = 3
+2020-11-04 13:21:36,656 - root - INFO - read = 4
+2020-11-04 13:21:36,657 - root - INFO - read = 5
+2020-11-04 13:21:36,658 - root - INFO - read = 6
+2020-11-04 13:21:36,659 - root - INFO - read = 7
+2020-11-04 13:21:36,660 - root - INFO - read = 8
+2020-11-04 13:21:36,660 - root - INFO - read = 9
+2020-11-04 13:21:36,661 - root - INFO - read = 10
+2020-11-04 13:21:36,662 - root - INFO - read = 11
+2020-11-04 13:21:36,663 - root - INFO - read = 12
+2020-11-04 13:21:36,664 - root - INFO - read = 13
+2020-11-04 13:21:36,664 - root - INFO - read = 14
+2020-11-04 13:21:36,665 - root - INFO - read = 15
+2020-11-04 13:21:36,665 - root - INFO - Now reading Ultrascale IDCODE via SCA JTAG
+2020-11-04 13:21:36,668 - root - INFO - IDCODE = 0x13919093
+2020-11-04 13:21:36,668 - root - INFO - I_INT = 0.8766788766788767
+2020-11-04 13:21:36,668 - root - INFO - I_MGT = 2.2185592185592187
+2020-11-04 13:21:36,668 - root - INFO - I_1V2 = 1.413919413919414
+2020-11-04 13:21:36,668 - root - INFO - I_1V5 = 1.5115995115995116
+2020-11-04 13:21:36,668 - root - INFO - I_1V8 = 0.8424908424908425
+2020-11-04 13:21:36,668 - root - INFO - I_2V5 = 0.7301587301587301
+2020-11-04 13:21:36,668 - root - INFO - I_3V3 = 0.525030525030525
+2020-11-04 13:21:36,668 - root - INFO - I_IN  = 2.653235653235653
+2020-11-04 13:21:36,668 - root - INFO - V_INT = 0.9567765567765568
+2020-11-04 13:21:36,668 - root - INFO - V_MGT = 1.0173382173382173
+2020-11-04 13:21:36,668 - root - INFO - V_1V2 = 1.2107448107448107
+2020-11-04 13:21:36,668 - root - INFO - V_1V5 = 1.5189255189255189
+2020-11-04 13:21:36,669 - root - INFO - V_1V8 = 1.7934065934065935
+2020-11-04 13:21:36,669 - root - INFO - V_2V5 = 2.4884004884004884
+2020-11-04 13:21:36,669 - root - INFO - V_3V3 = 3.2979242979242978
+2020-11-04 13:21:36,669 - root - INFO - V_IN  = 5.097435897435897
+2020-11-04 13:21:36,669 - root - INFO - I_VTRx1 = 199.317
+2020-11-04 13:21:36,669 - root - INFO - I_VTRx2 = 10.562999999999988
+2020-11-04 13:21:36,669 - root - INFO - T1    = 18.077268000000004
+2020-11-04 13:21:36,669 - root - INFO - T2    = 16.808695999999998
+2020-11-04 13:21:49,156 - root - INFO - Start testGBT
+2020-11-04 13:21:49,156 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 13:21:55,194 - root - INFO - GBTx0 locked to CRU
+2020-11-04 13:21:57,199 - root - INFO - wait 200 seconds
+2020-11-04 13:25:17,690 - root - INFO - sleep done
+2020-11-04 13:25:17,691 - root - INFO - CRU status flags:
+2020-11-04 13:25:17,691 - root - INFO - MGTLinkReady           1
+2020-11-04 13:25:17,691 - root - INFO - RxWordClockReady       1
+2020-11-04 13:25:17,691 - root - INFO - RxFrameClockReady      1
+2020-11-04 13:25:17,692 - root - INFO - GbtRxReady             1
+2020-11-04 13:25:17,692 - root - INFO - RxIsData               0
+2020-11-04 13:25:17,692 - root - INFO - GbtRxReadyLostFlag     0
+2020-11-04 13:25:17,692 - root - INFO - GbtRxDataErrorseenFlag 0
+2020-11-04 13:25:17,692 - root - INFO - Number of FEC Errors = 0
+2020-11-04 13:25:17,692 - root - INFO - GBTx0 loopback test completed without errors
+2020-11-04 13:25:34,539 - root - INFO - ok
+2020-11-04 13:26:09,658 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 13:26:09,658 - root - INFO - dipswitch = 0x1
+2020-11-04 13:26:17,741 - root - INFO - dipswitch = 0x3
+2020-11-04 13:26:18,854 - root - INFO - dipswitch = 0x7
+2020-11-04 13:26:19,664 - root - INFO - dipswitch = 0xf
+2020-11-04 13:26:20,475 - root - INFO - dipswitch = 0x1f
+2020-11-04 13:26:21,185 - root - INFO - dipswitch = 0x3f
+2020-11-04 13:26:21,996 - root - INFO - dipswitch = 0x7f
+2020-11-04 13:26:22,705 - root - INFO - dipswitch = 0xff
+2020-11-04 13:26:23,516 - root - INFO - dipswitch = 0x1ff
+2020-11-04 13:26:24,288 - root - INFO - dipswitch = 0x3ff
+2020-11-04 13:26:24,289 - root - INFO - Pushbutton = 0x0
+2020-11-04 13:26:33,894 - root - ERROR - pushbutton = 2 expected =1 ERROR!!!!!
+2020-11-04 13:26:33,895 - root - INFO - Start testing Jitter Cleaner
+2020-11-04 13:26:33,896 - root - INFO - FreqJitterCleaner local clk= 26265
+2020-11-04 13:55:18,919 - root - INFO - Start testPA3I2C
+2020-11-04 13:55:18,919 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 14:07:48,224 - root - INFO - Start testPA3I2C
+2020-11-04 14:07:48,224 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 14:08:01,266 - root - INFO - GBTx0 locked to CRU
+2020-11-04 14:08:05,274 - root - INFO - startLOLcnt = 5
+2020-11-04 14:08:05,276 - root - INFO - startC1Bcnt = 0
+2020-11-04 14:08:05,278 - root - INFO - startC2Bcnt = 5
+2020-11-04 14:08:06,293 - root - INFO - Number of tests failed on i2c0: 0/11
+2020-11-04 14:08:06,353 - root - INFO - Number of tests failed on i2c5: 0/11
+2020-11-04 14:08:07,365 - root - INFO - Number of tests failed on i2c0: 0/22
+2020-11-04 14:08:07,365 - root - INFO - Number of tests failed on i2c5: 0/22
+2020-11-04 14:08:08,494 - root - INFO - Number of tests failed on i2c0: 0/30
+2020-11-04 14:08:08,494 - root - INFO - Number of tests failed on i2c5: 0/30
+2020-11-04 14:08:09,526 - root - INFO - Number of tests failed on i2c0: 0/41
+2020-11-04 14:08:09,526 - root - INFO - Number of tests failed on i2c5: 0/41
+2020-11-04 14:08:10,585 - root - INFO - Number of tests failed on i2c0: 0/53
+2020-11-04 14:08:10,585 - root - INFO - Number of tests failed on i2c5: 0/53
+2020-11-04 14:08:11,646 - root - INFO - Number of tests failed on i2c0: 0/65
+2020-11-04 14:08:11,646 - root - INFO - Number of tests failed on i2c5: 0/65
+2020-11-04 14:08:12,708 - root - INFO - Number of tests failed on i2c0: 0/77
+2020-11-04 14:08:12,708 - root - INFO - Number of tests failed on i2c5: 0/77
+2020-11-04 14:08:13,771 - root - INFO - Number of tests failed on i2c0: 0/89
+2020-11-04 14:08:13,771 - root - INFO - Number of tests failed on i2c5: 0/89
+2020-11-04 14:08:14,837 - root - INFO - Number of tests failed on i2c0: 0/101
+2020-11-04 14:08:14,837 - root - INFO - Number of tests failed on i2c5: 0/101
+2020-11-04 14:08:15,900 - root - INFO - Number of tests failed on i2c0: 0/113
+2020-11-04 14:08:15,900 - root - INFO - Number of tests failed on i2c5: 0/113
+2020-11-04 14:08:16,964 - root - INFO - Number of tests failed on i2c0: 0/125
+2020-11-04 14:08:17,024 - root - INFO - Number of tests failed on i2c5: 0/125
+2020-11-04 14:08:18,003 - root - INFO - Number of tests failed on i2c0: 0/136
+2020-11-04 14:08:18,003 - root - INFO - Number of tests failed on i2c5: 0/136
+2020-11-04 14:08:19,066 - root - INFO - Number of tests failed on i2c0: 0/148
+2020-11-04 14:08:19,066 - root - INFO - Number of tests failed on i2c5: 0/148
+2020-11-04 14:08:20,129 - root - INFO - Number of tests failed on i2c0: 0/160
+2020-11-04 14:08:20,129 - root - INFO - Number of tests failed on i2c5: 0/160
+2020-11-04 14:08:21,190 - root - INFO - Number of tests failed on i2c0: 0/172
+2020-11-04 14:08:21,190 - root - INFO - Number of tests failed on i2c5: 0/172
+2020-11-04 14:08:22,254 - root - INFO - Number of tests failed on i2c0: 0/184
+2020-11-04 14:08:22,254 - root - INFO - Number of tests failed on i2c5: 0/184
+2020-11-04 14:08:23,288 - root - INFO - Number of tests failed on i2c0: 0/193
+2020-11-04 14:08:23,288 - root - INFO - Number of tests failed on i2c5: 0/193
+2020-11-04 14:08:24,328 - root - INFO - Number of tests failed on i2c0: 0/205
+2020-11-04 14:08:24,328 - root - INFO - Number of tests failed on i2c5: 0/205
+2020-11-04 14:08:25,386 - root - INFO - Number of tests failed on i2c0: 0/217
+2020-11-04 14:08:25,387 - root - INFO - Number of tests failed on i2c5: 0/217
+2020-11-04 14:08:26,448 - root - INFO - Number of tests failed on i2c0: 0/229
+2020-11-04 14:08:26,448 - root - INFO - Number of tests failed on i2c5: 0/229
+2020-11-04 14:08:27,514 - root - INFO - Number of tests failed on i2c0: 0/241
+2020-11-04 14:08:27,514 - root - INFO - Number of tests failed on i2c5: 0/241
+2020-11-04 14:08:28,551 - root - INFO - Number of tests failed on i2c0: 0/252
+2020-11-04 14:08:28,551 - root - INFO - Number of tests failed on i2c5: 0/252
+2020-11-04 14:08:29,615 - root - INFO - Number of tests failed on i2c0: 0/264
+2020-11-04 14:08:29,615 - root - INFO - Number of tests failed on i2c5: 0/264
+2020-11-04 14:08:30,676 - root - INFO - Number of tests failed on i2c0: 0/276
+2020-11-04 14:08:30,676 - root - INFO - Number of tests failed on i2c5: 0/276
+2020-11-04 14:08:31,728 - root - INFO - Number of tests failed on i2c0: 0/288
+2020-11-04 14:08:31,728 - root - INFO - Number of tests failed on i2c5: 0/288
+2020-11-04 14:08:32,792 - root - INFO - Number of tests failed on i2c0: 0/300
+2020-11-04 14:08:32,852 - root - INFO - Number of tests failed on i2c5: 0/300
+2020-11-04 14:08:33,808 - root - INFO - Number of tests failed on i2c0: 0/306
+2020-11-04 14:08:33,808 - root - INFO - Number of tests failed on i2c5: 0/306
+2020-11-04 14:08:34,921 - root - INFO - Number of tests failed on i2c0: 0/313
+2020-11-04 14:08:34,921 - root - INFO - Number of tests failed on i2c5: 0/313
+2020-11-04 14:08:35,939 - root - INFO - Number of tests failed on i2c0: 0/320
+2020-11-04 14:08:35,939 - root - INFO - Number of tests failed on i2c5: 0/320
+2020-11-04 14:08:36,969 - root - INFO - Number of tests failed on i2c0: 0/331
+2020-11-04 14:08:36,969 - root - INFO - Number of tests failed on i2c5: 0/331
+2020-11-04 14:08:38,034 - root - INFO - Number of tests failed on i2c0: 0/343
+2020-11-04 14:08:38,094 - root - INFO - Number of tests failed on i2c5: 0/343
+2020-11-04 14:08:39,067 - root - INFO - Number of tests failed on i2c0: 0/349
+2020-11-04 14:08:39,068 - root - INFO - Number of tests failed on i2c5: 0/349
+2020-11-04 14:08:40,192 - root - INFO - Number of tests failed on i2c0: 0/356
+2020-11-04 14:08:40,192 - root - INFO - Number of tests failed on i2c5: 0/356
+2020-11-04 14:08:41,249 - root - INFO - Number of tests failed on i2c0: 0/366
+2020-11-04 14:08:41,249 - root - INFO - Number of tests failed on i2c5: 0/366
+2020-11-04 14:08:42,292 - root - INFO - Number of tests failed on i2c0: 0/376
+2020-11-04 14:08:42,292 - root - INFO - Number of tests failed on i2c5: 0/376
+2020-11-04 14:08:43,332 - root - INFO - Number of tests failed on i2c0: 0/386
+2020-11-04 14:08:43,392 - root - INFO - Number of tests failed on i2c5: 0/386
+2020-11-04 14:08:44,346 - root - INFO - Number of tests failed on i2c0: 0/394
+2020-11-04 14:08:44,346 - root - INFO - Number of tests failed on i2c5: 0/394
+2020-11-04 14:08:45,392 - root - INFO - Number of tests failed on i2c0: 0/404
+2020-11-04 14:08:45,392 - root - INFO - Number of tests failed on i2c5: 0/404
+2020-11-04 14:08:46,456 - root - INFO - Number of tests failed on i2c0: 0/416
+2020-11-04 14:08:46,457 - root - INFO - Number of tests failed on i2c5: 0/416
+2020-11-04 14:08:47,520 - root - INFO - Number of tests failed on i2c0: 0/428
+2020-11-04 14:08:47,520 - root - INFO - Number of tests failed on i2c5: 0/428
+2020-11-04 14:08:48,584 - root - INFO - Number of tests failed on i2c0: 0/440
+2020-11-04 14:08:48,644 - root - INFO - Number of tests failed on i2c5: 0/440
+2020-11-04 14:08:49,632 - root - INFO - Number of tests failed on i2c0: 0/450
+2020-11-04 14:08:49,632 - root - INFO - Number of tests failed on i2c5: 0/450
+2020-11-04 14:08:50,699 - root - INFO - Number of tests failed on i2c0: 0/462
+2020-11-04 14:08:50,699 - root - INFO - Number of tests failed on i2c5: 0/462
+2020-11-04 14:08:51,763 - root - INFO - Number of tests failed on i2c0: 0/474
+2020-11-04 14:08:51,763 - root - INFO - Number of tests failed on i2c5: 0/474
+2020-11-04 14:08:52,823 - root - INFO - Number of tests failed on i2c0: 0/486
+2020-11-04 14:08:52,823 - root - INFO - Number of tests failed on i2c5: 0/486
+2020-11-04 14:08:53,876 - root - INFO - Number of tests failed on i2c0: 0/498
+2020-11-04 14:08:53,937 - root - INFO - Number of tests failed on i2c5: 0/498
+2020-11-04 14:08:54,264 - root - INFO - 10.21 reads per second
+2020-11-04 14:08:54,264 - root - INFO - Average read time 9.797260e-02s
+2020-11-04 14:08:54,266 - root - INFO - Ok: StopLOLcnt (5) equals startLOLcnt (5)
+2020-11-04 14:08:54,268 - root - INFO - Ok: StopC1Bcnt (0) equals startC1Bcnt (0)
+2020-11-04 14:08:54,270 - root - INFO - Ok: StopC2Bcnt (5) equals startC2Bcnt (5)
+2020-11-04 14:10:34,232 - root - INFO - Start testSelectMap
+2020-11-04 14:10:34,232 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 14:10:36,765 - root - INFO - GBTx0 locked to CRU
+2020-11-04 14:10:38,781 - ProAsic3 - INFO - Done!
+2020-11-04 14:10:38,898 - ProAsic3 - INFO - Selectmap read of IDcode returns 0x13919093
+2020-11-04 14:10:38,899 - root - INFO - selectMap Id Code = 0x13919093
+2020-11-04 14:10:38,899 - root - INFO - Local Clock counter ok = 26214 
+2020-11-04 14:10:39,402 - root - INFO - Ok, Jitter Cleaner clockStatus = 2, Now press S4 
+2020-11-04 14:10:46,125 - root - INFO - Ok, Jitter Cleaner clockStatus = 7, Now release S4 
+2020-11-04 14:10:46,711 - root - INFO - Ok, Jitter Cleaner clockStatus = 3, wait 1 second to lock
+2020-11-04 14:10:47,715 - root - INFO - Ok, Jitter Cleaner clockStatus = 2, Jitter Cleaner ok
+2020-11-04 14:12:20,000 - root - INFO - Start testCAN
+2020-11-04 14:12:20,000 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 14:12:22,007 - can.interfaces.socketcan.socketcan - INFO - Created a socket
+2020-11-04 14:12:22,008 - root - INFO - wait 30.0 seconds
+2020-11-04 14:12:52,017 - root - INFO - Number of tests failed: 0/3123
+2020-11-04 14:12:52,017 - root - INFO - Successful reads: 9369/9369
+2020-11-04 14:12:52,017 - root - INFO - Successful writes: 3123/3123
+2020-11-04 14:12:52,017 - root - INFO - Timeouts: 0
+2020-11-04 14:12:52,018 - root - INFO - Wrong reponses: 0
+2020-11-04 14:12:52,018 - root - INFO - Wrong IDs: 0
+2020-11-04 14:12:52,018 - root - INFO - 104.06 test iterations per second
+2020-11-04 14:12:52,018 - root - INFO - 416.26 attempted transactions per second
+2020-11-04 14:12:52,018 - root - INFO - 416.25 successful transactions per second
+2020-11-04 14:12:52,018 - root - INFO - Average test iteration attempt time 9.609603e-03s
+2020-11-04 14:12:52,019 - root - INFO - Average transaction attempt time 2.402416e-03s
+2020-11-04 14:12:52,033 - root - INFO - 
+2020-11-04 14:12:52,033 - root - INFO - can_reg_rx_msg_count: 12493
+2020-11-04 14:12:52,034 - root - INFO - can_reg_tx_msg_count: 12493
+2020-11-04 14:12:52,034 - root - INFO - can_reg_read_count: 9372
+2020-11-04 14:12:52,034 - root - INFO - can_reg_write_count: 3123
+2020-11-04 14:12:52,034 - root - INFO - can_reg_status_alert_count: 0
+2020-11-04 14:12:52,034 - root - INFO - can_reg_unknown_count: 0
+2020-11-04 14:13:01,559 - root - INFO - ok
+2020-11-04 14:13:17,376 - root - INFO - Start testFlashReadback
+2020-11-04 14:13:17,376 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2020-11-04 14:13:19,910 - root - INFO - GBTx0 locked to CRU
+2020-11-04 14:13:21,925 - ProAsic3 - INFO - Done!
+2020-11-04 14:13:21,926 - ProAsic3 - INFO - random seed for flash random data:27217467
+2020-11-04 14:13:21,927 - ProAsic3 - INFO - started at 19:13:21
+2020-11-04 14:13:21,928 - ProAsic3 - INFO - this function might fail in some cases if you write to a bad block.
+To solve this, choose another block, for example increment the block by 0x100
+2020-11-04 14:13:21,930 - ProAsic3 - INFO - ereasing blocks 0x300 to 0x301 pages 0xc000 to 0xc040
+2020-11-04 14:13:22,074 - ProAsic3 - INFO - Writing to page C000
+2020-11-04 14:13:22,460 - ProAsic3 - INFO - write to flash ended at 19:13:22
+2020-11-04 14:13:29,429 - ProAsic3 - INFO - test successful
+2020-11-04 14:13:29,429 - ProAsic3 - INFO - flash readback test successful
+2020-11-04 14:13:29,430 - ProAsic3 - INFO - [(175, 175), (104, 104), (142, 142), (15, 15), (103, 103), (128, 128), (180, 180), (150, 150), (65, 65), (147, 147)]
+2020-11-04 14:13:54,820 - root - INFO - Start Bad Block Readback
+2020-11-04 14:13:54,820 - root - INFO - Board serial number = 0392
+2020-11-04 14:13:55,840 - root - INFO - GBTx0 locked to CRU
+2020-11-04 14:13:59,862 - ProAsic3 - INFO - Done!
+2020-11-04 14:13:59,863 - root - INFO - startLOLcnt = 10
+2020-11-04 14:13:59,864 - root - INFO - startC1Bcnt = 0
+2020-11-04 14:13:59,864 - root - INFO - startC2Bcnt = 10
+2020-11-04 14:22:00,537 - ProAsic3 - INFO - bad blocks data: 
+['0x948', '0x948', '0x1255', '0x1255', '0x18a8', '0x18a8', '0x1a78', '0x1a78', '0x1c06', '0x1c06', '0x1e56', '0x1e56']
+2020-11-04 14:30:00,764 - ProAsic3 - INFO - bad blocks data: 
+['0xae', '0xae', '0x225', '0x225', '0x2a0', '0x2a0', '0x422', '0x422', '0x438', '0x438', '0x50f', '0x50f', '0x706', '0x706', '0x8a1', '0x8a1', '0xb7a', '0xb7a', '0xd86', '0xd86', '0x1053', '0x1053', '0x1878', '0x1878', '0x1b16', '0x1b16', '0x1c2c', '0x1c2c', '0x1c64', '0x1c64', '0x1d3b', '0x1d3b', '0x1dd0', '0x1dd0', '0x1e80', '0x1e80', '0x1f50', '0x1f50', '0x1f91', '0x1f91']
+2020-11-04 14:30:00,904 - numexpr.utils - INFO - NumExpr defaulting to 8 threads.
+2020-11-04 14:30:00,920 - root - INFO - Ok: StopLOLcnt (10) equals startLOLcnt (10)
+2020-11-04 14:30:00,921 - root - INFO - Ok: StopC1Bcnt (0) equals startC1Bcnt (0)
+2020-11-04 14:30:00,922 - root - INFO - Ok: StopC2Bcnt (10) equals startC2Bcnt (10)
+2021-01-06 14:14:57,118 - root - INFO - Start testAll
+2021-01-06 14:14:57,186 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-01-06 14:14:59,193 - root - INFO - CRU Version: AC12387
+2021-01-06 14:14:59,193 - root - INFO - RDO Version: BED27B3
+2021-01-06 14:14:59,195 - root - INFO - DNA = 0x40020001012947641d3083c5
+2021-01-06 14:15:01,349 - root - INFO - Fixedpattern GBTx0(address=374)=0xa5
+2021-01-06 14:15:01,350 - root - INFO - Fixedpattern GBTx1(address=374)=0xff
+2021-01-06 14:15:01,350 - root - ERROR - GBTx1 not accessible from I2C, fixedpattern (address 374) != 0xA5
+2021-01-06 14:15:21,220 - root - INFO - Start testAll
+2021-01-06 14:15:21,220 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-01-06 14:15:23,228 - root - INFO - CRU Version: AC12387
+2021-01-06 14:15:23,228 - root - INFO - RDO Version: BED27B3
+2021-01-06 14:15:23,231 - root - INFO - DNA = 0x40020001012947641d3083c5
+2021-01-06 14:15:25,279 - root - INFO - Fixedpattern GBTx0(address=374)=0xa5
+2021-01-06 14:15:25,281 - root - INFO - Fixedpattern GBTx1(address=374)=0xff
+2021-01-06 14:15:25,281 - root - ERROR - GBTx1 not accessible from I2C, fixedpattern (address 374) != 0xA5
+2021-01-06 14:17:44,210 - root - INFO - Start testAll
+2021-01-06 14:17:44,210 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-01-06 14:17:46,218 - root - INFO - CRU Version: AC12387
+2021-01-06 14:17:46,218 - root - INFO - RDO Version: BED27B3
+2021-01-06 14:17:46,221 - root - INFO - DNA = 0x40020001012947641d3083c5
+2021-01-06 14:17:48,274 - root - INFO - Fixedpattern GBTx0(address=374)=0xa5
+2021-01-06 14:17:48,276 - root - INFO - Fixedpattern GBTx1(address=374)=0xa5
+2021-01-06 14:17:48,278 - root - INFO - Fixedpattern GBTx2(address=374)=0xa5
+2021-01-06 14:17:52,319 - root - INFO - GBTx0 locked to CRU
+2021-01-06 14:17:52,320 - root - INFO - GBTx2 locked to CRU
+2021-01-06 14:17:52,322 - root - INFO - GBTx0(adres=367=testFuse1) = 0x82
+2021-01-06 14:17:52,323 - root - INFO - GBTx0(adres=368=testFuse2) = 0xbb
+2021-01-06 14:17:52,325 - root - INFO - GBTx1(adres=367=testFuse1) = 0xb8
+2021-01-06 14:17:52,325 - root - INFO - GBTx1(adres=368=testFuse2) = 0xbb
+2021-01-06 14:17:52,327 - root - INFO - GBTx2(adres=367=testFuse1) = 0x6f
+2021-01-06 14:17:52,327 - root - INFO - GBTx2(adres=368=testFuse2) = 0xbb
+2021-01-06 14:17:54,834 - root - INFO - MGT status: (15, {'init_done': 1, 'reset_rx_done': 1, 'link_status': 1, 'link_down_latched': 1})
+2021-01-06 14:17:54,835 - root - INFO - MGT errors: 0
+2021-01-06 14:17:54,836 - root - INFO - read_prbs_locked: MGT locked 0xfffffff
+2021-01-06 14:17:54,837 - root - INFO - Disable DCLK
+2021-01-06 14:17:54,837 - root - INFO - reset all prbs  receivers
+2021-01-06 14:17:54,838 - root - INFO - clear all prbs error counters
+2021-01-06 14:17:54,838 - root - INFO - inject errors
+2021-01-06 14:17:54,842 - root - INFO - Number of RUv0 FEC Errors at beginning of testAll = 0
+2021-01-06 14:17:54,842 - root - INFO - Number of GBTx0 FEC Errors at beginning of testAll = 214
+2021-01-06 14:17:54,842 - root - INFO - Number of GBTx2 FEC Errors at beginning of testAll = 71
+2021-01-06 14:17:54,843 - root - INFO - wait 5.0 seconds
+2021-01-06 14:17:59,848 - root - INFO - sleep done
+2021-01-06 14:17:59,910 - root - INFO - OK, smaError 6
+2021-01-06 14:17:59,911 - root - INFO - OK, headerJ13Error0 6
+2021-01-06 14:17:59,911 - root - INFO - OK, headerJ13Error1 12
+2021-01-06 14:17:59,912 - root - INFO - OK, headerJ13Error2 18
+2021-01-06 14:17:59,912 - root - INFO - OK, headerJ13Error3 24
+2021-01-06 14:17:59,912 - root - INFO - OK, headerJ13Error4 30
+2021-01-06 14:17:59,913 - root - INFO - OK, PA3headerJ14Error0 6
+2021-01-06 14:17:59,913 - root - INFO - OK, PA3headerJ14Error1 12
+2021-01-06 14:17:59,913 - root - INFO - OK, PA3headerJ14Error2 18
+2021-01-06 14:17:59,914 - root - INFO - OK, PA3headerJ14Error3 24
+2021-01-06 14:17:59,914 - root - INFO - OK, PA3headerJ14Error4 30
+2021-01-06 14:17:59,914 - root - INFO - OK, PA3Error0 6
+2021-01-06 14:17:59,915 - root - INFO - OK, PA3Error1 12
+2021-01-06 14:17:59,915 - root - INFO - OK, PA3Error2 18
+2021-01-06 14:17:59,915 - root - INFO - OK, PA3Error3 24
+2021-01-06 14:17:59,916 - root - INFO - OK, PA3Error4 30
+2021-01-06 14:17:59,916 - root - INFO - OK, PA3Error5 6
+2021-01-06 14:17:59,916 - root - INFO - OK, PA3Error6 12
+2021-01-06 14:17:59,917 - root - INFO - OK, PA3Error7 18
+2021-01-06 14:17:59,917 - root - INFO - OK, PA3Error8 24
+2021-01-06 14:17:59,917 - root - INFO - OK, PA3Error9 30
+2021-01-06 14:17:59,918 - root - INFO - OK, DCTRLerror0 6
+2021-01-06 14:17:59,918 - root - INFO - OK, DCTRLerror1 12
+2021-01-06 14:17:59,919 - root - INFO - OK, DCTRLerror2 18
+2021-01-06 14:17:59,919 - root - INFO - OK, DCTRLerror3 24
+2021-01-06 14:17:59,920 - root - INFO - OK, DCTRLerror4 30
+2021-01-06 14:17:59,920 - root - INFO - OK, DCLKBerror0 0
+2021-01-06 14:17:59,920 - root - INFO - OK, DCLKBerror1 0
+2021-01-06 14:17:59,921 - root - INFO - OK, DCLKBerror2 0
+2021-01-06 14:17:59,921 - root - INFO - OK, DCLKBerror3 0
+2021-01-06 14:17:59,921 - root - INFO - OK, DCLKBerror4 0
+2021-01-06 14:17:59,922 - root - INFO - OK, DCLKCerror0 0
+2021-01-06 14:17:59,922 - root - INFO - OK, DCLKCerror1 0
+2021-01-06 14:17:59,922 - root - INFO - OK, DCLKCerror2 0
+2021-01-06 14:17:59,922 - root - INFO - OK, DCLKCerror3 0
+2021-01-06 14:17:59,922 - root - INFO - OK, DCLKCerror4 0
+2021-01-06 14:17:59,922 - root - INFO - OK, AUXerror0 6
+2021-01-06 14:17:59,922 - root - INFO - OK, AUXerror1 12
+2021-01-06 14:17:59,923 - root - INFO - OK, AUXerror2 18
+2021-01-06 14:17:59,923 - root - INFO - OK, AUXerror3 24
+2021-01-06 14:17:59,923 - root - INFO - OK, PUerror0 6
+2021-01-06 14:17:59,923 - root - INFO - OK, PUerror1 12
+2021-01-06 14:17:59,923 - root - INFO - OK, PUerror2 18
+2021-01-06 14:17:59,923 - root - INFO - OK, PUerror3 24
+2021-01-06 14:17:59,923 - root - INFO - OK, PUerror4 30
+2021-01-06 14:17:59,923 - root - INFO - OK, PUerror5 36
+2021-01-06 14:17:59,924 - root - INFO - OK, PUerror6 42
+2021-01-06 14:17:59,924 - root - INFO - OK, PUerror7 48
+2021-01-06 14:17:59,924 - root - INFO - Enable DCLK
+2021-01-06 14:17:59,924 - root - INFO - reset all prbs  receivers
+2021-01-06 14:17:59,924 - root - INFO - clear all prbs error counters
+2021-01-06 14:17:59,924 - root - INFO - inject errors
+2021-01-06 14:17:59,924 - root - INFO - wait 300 seconds
+2021-01-06 14:17:59,924 - root - INFO - Number of GPIO Errors so far = 0
+2021-01-06 14:17:59,925 - root - INFO - Number of MGT errors so far = 0
+2021-01-06 14:23:00,702 - root - INFO - sleep done
+2021-01-06 14:23:00,703 - root - INFO - OK, smaError 6
+2021-01-06 14:23:00,704 - root - INFO - OK, headerJ13Error0 6
+2021-01-06 14:23:00,705 - root - INFO - OK, headerJ13Error1 12
+2021-01-06 14:23:00,706 - root - INFO - OK, headerJ13Error2 18
+2021-01-06 14:23:00,706 - root - INFO - OK, headerJ13Error3 24
+2021-01-06 14:23:00,706 - root - INFO - OK, headerJ13Error4 30
+2021-01-06 14:23:00,706 - root - INFO - OK, PA3headerJ14Error0 6
+2021-01-06 14:23:00,706 - root - INFO - OK, PA3headerJ14Error1 12
+2021-01-06 14:23:00,707 - root - INFO - OK, PA3headerJ14Error2 18
+2021-01-06 14:23:00,707 - root - INFO - OK, PA3headerJ14Error3 24
+2021-01-06 14:23:00,707 - root - INFO - OK, PA3headerJ14Error4 30
+2021-01-06 14:23:00,707 - root - INFO - OK, PA3Error0 6
+2021-01-06 14:23:00,707 - root - INFO - OK, PA3Error1 12
+2021-01-06 14:23:00,707 - root - INFO - OK, PA3Error2 18
+2021-01-06 14:23:00,708 - root - INFO - OK, PA3Error3 24
+2021-01-06 14:23:00,708 - root - INFO - OK, PA3Error4 30
+2021-01-06 14:23:00,708 - root - INFO - OK, PA3Error5 6
+2021-01-06 14:23:00,708 - root - INFO - OK, PA3Error6 12
+2021-01-06 14:23:00,708 - root - INFO - OK, PA3Error7 18
+2021-01-06 14:23:00,708 - root - INFO - OK, PA3Error8 24
+2021-01-06 14:23:00,708 - root - INFO - OK, PA3Error9 30
+2021-01-06 14:23:00,708 - root - INFO - OK, DCTRLerror0 6
+2021-01-06 14:23:00,709 - root - INFO - OK, DCTRLerror1 12
+2021-01-06 14:23:00,709 - root - INFO - OK, DCTRLerror2 18
+2021-01-06 14:23:00,709 - root - INFO - OK, DCTRLerror3 24
+2021-01-06 14:23:00,709 - root - INFO - OK, DCTRLerror4 30
+2021-01-06 14:23:00,709 - root - INFO - OK, DCLKBerror0 6
+2021-01-06 14:23:00,709 - root - INFO - OK, DCLKBerror1 12
+2021-01-06 14:23:00,709 - root - INFO - OK, DCLKBerror2 18
+2021-01-06 14:23:00,710 - root - INFO - OK, DCLKBerror3 24
+2021-01-06 14:23:00,710 - root - INFO - OK, DCLKBerror4 30
+2021-01-06 14:23:00,710 - root - INFO - OK, DCLKCerror0 6
+2021-01-06 14:23:00,710 - root - INFO - OK, DCLKCerror1 12
+2021-01-06 14:23:00,710 - root - INFO - OK, DCLKCerror2 18
+2021-01-06 14:23:00,710 - root - INFO - OK, DCLKCerror3 24
+2021-01-06 14:23:00,710 - root - INFO - OK, DCLKCerror4 30
+2021-01-06 14:23:00,710 - root - INFO - OK, AUXerror0 6
+2021-01-06 14:23:00,711 - root - INFO - OK, AUXerror1 12
+2021-01-06 14:23:00,711 - root - INFO - OK, AUXerror2 18
+2021-01-06 14:23:00,711 - root - INFO - OK, AUXerror3 24
+2021-01-06 14:23:00,711 - root - INFO - OK, PUerror0 6
+2021-01-06 14:23:00,711 - root - INFO - OK, PUerror1 12
+2021-01-06 14:23:00,711 - root - INFO - OK, PUerror2 18
+2021-01-06 14:23:00,711 - root - INFO - OK, PUerror3 24
+2021-01-06 14:23:00,712 - root - INFO - OK, PUerror4 30
+2021-01-06 14:23:00,712 - root - INFO - OK, PUerror5 36
+2021-01-06 14:23:00,712 - root - INFO - OK, PUerror6 42
+2021-01-06 14:23:00,712 - root - INFO - OK, PUerror7 48
+2021-01-06 14:23:00,712 - root - INFO - OK, PRBS counter 0 = 1
+2021-01-06 14:23:00,712 - root - INFO - OK, PRBS counter 1 = 1
+2021-01-06 14:23:00,712 - root - INFO - OK, PRBS counter 2 = 1
+2021-01-06 14:23:00,713 - root - INFO - OK, PRBS counter 3 = 1
+2021-01-06 14:23:00,713 - root - INFO - OK, PRBS counter 4 = 1
+2021-01-06 14:23:00,713 - root - INFO - OK, PRBS counter 5 = 1
+2021-01-06 14:23:00,714 - root - INFO - OK, PRBS counter 6 = 1
+2021-01-06 14:23:00,714 - root - INFO - OK, PRBS counter 7 = 1
+2021-01-06 14:23:00,714 - root - INFO - OK, PRBS counter 8 = 0, BUSY loopback
+2021-01-06 14:23:00,715 - root - INFO - OK, PRBS counter 9 = 1
+2021-01-06 14:23:00,715 - root - INFO - OK, PRBS counter 10 = 1
+2021-01-06 14:23:00,715 - root - INFO - OK, PRBS counter 11 = 1
+2021-01-06 14:23:00,715 - root - INFO - OK, PRBS counter 12 = 1
+2021-01-06 14:23:00,715 - root - INFO - OK, PRBS counter 13 = 1
+2021-01-06 14:23:00,716 - root - INFO - OK, PRBS counter 14 = 1
+2021-01-06 14:23:00,716 - root - INFO - OK, PRBS counter 15 = 1
+2021-01-06 14:23:00,716 - root - INFO - OK, PRBS counter 16 = 1
+2021-01-06 14:23:00,716 - root - INFO - OK, PRBS counter 17 = 1
+2021-01-06 14:23:00,717 - root - INFO - OK, PRBS counter 18 = 1
+2021-01-06 14:23:00,717 - root - INFO - OK, PRBS counter 19 = 1
+2021-01-06 14:23:00,717 - root - INFO - OK, PRBS counter 20 = 1
+2021-01-06 14:23:00,717 - root - INFO - OK, PRBS counter 21 = 1
+2021-01-06 14:23:00,718 - root - INFO - OK, PRBS counter 22 = 1
+2021-01-06 14:23:00,718 - root - INFO - OK, PRBS counter 23 = 1
+2021-01-06 14:23:00,718 - root - INFO - OK, PRBS counter 24 = 1
+2021-01-06 14:23:00,718 - root - INFO - OK, PRBS counter 25 = 1
+2021-01-06 14:23:00,719 - root - INFO - OK, PRBS counter 26 = 1
+2021-01-06 14:23:00,719 - root - INFO - OK, PRBS counter 27 = 1
+2021-01-06 14:23:00,719 - root - INFO - CRU status flags:
+2021-01-06 14:23:00,719 - root - INFO - MGTLinkReady           1
+2021-01-06 14:23:00,719 - root - INFO - RxWordClockReady       1
+2021-01-06 14:23:00,719 - root - INFO - RxFrameClockReady      1
+2021-01-06 14:23:00,719 - root - INFO - GbtRxReady             1
+2021-01-06 14:23:00,719 - root - INFO - RxIsData               0
+2021-01-06 14:23:00,719 - root - INFO - GbtRxReadyLostFlag     0
+2021-01-06 14:23:00,719 - root - INFO - GbtRxDataErrorseenFlag 0
+2021-01-06 14:23:00,721 - root - INFO - Number of RUv0 FEC Errors 0, same as start of test
+2021-01-06 14:23:00,721 - root - INFO - Number of GBTx0 FEC Errors 214, same as start of test
+2021-01-06 14:23:00,721 - root - INFO - Number of GBTx2 FEC Errors 71, same as start of test
+2021-01-06 14:23:00,721 - root - INFO - No Data errors and link errors
+2021-01-06 14:23:00,721 - root - INFO - Number of GPIO Errors = 0
+2021-01-06 14:23:00,721 - root - INFO - Number of faulty MGT channels = 0
+2021-01-06 14:47:01,536 - root - INFO - retest after replacing S0: OK
+2021-01-06 14:47:33,752 - root - INFO - Start testSCA
+2021-01-06 14:47:33,753 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-01-06 14:47:36,287 - root - INFO - GBTx0 locked to CRU
+2021-01-06 14:47:36,310 - root - INFO - Now testing SCA-I2C  lines to Xilinx
+2021-01-06 14:47:36,409 - root - INFO - Expected = 63, received = 63
+2021-01-06 14:47:36,505 - root - INFO - Expected = 127, received = 127
+2021-01-06 14:47:36,601 - root - INFO - Expected = 191, received = 191
+2021-01-06 14:47:36,698 - root - INFO - Expected = 255, received = 255
+2021-01-06 14:47:36,698 - root - INFO - Now testing SCA-GPIO lines to Xilinx
+2021-01-06 14:47:36,698 - root - INFO - read = 0xfff00000
+2021-01-06 14:47:36,699 - root - INFO - read = 0xfff00041
+2021-01-06 14:47:36,699 - root - INFO - read = 0xfff00082
+2021-01-06 14:47:36,700 - root - INFO - read = 0xfff00104
+2021-01-06 14:47:36,700 - root - INFO - read = 0xfff00208
+2021-01-06 14:47:36,701 - root - INFO - read = 0xfff00410
+2021-01-06 14:47:36,701 - root - INFO - read = 0xfff00820
+2021-01-06 14:47:36,701 - root - INFO - Now testing SCA-GPIO lines to PA3
+2021-01-06 14:47:36,702 - root - INFO - read = 0
+2021-01-06 14:47:36,702 - root - INFO - read = 1
+2021-01-06 14:47:36,703 - root - INFO - read = 2
+2021-01-06 14:47:36,703 - root - INFO - read = 3
+2021-01-06 14:47:36,704 - root - INFO - read = 4
+2021-01-06 14:47:36,704 - root - INFO - read = 5
+2021-01-06 14:47:36,705 - root - INFO - read = 6
+2021-01-06 14:47:36,705 - root - INFO - read = 7
+2021-01-06 14:47:36,706 - root - INFO - read = 8
+2021-01-06 14:47:36,706 - root - INFO - read = 9
+2021-01-06 14:47:36,707 - root - INFO - read = 10
+2021-01-06 14:47:36,707 - root - INFO - read = 11
+2021-01-06 14:47:36,708 - root - INFO - read = 12
+2021-01-06 14:47:36,708 - root - INFO - read = 13
+2021-01-06 14:47:36,709 - root - INFO - read = 14
+2021-01-06 14:47:36,710 - root - INFO - read = 15
+2021-01-06 14:47:36,710 - root - INFO - Now reading Ultrascale IDCODE via SCA JTAG
+2021-01-06 14:47:36,712 - root - INFO - IDCODE = 0x13919093
+2021-01-06 14:47:36,712 - root - INFO - I_INT = 1.0085470085470085
+2021-01-06 14:47:36,712 - root - INFO - I_MGT = 2.1965811965811968
+2021-01-06 14:47:36,712 - root - INFO - I_1V2 = 1.4468864468864469
+2021-01-06 14:47:36,712 - root - INFO - I_1V5 = 2.1123321123321124
+2021-01-06 14:47:36,712 - root - INFO - I_1V8 = 0.8473748473748474
+2021-01-06 14:47:36,712 - root - INFO - I_2V5 = 0.7411477411477412
+2021-01-06 14:47:36,712 - root - INFO - I_3V3 = 0.518925518925519
+2021-01-06 14:47:36,712 - root - INFO - I_IN  = 2.9206349206349205
+2021-01-06 14:47:36,712 - root - INFO - V_INT = 0.9557997557997558
+2021-01-06 14:47:36,713 - root - INFO - V_MGT = 1.0163614163614163
+2021-01-06 14:47:36,713 - root - INFO - V_1V2 = 1.2126984126984126
+2021-01-06 14:47:36,713 - root - INFO - V_1V5 = 1.5174603174603174
+2021-01-06 14:47:36,713 - root - INFO - V_1V8 = 1.792918192918193
+2021-01-06 14:47:36,713 - root - INFO - V_2V5 = 2.485958485958486
+2021-01-06 14:47:36,713 - root - INFO - V_3V3 = 3.2979242979242978
+2021-01-06 14:47:36,713 - root - INFO - V_IN  = 4.923076923076923
+2021-01-06 14:47:36,713 - root - INFO - I_VTRx1 = 201.11
+2021-01-06 14:47:36,713 - root - INFO - I_VTRx2 = 217.736
+2021-01-06 14:47:36,713 - root - INFO - T1    = 22.517269999999996
+2021-01-06 14:47:36,713 - root - INFO - T2    = 19.34584000000001
+2021-01-06 14:47:36,713 - root - INFO - T_INT = 30.44425351697083
+2021-01-06 14:47:50,240 - root - INFO - Start testGBT
+2021-01-06 14:47:50,241 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-01-06 14:47:56,279 - root - INFO - GBTx0 locked to CRU
+2021-01-06 14:47:58,286 - root - INFO - Number of RUv0 FEC Errors at beginning of testGBT = 0
+2021-01-06 14:47:58,287 - root - INFO - Number of GBTx0 FEC Errors at beginning of testGBT = 140
+2021-01-06 14:47:58,287 - root - INFO - wait 200 seconds
+2021-01-06 14:51:18,808 - root - INFO - sleep done
+2021-01-06 14:51:18,809 - root - INFO - CRU status flags:
+2021-01-06 14:51:18,810 - root - INFO - MGTLinkReady           1
+2021-01-06 14:51:18,810 - root - INFO - RxWordClockReady       1
+2021-01-06 14:51:18,810 - root - INFO - RxFrameClockReady      1
+2021-01-06 14:51:18,810 - root - INFO - GbtRxReady             1
+2021-01-06 14:51:18,810 - root - INFO - RxIsData               0
+2021-01-06 14:51:18,811 - root - INFO - GbtRxReadyLostFlag     0
+2021-01-06 14:51:18,811 - root - INFO - GbtRxDataErrorseenFlag 0
+2021-01-06 14:51:18,813 - root - INFO - Number of RUv0 FEC Errors 0, same as start of test
+2021-01-06 14:51:18,813 - root - INFO - Number of GBTx0 FEC Errors 140, same as start of test
+2021-01-06 14:51:18,814 - root - INFO - GBTx0 loopback test completed without errors
+2021-01-06 14:56:11,353 - root - INFO - retest after replacement of S0: OK
+2021-01-06 14:56:30,905 - root - INFO - Start testBUTTON
+2021-01-06 14:56:30,906 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-01-06 14:56:33,500 - root - INFO - GBTx0 locked to CRU
+2021-01-06 14:56:35,517 - root - INFO - dipswitch = 0x1
+2021-01-06 14:56:39,770 - root - INFO - dipswitch = 0x3
+2021-01-06 14:56:40,683 - root - INFO - dipswitch = 0x7
+2021-01-06 14:56:41,393 - root - INFO - dipswitch = 0xf
+2021-01-06 14:56:42,103 - root - INFO - dipswitch = 0x1f
+2021-01-06 14:56:42,814 - root - INFO - dipswitch = 0x3f
+2021-01-06 14:56:43,425 - root - INFO - dipswitch = 0x7f
+2021-01-06 14:56:44,135 - root - INFO - dipswitch = 0xff
+2021-01-06 14:56:44,745 - root - INFO - dipswitch = 0x1ff
+2021-01-06 14:56:45,455 - root - INFO - dipswitch = 0x3ff
+2021-01-06 14:56:45,456 - root - INFO - Pushbutton = 0x0
+2021-01-06 14:56:50,111 - root - INFO - pushbutton = 1
+2021-01-06 14:56:50,619 - root - INFO - Pushbutton = 0x0
+2021-01-06 14:56:53,248 - root - ERROR - pushbutton = 4 expected =2 ERROR!!!!!
+2021-01-06 14:56:53,249 - root - INFO - Start testing Jitter Cleaner
+2021-01-06 14:56:53,249 - root - INFO - FreqJitterCleaner local clk= 26265
+2021-01-06 15:07:46,372 - root - INFO - Start testBUTTON
+2021-01-06 15:07:46,372 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-01-06 15:07:48,907 - root - INFO - GBTx0 locked to CRU
+2021-01-06 15:07:50,926 - root - INFO - dipswitch = 0x1
+2021-01-06 15:07:56,698 - root - INFO - dipswitch = 0x3
+2021-01-06 15:07:57,610 - root - INFO - dipswitch = 0x7
+2021-01-06 15:07:58,219 - root - INFO - dipswitch = 0xf
+2021-01-06 15:07:58,928 - root - INFO - dipswitch = 0x1f
+2021-01-06 15:07:59,536 - root - INFO - dipswitch = 0x3f
+2021-01-06 15:08:00,246 - root - INFO - dipswitch = 0x7f
+2021-01-06 15:08:00,855 - root - INFO - dipswitch = 0xff
+2021-01-06 15:08:01,464 - root - INFO - dipswitch = 0x1ff
+2021-01-06 15:08:02,680 - root - INFO - dipswitch = 0x3ff
+2021-01-06 15:08:02,681 - root - INFO - Pushbutton = 0x0
+2021-01-06 15:08:06,932 - root - INFO - pushbutton = 1
+2021-01-06 15:08:07,440 - root - INFO - Pushbutton = 0x0
+2021-01-06 15:08:08,857 - root - INFO - pushbutton = 2
+2021-01-06 15:08:09,061 - root - INFO - Pushbutton = 0x0
+2021-01-06 15:08:12,199 - root - INFO - pushbutton = 4
+2021-01-06 15:08:12,504 - root - INFO - Pushbutton = 0x0
+2021-01-06 15:08:13,718 - root - INFO - pushbutton = 8
+2021-01-06 15:08:14,023 - root - INFO - Start testing Jitter Cleaner
+2021-01-06 15:08:14,084 - root - INFO - FreqJitterCleaner local clk= 26265
+2021-01-07 15:45:33,439 - root - INFO - Start testBUTTON
+2021-01-07 15:45:33,439 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-01-07 15:45:36,046 - root - INFO - GBTx0 locked to CRU
+2021-01-07 15:45:38,062 - root - INFO - dipswitch = 0x1
+2021-01-07 15:45:46,253 - root - INFO - dipswitch = 0x3
+2021-01-07 15:45:47,063 - root - INFO - dipswitch = 0x7
+2021-01-07 15:45:47,773 - root - INFO - dipswitch = 0xf
+2021-01-07 15:45:48,482 - root - INFO - dipswitch = 0x1f
+2021-01-07 15:45:49,293 - root - INFO - dipswitch = 0x3f
+2021-01-07 15:45:50,003 - root - INFO - dipswitch = 0x7f
+2021-01-07 15:45:50,611 - root - INFO - dipswitch = 0xff
+2021-01-07 15:45:51,322 - root - INFO - dipswitch = 0x1ff
+2021-01-07 15:45:52,032 - root - INFO - dipswitch = 0x3ff
+2021-01-07 15:45:52,034 - root - INFO - Pushbutton = 0x0
+2021-01-07 15:45:54,565 - root - INFO - pushbutton = 1
+2021-01-07 15:45:54,972 - root - INFO - Pushbutton = 0x0
+2021-01-07 15:45:55,783 - root - INFO - pushbutton = 2
+2021-01-07 15:45:56,189 - root - INFO - Pushbutton = 0x0
+2021-01-07 15:45:57,000 - root - INFO - pushbutton = 4
+2021-01-07 15:45:57,406 - root - INFO - Pushbutton = 0x0
+2021-01-07 15:45:58,318 - root - INFO - pushbutton = 8
+2021-01-07 15:45:58,522 - root - INFO - Start testing Jitter Cleaner
+2021-01-07 15:45:58,523 - root - INFO - FreqJitterCleaner local clk= 26265
+2021-09-03 15:33:54,524 - root - INFO - Start testSCA_short
+2021-09-03 15:33:54,593 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-09-03 15:33:58,817 - root - INFO - GBTx0 locked to CRU
+2021-09-03 15:33:58,857 - root - INFO - I_INT = 0.7936507936507936
+2021-09-03 15:33:58,857 - root - INFO - I_MGT = 2.2002442002442004
+2021-09-03 15:33:58,857 - root - INFO - I_1V2 = 1.393162393162393
+2021-09-03 15:33:58,858 - root - INFO - I_1V5 = 1.8424908424908424
+2021-09-03 15:33:58,858 - root - INFO - I_1V8 = 0.8754578754578755
+2021-09-03 15:33:58,858 - root - INFO - I_2V5 = 0.7216117216117216
+2021-09-03 15:33:58,858 - root - INFO - I_3V3 = 0.4371184371184371
+2021-09-03 15:33:58,858 - root - INFO - I_IN  = 2.681318681318681
+2021-09-03 15:33:58,859 - root - INFO - V_INT = 0.9587301587301588
+2021-09-03 15:33:58,859 - root - INFO - V_MGT = 1.0178266178266178
+2021-09-03 15:33:58,859 - root - INFO - V_1V2 = 1.213186813186813
+2021-09-03 15:33:58,859 - root - INFO - V_1V5 = 1.5208791208791208
+2021-09-03 15:33:58,859 - root - INFO - V_1V8 = 1.794871794871795
+2021-09-03 15:33:58,860 - root - INFO - V_2V5 = 2.4896214896214897
+2021-09-03 15:33:58,860 - root - INFO - V_3V3 = 3.3064713064713063
+2021-09-03 15:33:58,860 - root - INFO - V_IN  = 5.046153846153846
+2021-09-03 15:33:58,860 - root - INFO - I_VTRx1 = 191.32999999999998
+2021-09-03 15:33:58,860 - root - INFO - I_VTRx2 = 201.11
+2021-09-03 15:33:58,861 - root - INFO - T1    = 20.614412000000016
+2021-09-03 15:33:58,861 - root - INFO - T2    = 17.442981999999972
+2021-09-03 15:33:58,861 - root - INFO - T_INT = 28.04097063255075
+2021-09-03 15:34:07,800 - root - INFO - Start testGBT
+2021-09-03 15:34:07,800 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-09-03 15:34:13,839 - root - INFO - GBTx0 locked to CRU
+2021-09-03 15:34:15,845 - root - INFO - Number of RUv0 FEC Errors at beginning of testGBT = 0
+2021-09-03 15:34:15,845 - root - INFO - Number of GBTx0 FEC Errors at beginning of testGBT = 223
+2021-09-03 15:34:15,845 - root - INFO - wait 120 seconds
+2021-09-03 15:36:16,179 - root - INFO - sleep done
+2021-09-03 15:36:16,182 - root - INFO - Number of RUv0 FEC Errors 0, same as start of test
+2021-09-03 15:36:16,182 - root - INFO - Number of GBTx0 FEC Errors 223, same as start of test
+2021-09-03 15:36:16,183 - root - INFO - CRU status flags at end of test:
+2021-09-03 15:36:16,183 - root - INFO - MGTLinkReady           1
+2021-09-03 15:36:16,183 - root - INFO - RxWordClockReady       1
+2021-09-03 15:36:16,184 - root - INFO - RxFrameClockReady      1
+2021-09-03 15:36:16,184 - root - INFO - GbtRxReady             1
+2021-09-03 15:36:16,184 - root - INFO - RxIsData               0
+2021-09-03 15:36:16,184 - root - INFO - GbtRxReadyLostFlag     0
+2021-09-03 15:36:16,184 - root - INFO - GbtRxDataErrorseenFlag 0
+2021-09-03 15:36:16,184 - root - INFO - No data or link loss errors
+2021-09-03 15:36:16,185 - root - INFO - GBTx0 loopback test completed without errors
+2021-09-03 15:36:28,708 - root - INFO - ok
+2021-09-03 15:36:34,849 - root - INFO - Start testGBT1
+2021-09-03 15:36:34,849 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-09-03 15:36:41,908 - root - INFO - GBTx0 locked to CRU
+2021-09-03 15:36:43,914 - root - INFO - GBTx0 charge pump setting = 4
+2021-09-03 15:36:43,916 - root - INFO - Number of RUv0 FEC Errors at beginning of testGBT1 = 0
+2021-09-03 15:36:43,917 - root - INFO - Number of GBTx0 FEC Errors at beginning of testGBT1 = 36
+2021-09-03 15:36:43,917 - root - INFO - wait 120 seconds
+2021-09-03 15:38:44,248 - root - INFO - sleep done
+2021-09-03 15:38:44,249 - root - INFO - Number of RUv0 FEC Errors 0, same as start of test
+2021-09-03 15:38:44,249 - root - INFO - Number of GBTx0 FEC Errors 36, same as start of test
+2021-09-03 15:38:44,250 - root - INFO - CRU status flags at end of test:
+2021-09-03 15:38:44,250 - root - INFO - MGTLinkReady           1
+2021-09-03 15:38:44,250 - root - INFO - RxWordClockReady       1
+2021-09-03 15:38:44,250 - root - INFO - RxFrameClockReady      1
+2021-09-03 15:38:44,250 - root - INFO - GbtRxReady             1
+2021-09-03 15:38:44,250 - root - INFO - RxIsData               0
+2021-09-03 15:38:44,250 - root - INFO - GbtRxReadyLostFlag     0
+2021-09-03 15:38:44,250 - root - INFO - GbtRxDataErrorseenFlag 0
+2021-09-03 15:38:44,250 - root - INFO - No data or link loss errors
+2021-09-03 15:38:44,250 - root - INFO - GBT1 loopback test completed without errors
+2021-09-03 15:39:01,533 - root - INFO - ok
+2021-09-03 15:39:08,313 - root - INFO - Start testGBT2
+2021-09-03 15:39:08,313 - root - INFO - Board serial number = I0610-01-R00,S/20772/1-001,0392
+2021-09-03 15:39:15,384 - root - INFO - GBTx2 locked to CRU
+2021-09-03 15:39:17,389 - root - INFO - GBTx2 charge pump setting = 4
+2021-09-03 15:39:17,391 - root - INFO - Number of RUv0 FEC Errors at beginning of testGBT2 = 0
+2021-09-03 15:39:17,392 - root - INFO - Number of GBTx2 FEC Errors at beginning of testGBT2 = 180
+2021-09-03 15:39:17,392 - root - INFO - wait 120 seconds
+2021-09-03 15:41:17,742 - root - INFO - sleep done
+2021-09-03 15:41:17,745 - root - INFO - Number of RUv0 FEC Errors 0, same as start of test
+2021-09-03 15:41:17,745 - root - INFO - Number of GBTx2 FEC Errors 180, same as start of test
+2021-09-03 15:41:17,746 - root - INFO - CRU status flags at end of test:
+2021-09-03 15:41:17,746 - root - INFO - MGTLinkReady           1
+2021-09-03 15:41:17,747 - root - INFO - RxWordClockReady       1
+2021-09-03 15:41:17,747 - root - INFO - RxFrameClockReady      1
+2021-09-03 15:41:17,747 - root - INFO - GbtRxReady             1
+2021-09-03 15:41:17,747 - root - INFO - RxIsData               0
+2021-09-03 15:41:17,747 - root - INFO - GbtRxReadyLostFlag     0
+2021-09-03 15:41:17,748 - root - INFO - GbtRxDataErrorseenFlag 0
+2021-09-03 15:41:17,748 - root - INFO - No data or link loss errors
+2021-09-03 15:41:17,748 - root - INFO - GBT2 loopback test completed without errors
+2021-09-03 15:43:02,736 - root - INFO - ok

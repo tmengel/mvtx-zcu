@@ -1,0 +1,2 @@
+../../../source/rtl/hamming/assertions/h3_correct_n_k_assertions.sv
+../../../source/bench/hamming/h3_correct_tb.sv

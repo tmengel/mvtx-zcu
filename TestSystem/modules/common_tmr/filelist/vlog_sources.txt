@@ -1,0 +1,8 @@
+source/rtl/mmr_registers/majority_voter.sv
+source/rtl/mmr_registers/majority_voter_packed.sv
+source/rtl/mmr_registers/majority_voter_array.sv
+source/rtl/mmr_registers/majority_voter_triplicated.sv
+source/rtl/mmr_registers/majority_voter_triplicated_array.sv
+source/rtl/regnbit/regnbit_1to3.sv
+source/rtl/regnbit/regnbit_3to1.sv
+source/rtl/common/minority_voter.sv

@@ -1,0 +1,1 @@
+source/ip/fifo32x1024/fifo32x1024.xci

@@ -1,0 +1,6 @@
+#gsource/rtl/example_designs/xilinx_zultrascalep/core_sources/gbt_rx_frameclk_phalgnr/rx_frmclk_pll.xci
+source/rtl/gbt_bank/xilinx_zup/gbt_tx/gbt_tx/xlx_zup_tx_dpram.xci
+source/rtl/gbt_bank/xilinx_zup/mgt/mgt_ip_vhd/xlx_zup_mgt_ip/xlx_zup_mgt_ip.xci
+source/rtl/gbt_bank/xilinx_zup/gbt_rx/gbt_rx/xlx_zup_rx_dpram.xci
+source/rtl/example_designs/xilinx_zultrascalep/core_sources/tx_pll/xlx_zup_tx_pll.xci
+source/rtl/example_designs/xilinx_zultrascalep/zcu102/main_mmcm/main_mmcm.xci

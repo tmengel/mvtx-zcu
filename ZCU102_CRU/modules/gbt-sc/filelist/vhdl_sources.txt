@@ -1,0 +1,12 @@
+source/rtl/IC/ic_deserializer.vhd
+source/rtl/IC/ic_rx.vhd
+source/rtl/IC/ic_rx_fifo.vhd
+source/rtl/IC/ic_top.vhd
+source/rtl/IC/ic_tx.vhd
+source/rtl/SCA/sca_deserializer.vhd
+source/rtl/SCA/sca_pkg.vhd
+source/rtl/SCA/sca_rx.vhd
+source/rtl/SCA/sca_rx_fifo.vhd
+source/rtl/SCA/sca_top.vhd
+source/rtl/SCA/sca_tx.vhd
+source/rtl/gbtsc_top.vhd

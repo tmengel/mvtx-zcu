@@ -1,0 +1,3 @@
+#source/ip/clk_wiz_0/clk_wiz_0.xci
+source/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci
+source/ip/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0.xci

@@ -1,0 +1,33 @@
+##################
+# Vivado
+##################
+zcu102/vivado_project/*
+!zcu102/vivado_project/xlx_zcu102_gbt_exmpldsgn.xpr
+
+##################
+# IPs
+##################
+!zcu102/main_mmcm/
+zcu102/main_mmcm/*
+!zcu102/main_mmcm/main_mmcm.xci
+
+!core_sources/chipscope_ila/
+core_sources/chipscope_ila/*
+!core_sources/chipscope_ila/xlx_zup_vivado_debug.xci
+
+!core_sources/chipscope_vio/
+core_sources/chipscope_vio/*
+!core_sources/chipscope_vio/xlx_zup_vio.xci
+
+!core_sources/gbt_rx_frameclk_phalgnr/
+core_sources/gbt_rx_frameclk_phalgnr/*
+!core_sources/gbt_rx_frameclk_phalgnr/rx_frmclk_pll.xci
+
+!core_sources/jtagCtrl_gbtfpgaTest/
+core_sources/jtagCtrl_gbtfpgaTest/*
+!core_sources/jtagCtrl_gbtfpgaTest/jtagCtrl_gbtfpgaTest.xci
+
+!core_sources/tx_pll/
+core_sources/tx_pll/*
+!core_sources/tx_pll/xlx_zup_tx_pll.xci
+

@@ -1,0 +1,3 @@
++incdir+$usb_if_bench source/bench/Fx3Pkg.sv
+source/ip/fifo_DP23_32bit/sim/fifo_DP23_32bit.v
+source/ip/fifo32x1024/sim/fifo32x1024.v

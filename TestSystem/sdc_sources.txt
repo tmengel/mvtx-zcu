@@ -1,0 +1,3 @@
+/home/ALICE/TestSystem/source/constraints/PinConstraints.xdc
+/home/ALICE/TestSystem/source/constraints/TimingConstraints.xdc
+/home/ALICE/TestSystem/source/constraints/Bitstream_settings.xdc

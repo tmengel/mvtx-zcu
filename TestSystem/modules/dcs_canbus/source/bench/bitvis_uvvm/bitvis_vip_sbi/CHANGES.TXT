@@ -1,0 +1,164 @@
+Bitvis VIP SBI - Overview on Versions and Changes
+==============================================================
+
+v2.0.5
+----------
+Released: 2017-04-28
+- Updated formatting in documentation
+- Added mathcing_values to spi_poll_until()
+
+v2.0.4
+----------
+Released: 2017-04-04
+- Updated the BFM init functions to fix compile error in GHDL
+
+v2.0.3
+----------
+Released: 2017-03-16
+- Updated documentation
+
+
+v2.0.2
+----------
+Released: 2017-02-13
+- Applied minor bugfixes and updated documentation for v2.0.x
+
+
+v2.0.1
+----------
+Released: 2017-02-01
+- Applied minor bugfixes after beta testing
+
+
+v2.0.0
+----------
+Released: 2017-01-25
+
+- Changed order of BFM-check methods. "alert_level" moved to first optional parameter.
+- Changed ID_BFM to ID_INSERTED_DELAY in INSERT_DELAY method
+- Added AWAIT_ANY_COMPLETION. 
+- Due to updates in store_result and fetch_result() in uvvm_vvc_framework:
+-  - added definition of t_vvc_result, t_vvc_result_queue_element, t_vvc_response, shared_vvc_response
+-  - updated call to store_result()
+- Removed the use of INSERT_DELAY_IN_TIME. Merged with INSERT_DELAY.
+
+
+VVC changes
+----------
+- Added feature : When bfm_config.use_fixed_wait_cycles_read = true, wait 'fixed_wait_cycles_read' after asserting rd, before sampling rdata
+- Renamed transaction_info_for_waveview to transaction_info
+ 
+
+----------------------------------------------------------------------
+v1.1.1 
+----------
+Released: 2016-10-28
+
+VVC changes
+----------
+- transaction_for_waveview now shows NO_OPERATION after a transaction has been completed
+
+v1.1.0
+----------
+Released: 2016-04-28
+
+BFM changes
+----------
+
+- sbi_write() and sbi_read(): Now verifying that ready signal is either '0'
+  or '1' if config.use_ready_signal is true.
+
+VVC changes
+----------
+- Added quietness parameter to enable/disable log msg
+- Added scope parameter to VVC insert bfm delay procedure
+
+v1.0.1
+--------------------
+Released: 2016-01-20
+
+General changes
+----------
+- License conditions have changed. Bitvis VIP SBI is now released 
+  under the MIT license, see LICENSE.txt
+- UVVM VVC Framework is now open source. Updated compile script with new file names.
+- Removed unused reset port from VVC.
+
+v1.0.0
+--------------------
+Released: 2015-12-08
+
+General changes
+----------
+- Added example of how to use config records to QuickRef
+- Improved documentation of how to use the signal interface 
+- Applied changes caused by UVVM VVC Framework package renaming
+    - work.vvc_support_pkg => work.td_vvc_entity_support_pkg
+    - work.uvvm_vvc_dedicated_support => work.td_target_support_pkg
+    - uvvm_vvc_framework.uvvm_support_pkg => uvvm_vvc_framework.ti_vvc_framework_support_pkg
+    - work.uvvm_methods_pkg => work.td_vvc_framework_common_methods_pkg
+    - work.queue_pkg => work.td_queue_pkg
+    
+BFM changes
+----------
+- Added use_ready_signal to BFM config
+
+VVC changes
+----------
+- Added check for if BFM access exceeds the specified start-to-start inter-bfm delay
+
+
+v0.6.0
+--------------------
+Released: 2015-11-18
+
+General changes
+----------
+- General renaming:
+  - GC_CMD_QUEUE_COUNT_ALERT_LEVEL -> GC_CMD_QUEUE_COUNT_THRESHOLD
+  - GC_CMD_QUEUE_COUNT_ALERT_LEVEL_SEVERITY -> GC_CMD_QUEUE_COUNT_THRESHOLD_SEVERITY
+  - THIS_VVC -> THIS_VVCT
+- New QuickRefs added for both BFM and VVC
+
+VVC changes
+----------
+- Added inter-BFM delay to vvc_config for inserting delay between BFM accesses
+- Removed unused packet declarations in the VHDL files
+- Set msg parameter to mandatory in VVC methods
+- Set VVC index to default 1
+- Removed version number from VVC code
+
+v0.5.0
+----------
+Released: 2015-10-20
+
+- General renaming:
+  - Renamed VVC architecture to behave
+- BFM config is now set from VVC by accessing vvc_config.bfm_config.
+- Default VVC message ID panel is now C_VVC_MSG_ID_PANEL_DEFAULT
+- Now checking that input widths are set correctly in VVC
+- Removed clock period from VVC config, since this is also set from BFM config.
+
+
+v0.4.0
+----------
+Released: 2015-10-12
+
+- General VVC renaming:
+  - VVC_ACK => global_vvc_ack
+  - VVC_CMD => shared_vvc_cmd
+  - VVC_RESPONSE => shared_vvc_response
+  - <name>_VVC => <name>_VVCT
+  - <name>_vvc_status => shared_<name>_vvc_status
+  - <name>_vvc_config => shared_<name>_vvc_config
+  - sbi_if in VVC => sbi_vvc_master_if
+- Added insert_delay with delay in time
+- Added VVC_BROADCAST to VVC interpreter await_cmd_from_sequencer
+- Added transaction info record for waveview
+  
+
+v0.3.0
+----------
+Released: 2015-10-07
+
+Initial version of SBI VIP

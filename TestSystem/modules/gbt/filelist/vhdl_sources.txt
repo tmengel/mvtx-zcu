@@ -1,0 +1,13 @@
+source/rtl/gbtx_pkg.vhd
+source/rtl/gbtx_controller/gbtx_controller_pkg.vhd
+source/rtl/gbtx_controller/BitSlipInLogic_8b.vhd
+source/rtl/gbtx_controller/gbtx_bitslip_logic.vhd
+source/rtl/gbtx_controller/gbtx_rx_handler.vhd
+source/rtl/gbtx_controller/gbtx_tx_handler.vhd
+source/rtl/gbtx_controller/gbtx_wishbone.vhd
+source/rtl/gbtx_controller/gbtx_hard_macros.vhd
+source/rtl/gbtx_controller/tmr_wrappers/gbtx_wishbone_tmr_wrapper.vhd
+source/rtl/gbtx_controller/tmr_wrappers/gbtx_bitslip_logic_tmr_wrapper.vhd
+source/rtl/gbtx_controller/tmr_wrappers/gbtx_rx_handler_tmr_wrapper.vhd
+source/rtl/gbtx_controller/tmr_wrappers/gbtx_tx_handler_tmr_wrapper.vhd
+source/rtl/gbtx_controller/gbtx_controller.vhd

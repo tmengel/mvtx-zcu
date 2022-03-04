@@ -1,0 +1,2 @@
+../../../source/rtl/mmr_registers/majority_voter.sv
+../../../source/rtl/mmr_registers/majority_voter_packed.sv

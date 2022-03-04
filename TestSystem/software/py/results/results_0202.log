@@ -1,0 +1,171 @@
+2019-08-28 10:20:32,922 - root - INFO - Start testAll
+2019-08-28 10:20:32,923 - root - INFO - Board serial number = 202
+2019-08-28 10:20:34,930 - root - INFO - CRU Version: AC12387
+2019-08-28 10:20:34,931 - root - INFO - RDO Version: B3944D5
+2019-08-28 10:20:34,933 - root - INFO - DNA = 0x40020001012947641d90c4c5
+2019-08-28 10:20:36,503 - root - INFO - Fixedpattern GBTx0(address=374)=0xa5
+2019-08-28 10:20:36,504 - root - INFO - Fixedpattern GBTx1(address=374)=0xa5
+2019-08-28 10:20:36,506 - root - INFO - Fixedpattern GBTx2(address=374)=0xa5
+2019-08-28 10:20:38,545 - root - INFO - GBTx0 locked to CRU
+2019-08-28 10:20:38,546 - root - INFO - GBTx2 locked to CRU
+2019-08-28 10:20:38,548 - root - INFO - GBTx0(adres=367=testFuse1) = 0x52
+2019-08-28 10:20:38,548 - root - INFO - GBTx0(adres=368=testFuse2) = 0x97
+2019-08-28 10:20:38,550 - root - INFO - GBTx1(adres=367=testFuse1) = 0xf0
+2019-08-28 10:20:38,551 - root - INFO - GBTx1(adres=368=testFuse2) = 0x7c
+2019-08-28 10:20:38,553 - root - INFO - GBTx2(adres=367=testFuse1) = 0x7c
+2019-08-28 10:20:38,553 - root - INFO - GBTx2(adres=368=testFuse2) = 0xc0
+2019-08-28 10:20:38,554 - root - INFO - Number of FEC Errors at start of test = 0
+2019-08-28 10:20:40,558 - root - INFO - MGT status: (8, {'init_done': 0, 'reset_rx_done': 0, 'link_status': 0, 'link_down_latched': 1})
+2019-08-28 10:20:40,559 - root - INFO - MGT errors: 256
+2019-08-28 10:20:40,560 - root - ERROR - read_prbs_locked: MGT locked 0xffffeff
+2019-08-28 10:20:40,560 - root - INFO - Disable DCLK
+2019-08-28 10:20:40,561 - root - INFO - reset all prbs  receivers
+2019-08-28 10:20:40,561 - root - INFO - clear all prbs error counters
+2019-08-28 10:20:40,561 - root - INFO - inject errors
+2019-08-28 10:20:40,562 - root - INFO - wait 5.0 seconds
+2019-08-28 10:20:45,567 - root - INFO - sleep done
+2019-08-28 10:20:45,568 - root - INFO - OK, smaError 6
+2019-08-28 10:20:45,569 - root - INFO - OK, headerJ13Error0 6
+2019-08-28 10:20:45,569 - root - INFO - OK, headerJ13Error1 12
+2019-08-28 10:20:45,569 - root - INFO - OK, headerJ13Error2 18
+2019-08-28 10:20:45,569 - root - INFO - OK, headerJ13Error3 24
+2019-08-28 10:20:45,569 - root - INFO - OK, headerJ13Error4 30
+2019-08-28 10:20:45,570 - root - INFO - OK, PA3headerJ14Error0 6
+2019-08-28 10:20:45,570 - root - INFO - OK, PA3headerJ14Error1 12
+2019-08-28 10:20:45,570 - root - INFO - OK, PA3headerJ14Error2 18
+2019-08-28 10:20:45,570 - root - INFO - OK, PA3headerJ14Error3 24
+2019-08-28 10:20:45,570 - root - INFO - OK, PA3headerJ14Error4 30
+2019-08-28 10:20:45,571 - root - INFO - OK, PA3Error0 6
+2019-08-28 10:20:45,571 - root - INFO - OK, PA3Error1 12
+2019-08-28 10:20:45,571 - root - INFO - OK, PA3Error2 18
+2019-08-28 10:20:45,571 - root - INFO - OK, PA3Error3 24
+2019-08-28 10:20:45,571 - root - INFO - OK, PA3Error4 30
+2019-08-28 10:20:45,571 - root - INFO - OK, PA3Error5 6
+2019-08-28 10:20:45,571 - root - INFO - OK, PA3Error6 12
+2019-08-28 10:20:45,572 - root - INFO - OK, PA3Error7 18
+2019-08-28 10:20:45,572 - root - INFO - OK, PA3Error8 24
+2019-08-28 10:20:45,572 - root - INFO - OK, PA3Error9 30
+2019-08-28 10:20:45,572 - root - INFO - OK, DCTRLerror0 6
+2019-08-28 10:20:45,572 - root - INFO - OK, DCTRLerror1 12
+2019-08-28 10:20:45,572 - root - INFO - OK, DCTRLerror2 18
+2019-08-28 10:20:45,573 - root - INFO - OK, DCTRLerror3 24
+2019-08-28 10:20:45,573 - root - INFO - OK, DCTRLerror4 30
+2019-08-28 10:20:45,573 - root - INFO - OK, DCLKBerror0 0
+2019-08-28 10:20:45,573 - root - INFO - OK, DCLKBerror1 0
+2019-08-28 10:20:45,573 - root - INFO - OK, DCLKBerror2 0
+2019-08-28 10:20:45,573 - root - INFO - OK, DCLKBerror3 0
+2019-08-28 10:20:45,574 - root - INFO - OK, DCLKBerror4 0
+2019-08-28 10:20:45,574 - root - INFO - OK, DCLKCerror0 0
+2019-08-28 10:20:45,574 - root - INFO - OK, DCLKCerror1 0
+2019-08-28 10:20:45,574 - root - INFO - OK, DCLKCerror2 0
+2019-08-28 10:20:45,574 - root - INFO - OK, DCLKCerror3 0
+2019-08-28 10:20:45,574 - root - INFO - OK, DCLKCerror4 0
+2019-08-28 10:20:45,574 - root - ERROR - AUXerror0 23090
+2019-08-28 10:20:45,575 - root - ERROR - AUXerror1 36086
+2019-08-28 10:20:45,575 - root - ERROR - AUXerror2 51774
+2019-08-28 10:20:45,575 - root - ERROR - AUXerror3 64596
+2019-08-28 10:20:45,575 - root - INFO - OK, PUerror0 6
+2019-08-28 10:20:45,575 - root - INFO - OK, PUerror1 12
+2019-08-28 10:20:45,576 - root - INFO - OK, PUerror2 18
+2019-08-28 10:20:45,576 - root - INFO - OK, PUerror3 24
+2019-08-28 10:20:45,576 - root - INFO - OK, PUerror4 30
+2019-08-28 10:20:45,576 - root - INFO - OK, PUerror5 36
+2019-08-28 10:20:45,576 - root - INFO - OK, PUerror6 42
+2019-08-28 10:20:45,576 - root - INFO - OK, PUerror7 48
+2019-08-28 10:20:45,576 - root - INFO - Enable DCLK
+2019-08-28 10:20:45,576 - root - INFO - reset all prbs  receivers
+2019-08-28 10:20:45,577 - root - INFO - clear all prbs error counters
+2019-08-28 10:20:45,577 - root - INFO - inject errors
+2019-08-28 10:20:45,577 - root - INFO - wait 300.0 seconds
+2019-08-28 10:20:45,577 - root - ERROR - Number of GPIO Errors so far = 4
+2019-08-28 10:20:45,577 - root - ERROR - Number of MGT Errors so far = 1
+2019-08-28 10:25:45,655 - root - INFO - sleep done
+2019-08-28 10:25:45,656 - root - INFO - OK, smaError 6
+2019-08-28 10:25:45,657 - root - INFO - OK, headerJ13Error0 6
+2019-08-28 10:25:45,657 - root - INFO - OK, headerJ13Error1 12
+2019-08-28 10:25:45,658 - root - INFO - OK, headerJ13Error2 18
+2019-08-28 10:25:45,659 - root - INFO - OK, headerJ13Error3 24
+2019-08-28 10:25:45,659 - root - ERROR - headerJ13Error4 29
+2019-08-28 10:25:45,660 - root - INFO - OK, PA3headerJ14Error0 6
+2019-08-28 10:25:45,660 - root - INFO - OK, PA3headerJ14Error1 12
+2019-08-28 10:25:45,661 - root - INFO - OK, PA3headerJ14Error2 18
+2019-08-28 10:25:45,662 - root - INFO - OK, PA3headerJ14Error3 24
+2019-08-28 10:25:45,662 - root - INFO - OK, PA3headerJ14Error4 30
+2019-08-28 10:25:45,663 - root - INFO - OK, PA3Error0 6
+2019-08-28 10:25:45,663 - root - INFO - OK, PA3Error1 12
+2019-08-28 10:25:45,664 - root - INFO - OK, PA3Error2 18
+2019-08-28 10:25:45,665 - root - INFO - OK, PA3Error3 24
+2019-08-28 10:25:45,665 - root - INFO - OK, PA3Error4 30
+2019-08-28 10:25:45,666 - root - INFO - OK, PA3Error5 6
+2019-08-28 10:25:45,666 - root - INFO - OK, PA3Error6 12
+2019-08-28 10:25:45,667 - root - INFO - OK, PA3Error7 18
+2019-08-28 10:25:45,667 - root - INFO - OK, PA3Error8 24
+2019-08-28 10:25:45,667 - root - INFO - OK, PA3Error9 30
+2019-08-28 10:25:45,667 - root - INFO - OK, DCTRLerror0 6
+2019-08-28 10:25:45,667 - root - INFO - OK, DCTRLerror1 12
+2019-08-28 10:25:45,668 - root - INFO - OK, DCTRLerror2 18
+2019-08-28 10:25:45,668 - root - INFO - OK, DCTRLerror3 24
+2019-08-28 10:25:45,668 - root - INFO - OK, DCTRLerror4 30
+2019-08-28 10:25:45,668 - root - INFO - OK, DCLKBerror0 6
+2019-08-28 10:25:45,669 - root - INFO - OK, DCLKBerror1 12
+2019-08-28 10:25:45,669 - root - INFO - OK, DCLKBerror2 18
+2019-08-28 10:25:45,669 - root - INFO - OK, DCLKBerror3 24
+2019-08-28 10:25:45,669 - root - INFO - OK, DCLKBerror4 30
+2019-08-28 10:25:45,669 - root - INFO - OK, DCLKCerror0 6
+2019-08-28 10:25:45,670 - root - INFO - OK, DCLKCerror1 12
+2019-08-28 10:25:45,670 - root - INFO - OK, DCLKCerror2 18
+2019-08-28 10:25:45,670 - root - INFO - OK, DCLKCerror3 24
+2019-08-28 10:25:45,670 - root - INFO - OK, DCLKCerror4 30
+2019-08-28 10:25:45,670 - root - ERROR - AUXerror0 61172
+2019-08-28 10:25:45,670 - root - ERROR - AUXerror1 8024
+2019-08-28 10:25:45,671 - root - ERROR - AUXerror2 20042
+2019-08-28 10:25:45,671 - root - ERROR - AUXerror3 33230
+2019-08-28 10:25:45,671 - root - INFO - OK, PUerror0 6
+2019-08-28 10:25:45,671 - root - INFO - OK, PUerror1 12
+2019-08-28 10:25:45,671 - root - INFO - OK, PUerror2 18
+2019-08-28 10:25:45,671 - root - INFO - OK, PUerror3 24
+2019-08-28 10:25:45,672 - root - INFO - OK, PUerror4 30
+2019-08-28 10:25:45,672 - root - INFO - OK, PUerror5 36
+2019-08-28 10:25:45,672 - root - INFO - OK, PUerror6 42
+2019-08-28 10:25:45,672 - root - INFO - OK, PUerror7 48
+2019-08-28 10:25:45,672 - root - INFO - OK, PRBS counter 0 = 1
+2019-08-28 10:25:45,672 - root - INFO - OK, PRBS counter 1 = 1
+2019-08-28 10:25:45,673 - root - INFO - OK, PRBS counter 2 = 1
+2019-08-28 10:25:45,673 - root - INFO - OK, PRBS counter 3 = 1
+2019-08-28 10:25:45,673 - root - INFO - OK, PRBS counter 4 = 1
+2019-08-28 10:25:45,673 - root - INFO - OK, PRBS counter 5 = 1
+2019-08-28 10:25:45,673 - root - INFO - OK, PRBS counter 6 = 1
+2019-08-28 10:25:45,674 - root - INFO - OK, PRBS counter 7 = 1
+2019-08-28 10:25:45,674 - root - INFO - OK, PRBS counter 8 = 0, BUSY loopback
+2019-08-28 10:25:45,674 - root - INFO - OK, PRBS counter 9 = 1
+2019-08-28 10:25:45,674 - root - INFO - OK, PRBS counter 10 = 1
+2019-08-28 10:25:45,674 - root - INFO - OK, PRBS counter 11 = 1
+2019-08-28 10:25:45,675 - root - INFO - OK, PRBS counter 12 = 1
+2019-08-28 10:25:45,675 - root - INFO - OK, PRBS counter 13 = 1
+2019-08-28 10:25:45,675 - root - INFO - OK, PRBS counter 14 = 1
+2019-08-28 10:25:45,675 - root - INFO - OK, PRBS counter 15 = 1
+2019-08-28 10:25:45,676 - root - INFO - OK, PRBS counter 16 = 1
+2019-08-28 10:25:45,676 - root - INFO - OK, PRBS counter 17 = 1
+2019-08-28 10:25:45,676 - root - INFO - OK, PRBS counter 18 = 1
+2019-08-28 10:25:45,676 - root - INFO - OK, PRBS counter 19 = 1
+2019-08-28 10:25:45,677 - root - INFO - OK, PRBS counter 20 = 1
+2019-08-28 10:25:45,677 - root - INFO - OK, PRBS counter 21 = 1
+2019-08-28 10:25:45,677 - root - INFO - OK, PRBS counter 22 = 1
+2019-08-28 10:25:45,677 - root - INFO - OK, PRBS counter 23 = 1
+2019-08-28 10:25:45,677 - root - INFO - OK, PRBS counter 24 = 1
+2019-08-28 10:25:45,678 - root - INFO - OK, PRBS counter 25 = 1
+2019-08-28 10:25:45,678 - root - INFO - OK, PRBS counter 26 = 1
+2019-08-28 10:25:45,678 - root - INFO - OK, PRBS counter 27 = 1
+2019-08-28 10:25:45,678 - root - INFO - CRU status flags:
+2019-08-28 10:25:45,678 - root - INFO - MGTLinkReady           1
+2019-08-28 10:25:45,678 - root - INFO - RxWordClockReady       1
+2019-08-28 10:25:45,678 - root - INFO - RxFrameClockReady      1
+2019-08-28 10:25:45,678 - root - INFO - GbtRxReady             1
+2019-08-28 10:25:45,678 - root - INFO - RxIsData               0
+2019-08-28 10:25:45,678 - root - INFO - GbtRxReadyLostFlag     0
+2019-08-28 10:25:45,678 - root - INFO - GbtRxDataErrorseenFlag 0
+2019-08-28 10:25:45,679 - root - INFO - Number of FEC Errors = 0
+2019-08-28 10:25:45,679 - root - INFO - No Data errors and link errors
+2019-08-28 10:25:45,679 - root - ERROR - Number of GPIO Errors = 9
+2019-08-28 10:25:45,679 - root - ERROR - Number of faulty MGT channels = 1
+2019-08-28 10:28:46,125 - root - INFO - 

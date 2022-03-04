@@ -1,0 +1,10 @@
+{
+    "common":"modules/common",
+    "common_tmr":"modules/common_tmr",
+    "wishbone":"modules/wishbone",
+    "i2c":"modules/i2c",
+    "usb_if":"modules/usb_if",
+    "gbt":"modules/gbt",
+    "mgt_test":"modules/mgt_test",
+    "dcs_canbus":"modules/dcs_canbus"
+}

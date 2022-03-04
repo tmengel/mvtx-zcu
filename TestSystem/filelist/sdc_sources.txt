@@ -1,0 +1,3 @@
+source/constraints/PinConstraints.xdc
+source/constraints/TimingConstraints.xdc
+source/constraints/Bitstream_settings.xdc

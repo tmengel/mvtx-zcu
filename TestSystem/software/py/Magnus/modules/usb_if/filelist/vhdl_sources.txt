@@ -1,0 +1,7 @@
+#source/rtl/dataout_format_pkg.vhd
+#source/rtl/dataout_format/dataout_format_usb.vhd
+source/rtl/dp_mux_pkg.vhd
+source/rtl/ws_usb_if_pkg.vhd
+source/rtl/ws_usb_if.vhd
+source/rtl/usb_if.vhd
+source/rtl/tmr_wrappers/usb_if_tmr_wrapper.vhd

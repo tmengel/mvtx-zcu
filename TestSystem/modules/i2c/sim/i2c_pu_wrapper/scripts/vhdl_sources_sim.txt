@@ -1,0 +1,2 @@
+../../../source/bench/i2c_slave.vhd
+../../../source/bench/i2c_pu_wrapper_tb.vhd

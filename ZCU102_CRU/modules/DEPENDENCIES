@@ -1,0 +1,4 @@
+{
+    "gbt_fpga" : "modules/gbt_fpga",
+    "gbt-sc"   : "modules/gbt-sc"
+}

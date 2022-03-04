@@ -1,0 +1,46 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 17 11:19:51 2021
+# Process ID: 7489
+# Current directory: /home/yj6/ALICE/ZCU102_CRU
+# Command line: vivado
+# Log file: /home/yj6/ALICE/ZCU102_CRU/vivado.log
+# Journal file: /home/yj6/ALICE/ZCU102_CRU/vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project /home/yj6/ALICE/ZCU102_CRU/vivado/ZCU102_CRU/ZCU102_CRU.xpr
+open_hw_manager
+update_compile_order -fileset sources_1
+connect_hw_server -url localhost:3121 -allow_non_jtag
+current_hw_target [get_hw_targets */xilinx_tcf/Digilent/210308AE6FB4]
+set_property PARAM.FREQUENCY 15000000 [get_hw_targets */xilinx_tcf/Digilent/210308AE6FB4]
+open_hw_target
+set_property PROGRAM.FILE {/home/yj6/ALICE/ZCU102_CRU/ZCU102_CRU_top_210917_0956_a4b0ccec.bit} [get_hw_devices xczu9_0]
+set_property PROBES.FILE {/home/yj6/ALICE/ZCU102_CRU/ZCU102_CRU_top_210917_0956_a4b0ccec.ltx} [get_hw_devices xczu9_0]
+set_property FULL_PROBES.FILE {/home/yj6/ALICE/ZCU102_CRU/ZCU102_CRU_top_210917_0956_a4b0ccec.ltx} [get_hw_devices xczu9_0]
+set_property PROGRAM.FILE {/home/yj6/ALICE/ZCU102_CRU/ZCU102_CRU_top_210917_0956_a4b0ccec.bit} [get_hw_devices xczu9_0]
+program_hw_devices [get_hw_devices xczu9_0]
+refresh_hw_device [lindex [get_hw_devices xczu9_0] 0]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_1 -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"rxIla"}]]
+display_hw_ila_data [ get_hw_ila_data hw_ila_data_2 -of_objects [get_hw_ilas -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"txILa"}]]
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 1 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+startgroup
+set_property OUTPUT_VALUE 0 [get_hw_probes resetDataErrorSeenFlag_from_user -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+commit_hw_vio [get_hw_probes {resetDataErrorSeenFlag_from_user} -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+endgroup
+save_wave_config {/home/yj6/ALICE/ZCU102_CRU/vivado/ZCU102_CRU/ZCU102_CRU.hw/hw_1/wave/hw_ila_data_1/hw_ila_data_1.wcfg}
+save_wave_config {/home/yj6/ALICE/ZCU102_CRU/vivado/ZCU102_CRU/ZCU102_CRU.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wcfg}
+close_hw_manager

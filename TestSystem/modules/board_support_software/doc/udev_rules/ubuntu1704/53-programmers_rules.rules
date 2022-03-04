@@ -1,0 +1,3 @@
+# Rule for the Digilent JTAG-HS2 Programmer
+SUBSYSTEM=="usb", ATTR{idVendor}=="0403", ATTR{idProduct}=="6014", MODE="0666"
+

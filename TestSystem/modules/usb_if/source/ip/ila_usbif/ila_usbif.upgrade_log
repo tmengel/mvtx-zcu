@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Wed Jul 20 17:25:02 2016
+| Host         : pcphaiddt001 running 64-bit CentOS Linux release 7.2.1511 (Core)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'ila_usbif'
+
+1. Summary
+----------
+
+SUCCESS in the update of ila_usbif (xilinx.com:ip:ila:6.0 (Rev. 1)) to current project options.
+

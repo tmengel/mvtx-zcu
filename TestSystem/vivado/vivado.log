@@ -1,0 +1,29 @@
+#-----------------------------------------------------------
+# Vivado v2018.3 (64-bit)
+# SW Build 2405991 on Thu Dec  6 23:36:41 MST 2018
+# IP Build 2404404 on Fri Dec  7 01:43:56 MST 2018
+# Start of session at: Fri Jul 16 12:53:08 2021
+# Process ID: 18919
+# Current directory: /home/ALICE/TestSystem/vivado
+# Command line: vivado -mode batch -source scripts/create_project_vivado.tcl -notrace -tclargs
+# Log file: /home/ALICE/TestSystem/vivado/vivado.log
+# Journal file: /home/ALICE/TestSystem/vivado/vivado.jou
+#-----------------------------------------------------------
+source scripts/create_project_vivado.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2018.3/data/ip'.
+update_compile_order: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 1504.922 ; gain = 144.070 ; free physical = 11747 ; free virtual = 16762
+tcl_platform(byteOrder)   = littleEndian
+tcl_platform(machine)     = x86_64
+tcl_platform(os)          = Linux
+tcl_platform(osVersion)   = 5.4.0-77-generic
+tcl_platform(platform)    = unix
+tcl_platform(pointerSize) = 8
+tcl_platform(threaded)    = 1
+tcl_platform(user)        = yj6
+tcl_platform(wordSize)    = 8
+1
+20210716112550
+/home/ALICE/TestSystem/vivado/scripts/../../modules/common/software/tcl
+INFO: [Common 17-206] Exiting Vivado at Fri Jul 16 12:53:23 2021...

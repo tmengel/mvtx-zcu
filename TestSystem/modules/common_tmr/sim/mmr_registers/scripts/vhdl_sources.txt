@@ -1,0 +1,2 @@
+../../../source/rtl/mmr_registers/tmr_register_wrapper.vhd
+../../../source/rtl/mmr_registers/tmr_register_multiclock_wrapper.vhd

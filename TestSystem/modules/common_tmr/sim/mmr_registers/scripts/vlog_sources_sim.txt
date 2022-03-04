@@ -1,0 +1,5 @@
+../../../source/rtl/common/assertions/common_assertions.sv
+../../../source/rtl/mmr_registers/assertions/mmr_general_assertions.sv
+../../../source/rtl/mmr_registers/assertions/mmr_register_assertions.sv
+../../../source/rtl/mmr_registers/assertions/majority_voter_assertions.sv
+../../../source/bench/mmr_registers/mmr_register_tb.sv

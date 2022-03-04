@@ -1,0 +1,6 @@
+source/rtl/tmr_pkg.vhd
+source/rtl/mmr_registers/majority_voter_wrapper2.vhd
+source/rtl/mmr_registers/majority_voter_triplicated_array_wrapper.vhd
+source/rtl/mmr_registers/majority_voter_array_wrapper.vhd
+source/rtl/upcounter/upcounter_tmr_wrapper.vhd
+source/rtl/common/mvtmr_output.vhd

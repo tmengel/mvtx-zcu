@@ -1,0 +1,1516 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+
+<!--
+
+This file represents a GBTX configuration created on Mon Oct 05 21:46:13 CEST 2015
+Description:
+
+Listed are all signals of the GBTX with the corresponding values selected. Each signal has
+either three (triplicated) or one (not triplicated) locations. Some of the signals locations
+do not seem to correlate in a logical fashion, which is due to the design of the chip.
+
+JS: modified with different configuration for the paPhaseSelect registers
+
+-->
+
+
+<Signals>
+    <Signal name="cmEpllRxReferenceSelect" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="0" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="0" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="0" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cmEpllTxReferenceSelect" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="1" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="1" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="1" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cmRxReferenceTestMuxSelect" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="2" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="2" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="2" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cmTxReferenceTestMuxSelect" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="3" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="3" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="3" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cmRxPhase40MHz" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="274" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="274" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="275" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="cmRxPhase80MHz" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="275" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="276" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="276" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="cmRxTestMuxSelect40" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="277" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="278" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="279" startBitIndex="0" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="cmRxTestMuxSelect80" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="277" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="278" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="279" startBitIndex="2" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="cmRxTestMuxSelect160" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="277" startBitIndex="4" lastBitIndex="5"/>
+        <location startAddress="278" startBitIndex="4" lastBitIndex="5"/>
+        <location startAddress="279" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cmRxTestMuxSelect320" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="277" startBitIndex="6" lastBitIndex="7"/>
+        <location startAddress="278" startBitIndex="6" lastBitIndex="7"/>
+        <location startAddress="279" startBitIndex="6" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="cmReferenceClockSelect" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="281" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="281" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="281" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cmPsReferenceSelect" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="282" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="282" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="282" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cmTestOutSelect" triplicated="false" numberBits="7">
+        <value>0</value>
+        <location startAddress="283" startBitIndex="0" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="cmTxPhase40MHz" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="284" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="284" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="285" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="cmTxPhase80MHz" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="285" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="286" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="286" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="cmTxTestMuxSelect40" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="287" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="288" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="289" startBitIndex="0" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="cmTxTestMuxSelect80" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="287" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="288" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="289" startBitIndex="2" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="cmTxTestMuxSelect160" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="287" startBitIndex="4" lastBitIndex="5"/>
+        <location startAddress="288" startBitIndex="4" lastBitIndex="5"/>
+        <location startAddress="289" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cmTxTestMuxSelect320" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="287" startBitIndex="6" lastBitIndex="7"/>
+        <location startAddress="288" startBitIndex="6" lastBitIndex="7"/>
+        <location startAddress="289" startBitIndex="6" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="cmXpllReferenceSelect" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="290" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="290" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="290" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cmTestMuxSelect" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="319" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="SLVSoutTestSel" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="0" startBitIndex="6" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="testOutputSelect" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="280" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="FDL0" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="4" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FDL1" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="4" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="FDL2" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="5" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FDL3" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="5" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="FDL4" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="6" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FDL5" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="6" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="FDL6" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="7" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FDL7" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="7" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="CDL0" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="8" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="extS0" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="8" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="extEarly0" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="8" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="CDL1" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="9" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="extS1" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="9" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="extEarly1" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="9" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="CDL2" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="10" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="extS2" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="10" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="extEarly2" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="10" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="CDL3" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="11" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="extS3" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="11" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="extEarly3" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="11" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="CDL4" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="12" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="extS4" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="12" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="extEarly4" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="12" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="CDL5" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="13" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="extS5" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="13" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="extEarly5" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="13" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="CDL6" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="14" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="extS6" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="14" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="extEarly6" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="14" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="CDL7" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="15" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="extS7" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="15" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="extEarly7" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="15" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="iSel0" triplicated="false" numberBits="4">
+        <value>3</value>
+        <location startAddress="16" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FREQ0" triplicated="false" numberBits="2">
+        <value>2</value>
+        <location startAddress="16" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="extLate0" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="16" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="iSel1" triplicated="false" numberBits="4">
+        <value>3</value>
+        <location startAddress="17" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FREQ1" triplicated="false" numberBits="2">
+        <value>1</value>
+        <location startAddress="17" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="extLate1" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="17" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="iSel2" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="18" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FREQ2" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="18" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="extLate2" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="18" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="iSel3" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="19" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FREQ3" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="19" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="extLate3" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="19" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="iSel4" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="20" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FREQ4" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="20" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="extLate4" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="20" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="iSel5" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="21" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FREQ5" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="21" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="extLate5" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="21" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="iSel6" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="22" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FREQ6" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="22" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="extLate6" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="22" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="iSel7" triplicated="false" numberBits="4">
+        <value>3</value>
+        <location startAddress="23" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="FREQ7" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="23" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="extLate7" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="23" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="resetBar0" triplicated="false" numberBits="1">
+        <value>1</value>
+        <location startAddress="24" startBitIndex="0" lastBitIndex="0"/>
+    </Signal>
+    <Signal name="resetBar1" triplicated="false" numberBits="1">
+        <value>1</value>
+        <location startAddress="24" startBitIndex="1" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="resetBar2" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="24" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="resetBar3" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="24" startBitIndex="3" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="resetBar4" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="24" startBitIndex="4" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="resetBar5" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="24" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="resetBar6" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="24" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="resetBar7" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="24" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="resetPLLBar" triplicated="false" numberBits="1">
+        <value>1</value>
+        <location startAddress="25" startBitIndex="0" lastBitIndex="0"/>
+    </Signal>
+    <Signal name="enableTestBar" triplicated="false" numberBits="1">
+        <value>1</value>
+        <location startAddress="25" startBitIndex="1" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="ttcTestMuxSelect" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="25" startBitIndex="2" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="PLLcp" triplicated="false" numberBits="4">
+        <value>15</value>
+        <location startAddress="26" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="PLLres" triplicated="false" numberBits="3">
+        <value>7</value>
+        <location startAddress="26" startBitIndex="4" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="PSpllEnable" triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="52" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="52" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="52" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="timeOutEnable" triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="52" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="52" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="52" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="cset0" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="269" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="cset1" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="269" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="cset2" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="270" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="cset3" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="270" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="cset4" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="271" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="cset5" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="271" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="cset6" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="272" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="cset7" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="272" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="txSelectI" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="27" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="txSelectR" triplicated="false" numberBits="2">
+        <value>2</value>
+        <location startAddress="27" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="txEnableTest" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="27" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="txTestMode" triplicated="false" numberBits="2">
+        <value>0</value>
+        <location startAddress="28" startBitIndex="0" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="txDisableEncoderTMR" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="28" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="txSwitchesControl" triplicated="true" numberBits="6">
+        <value>21</value>
+        <location startAddress="29" startBitIndex="0" lastBitIndex="5"/>
+        <location startAddress="30" startBitIndex="0" lastBitIndex="5"/>
+        <location startAddress="31" startBitIndex="0" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="i2cResetTx" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="54" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="54" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="54" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="TXselectPosEdge" triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="244" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="244" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="244" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="txPLLLockTIme" triplicated="false" numberBits="4">
+        <value>6</value>
+        <location startAddress="32" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="txForceLockState" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="32" startBitIndex="4" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="txLossOfLockTime" triplicated="false" numberBits="3">
+        <value>3</value>
+        <location startAddress="32" startBitIndex="5" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="i2cTxReset" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="33" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="33" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="33" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="txEnableSoftLossOfLock" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="33" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="rxSelectR" triplicated="false" numberBits="4">
+        <value>13</value>
+        <location startAddress="34" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="rxDacGain" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="34" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="34" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="34" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="i2cRxSelectI2: freq detector" triplicated="false" numberBits="4">
+        <value>2</value>
+        <location startAddress="35" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="i2cRxSelectI2: phase detector" triplicated="false" numberBits="4">
+        <value>4</value>
+        <location startAddress="35" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="i2cRxControlOverride" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="36" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="36" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="36" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="i2cRxSelectDataInPhase" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="36" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="36" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="36" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="rxValidHeaders" triplicated="false" numberBits="8">
+        <value>15</value>
+        <location startAddress="37" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="rxMaxInvalidHeaders" triplicated="false" numberBits="8">
+        <value>4</value>
+        <location startAddress="38" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="rxMinValidHeaders" triplicated="false" numberBits="8">
+        <value>8</value>
+        <location startAddress="39" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="i2cRxSkipCycle" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="40" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="40" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="40" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="i2cRxSwap" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="40" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="40" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="40" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="i2cRxControlReset" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="41" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="41" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="41" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="i2cRxSelectI1" triplicated="false" numberBits="4">
+        <value>2</value>
+        <location startAddress="41" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="i2cStartRace" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="42" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="42" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="42" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="i2cRxDacEnable" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="42" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="42" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="42" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="i2cRxDac" triplicated="false" numberBits="9">
+        <value>0</value>
+        <location startAddress="43" startBitIndex="0" lastBitIndex="0"/>
+    </Signal>
+    <Signal name="i2cRxFilterBypass" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="44" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="44" startBitIndex="2" lastBitIndex="2"/>
+        <location startAddress="44" startBitIndex="3" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="i2cRxFilterEnable" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="45" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="45" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="45" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="i2cRxForceVfEqVc" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="45" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="45" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="45" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="i2cRxReset" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="53" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="53" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="53" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="rxSwitchesControl" triplicated="true" numberBits="6">
+        <value>21</value>
+        <location startAddress="46" startBitIndex="0" lastBitIndex="5"/>
+        <location startAddress="47" startBitIndex="0" lastBitIndex="5"/>
+        <location startAddress="48" startBitIndex="0" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="rxDisableDecoderTMR" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="49" startBitIndex="1" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="enableBERT" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="49" startBitIndex="2" lastBitIndex="2"/>
+        <location startAddress="49" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="49" startBitIndex="4" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="rxTestMode" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="49" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="49" startBitIndex="6" lastBitIndex="6"/>
+        <location startAddress="49" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="i2cResetRx" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="50" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="50" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="50" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="RXselectPosEdge" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="244" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="244" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="244" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="enable watchdog FSM " triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="50" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="50" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="50" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="stateForced" triplicated="false" numberBits="5">
+        <value>0</value>
+        <location startAddress="51" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="configDone" triplicated="false" numberBits="8">
+        <value>170</value>
+        <location startAddress="365" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="gbld_w0" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="55" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="gbld_w1" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="56" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="gbld_w2" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="57" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="gbld_w3" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="58" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="gbld_w4" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="59" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="gbld_w5" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="60" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="gbld_w6" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="61" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="gbld_ID" triplicated="false" numberBits="7">
+        <value>0</value>
+        <location startAddress="253" startBitIndex="0" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="paMode" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="62" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="62" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="62" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="paDataRateGroup0" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="63" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="63" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="63" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="paDllConfigGroup0" triplicated="true" numberBits="4">
+        <value>13</value>
+        <location startAddress="64" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="64" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="65" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paDllResetGroup0" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="65" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="65" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="65" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup0Ch4" triplicated="true" numberBits="4">
+        <value>8</value>
+        <location startAddress="67" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="71" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="75" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup0Ch0" triplicated="true" numberBits="4">
+        <value>6</value>
+        <location startAddress="69" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="73" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="77" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paTrainGroup0" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="78" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="79" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="80" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paEnableGroup0" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="81" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="82" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="83" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paResetGroup0" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="84" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="85" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="86" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paDataRateGroup1" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="87" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="87" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="87" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="paDllConfigGroup1" triplicated="true" numberBits="4">
+        <value>13</value>
+        <location startAddress="88" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="88" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="89" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paDllResetGroup1" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="89" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="89" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="89" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup1Ch4" triplicated="true" numberBits="4">
+        <value>7</value>
+        <location startAddress="91" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="95" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="99" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup1Ch0" triplicated="true" numberBits="4">
+        <value>7</value>
+        <location startAddress="93" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="97" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="101" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paTrainGroup1" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="102" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="103" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="104" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paEnableGroup1" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="105" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="106" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="107" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paResetGroup1" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="108" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="109" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="110" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paDataRateGroup2" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="111" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="111" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="111" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="paDllConfigGroup2" triplicated="true" numberBits="4">
+        <value>13</value>
+        <location startAddress="112" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="112" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="113" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paDllResetGroup2" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="113" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="113" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="113" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup2Ch4" triplicated="true" numberBits="4">
+        <value>9</value>
+        <location startAddress="115" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="119" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="123" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup2Ch0" triplicated="true" numberBits="4">
+        <value>8</value>
+        <location startAddress="117" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="121" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="125" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paTrainGroup2" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="126" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="127" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="128" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paEnableGroup2" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="129" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="130" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="131" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paResetGroup2" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="132" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="133" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="134" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paDataRateGroup3" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="135" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="135" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="135" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="paDllConfigGroup3" triplicated="true" numberBits="4">
+        <value>13</value>
+        <location startAddress="136" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="136" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="137" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paDllResetGroup3" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="137" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="137" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="137" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup3Ch4" triplicated="true" numberBits="4">
+        <value>8</value>
+        <location startAddress="139" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="143" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="147" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup3Ch0" triplicated="true" numberBits="4">
+        <value>8</value>
+        <location startAddress="141" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="145" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="149" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paTrainGroup3" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="150" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="151" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="152" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paEnableGroup3" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="153" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="154" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="155" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paResetGroup3" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="156" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="157" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="158" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paDataRateGroup4" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="159" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="159" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="159" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="paDllConfigGroup4" triplicated="true" numberBits="4">
+        <value>13</value>
+        <location startAddress="160" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="160" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="161" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paDllResetGroup4" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="161" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="161" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="161" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup4Ch4" triplicated="true" numberBits="4">
+        <value>9</value>
+        <location startAddress="163" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="167" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="171" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup4Ch0" triplicated="true" numberBits="4">
+        <value>8</value>
+        <location startAddress="165" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="169" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="173" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paTrainGroup4" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="174" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="175" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="176" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paEnableGroup4" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="177" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="178" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="179" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paResetGroup4" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="180" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="181" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="182" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paDataRateGroup5" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="183" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="183" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="183" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="paDllConfigGroup5" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="184" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="184" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="185" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paDllResetGroup5" triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="185" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="185" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="185" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup5" triplicated="true" numberBits="32">
+        <value>0</value>
+        <location startAddress="186" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="190" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="194" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paTrainGroup5" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="198" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="199" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="200" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paEnableGroup5" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="201" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="202" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="203" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paResetGroup5" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="204" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="205" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="206" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paDataRateGroup6" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="207" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="207" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="207" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="paDllConfigGroup6" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="208" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="208" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="209" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paDllResetGroup6" triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="209" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="209" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="209" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="paPhaseSelectGroup6" triplicated="true" numberBits="32">
+        <value>0</value>
+        <location startAddress="210" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="214" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="218" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paTrainGroup6" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="222" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="223" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="224" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paEnableGroup6" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="225" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="226" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="227" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paResetGroup6" triplicated="true" numberBits="8">
+        <value>0</value>
+        <location startAddress="228" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="229" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="230" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="dllCoarseLockDetection" triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="233" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="233" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="233" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="bypass EportRX" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="252" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="252" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="252" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="enableTermination0" triplicated="false" numberBits="8">
+        <value>255</value>
+        <location startAddress="320" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="enableTermination1" triplicated="false" numberBits="8">
+        <value>255</value>
+        <location startAddress="321" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="enableTermination2" triplicated="false" numberBits="8">
+        <value>255</value>
+        <location startAddress="322" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="enableTermination3" triplicated="false" numberBits="8">
+        <value>255</value>
+        <location startAddress="323" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="enableTermination4" triplicated="false" numberBits="8">
+        <value>255</value>
+        <location startAddress="324" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="enableTermination5" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="325" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="enableTermination6" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="326" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="paDllConfigEC" triplicated="true" numberBits="4">
+        <value>13</value>
+        <location startAddress="231" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="231" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="232" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paDllResetEC" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="232" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="232" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="232" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="paPhaseSelectEC" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="233" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="237" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="241" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="paTrainEC" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="245" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="245" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="245" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="paEnableEC" triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="248" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="248" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="248" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="paResetEC" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="251" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="251" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="251" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="modeEc" triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="254" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="254" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="254" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="clockBusFrequencyEc" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="257" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="257" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="257" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="loopbackE" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="234" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="234" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="234" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="loopbackF" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="234" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="234" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="234" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="xPllChargePumpCurrent" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="235" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="235" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="236" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="xPllFrequencyTrim" triplicated="true" numberBits="7">
+        <value>78</value>
+        <location startAddress="313" startBitIndex="0" lastBitIndex="6"/>
+        <location startAddress="314" startBitIndex="0" lastBitIndex="6"/>
+        <location startAddress="315" startBitIndex="0" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="xPllEnable" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="313" startBitIndex="7" lastBitIndex="7"/>
+        <location startAddress="314" startBitIndex="7" lastBitIndex="7"/>
+        <location startAddress="315" startBitIndex="7" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="xPllGmSelect" triplicated="true" numberBits="4">
+        <value>10</value>
+        <location startAddress="316" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="316" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="317" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="xPllEnablePhaseDetector" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="317" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="317" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="317" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="xPllControlOverride" triplicated="true" numberBits="1">
+        <value>1</value>
+        <location startAddress="318" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="318" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="318" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="xPllEnableAutoRestart" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="318" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="318" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="318" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="fuseBlowAddress" triplicated="false" numberBits="16">
+        <value>0</value>
+        <location startAddress="238" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="fuseBlowData" triplicated="false" numberBits="8">
+        <value>0</value>
+        <location startAddress="240" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="ePllRxReferenceFreq" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="242" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="242" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="242" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="ePllRxPhase320MHz" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="302" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="302" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="292" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="ePllRxReset" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="303" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="303" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="303" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="ePllRxEnablePhase" triplicated="true" numberBits="8">
+        <value>255</value>
+        <location startAddress="304" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="305" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="306" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="ePllRxPhase160MHz" triplicated="true" numberBits="5">
+        <value>0</value>
+        <location startAddress="307" startBitIndex="0" lastBitIndex="4"/>
+        <location startAddress="308" startBitIndex="0" lastBitIndex="4"/>
+        <location startAddress="309" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="ePllRxCap" triplicated="true" numberBits="2">
+        <value>2</value>
+        <location startAddress="307" startBitIndex="5" lastBitIndex="6"/>
+        <location startAddress="308" startBitIndex="5" lastBitIndex="6"/>
+        <location startAddress="309" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="ePllRxIcp" triplicated="true" numberBits="4">
+        <value>10</value>
+        <location startAddress="310" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="311" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="312" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="ePllRxRes" triplicated="true" numberBits="4">
+        <value>2</value>
+        <location startAddress="310" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="311" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="312" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="ePllTxReferenceFreq" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="243" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="243" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="243" startBitIndex="4" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="ePllTxPhase320MHz" triplicated="true" numberBits="4">
+        <value>0</value>
+        <location startAddress="291" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="291" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="292" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="ePllTxEnablePhase" triplicated="true" numberBits="8">
+        <value>255</value>
+        <location startAddress="293" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="294" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="295" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="ePllTxPhase160MHz" triplicated="true" numberBits="5">
+        <value>0</value>
+        <location startAddress="296" startBitIndex="0" lastBitIndex="4"/>
+        <location startAddress="297" startBitIndex="0" lastBitIndex="4"/>
+        <location startAddress="298" startBitIndex="0" lastBitIndex="4"/>
+    </Signal>
+    <Signal name="ePllTxCap" triplicated="true" numberBits="2">
+        <value>2</value>
+        <location startAddress="296" startBitIndex="5" lastBitIndex="6"/>
+        <location startAddress="297" startBitIndex="5" lastBitIndex="6"/>
+        <location startAddress="298" startBitIndex="5" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="ePllTxIcp" triplicated="true" numberBits="4">
+        <value>10</value>
+        <location startAddress="299" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="300" startBitIndex="0" lastBitIndex="3"/>
+        <location startAddress="301" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="ePllTxRes" triplicated="true" numberBits="4">
+        <value>2</value>
+        <location startAddress="299" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="300" startBitIndex="4" lastBitIndex="7"/>
+        <location startAddress="301" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="ePllTxReset" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="303" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="303" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="303" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="bypassEportTX0" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="246" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="246" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="246" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="bypassEportTX1" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="246" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="246" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="246" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="bypassEportTX2" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="246" startBitIndex="6" lastBitIndex="6"/>
+        <location startAddress="246" startBitIndex="7" lastBitIndex="7"/>
+        <location startAddress="247" startBitIndex="0" lastBitIndex="0"/>
+    </Signal>
+    <Signal name="bypassEportTX3" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="247" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="247" startBitIndex="2" lastBitIndex="2"/>
+        <location startAddress="247" startBitIndex="3" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="bypassEportTX4" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="247" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="247" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="247" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="selHiByteTX0" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="249" startBitIndex="0" lastBitIndex="0"/>
+        <location startAddress="249" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="249" startBitIndex="2" lastBitIndex="2"/>
+    </Signal>
+    <Signal name="selHiByteTX1" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="249" startBitIndex="3" lastBitIndex="3"/>
+        <location startAddress="249" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="249" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+    <Signal name="selHiByteTX2" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="249" startBitIndex="6" lastBitIndex="6"/>
+        <location startAddress="249" startBitIndex="7" lastBitIndex="7"/>
+        <location startAddress="250" startBitIndex="0" lastBitIndex="0"/>
+    </Signal>
+    <Signal name="selHiByteTX3" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="250" startBitIndex="1" lastBitIndex="1"/>
+        <location startAddress="250" startBitIndex="2" lastBitIndex="2"/>
+        <location startAddress="250" startBitIndex="3" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="selHiByteTX4" triplicated="true" numberBits="1">
+        <value>0</value>
+        <location startAddress="250" startBitIndex="4" lastBitIndex="4"/>
+        <location startAddress="250" startBitIndex="5" lastBitIndex="5"/>
+        <location startAddress="250" startBitIndex="6" lastBitIndex="6"/>
+    </Signal>
+    <Signal name="modeGroup0" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="254" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="332" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="347" startBitIndex="0" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="clockBusFrequency0" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="254" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="332" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="347" startBitIndex="2" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="clockPortEnableGroup0" triplicated="true" numberBits="8">
+        <value>1</value>
+        <location startAddress="255" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="333" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="348" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="dataPortEnableGroup0" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="256" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="334" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="349" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="modeGroup1" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="257" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="335" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="350" startBitIndex="0" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="clockBusFrequency1" triplicated="true" numberBits="2">
+        <value>1</value>
+        <location startAddress="257" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="335" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="350" startBitIndex="2" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="clockPortEnableGroup1" triplicated="true" numberBits="8">
+        <value>1</value>
+        <location startAddress="258" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="336" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="351" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="dataPortEnableGroup1" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="259" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="337" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="352" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="modeGroup2" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="260" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="338" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="353" startBitIndex="0" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="clockBusFrequency2" triplicated="true" numberBits="2">
+        <value>2</value>
+        <location startAddress="260" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="338" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="353" startBitIndex="2" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="clockPortEnableGroup2" triplicated="true" numberBits="8">
+        <value>1</value>
+        <location startAddress="261" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="339" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="354" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="dataPortEnableGroup2" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="262" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="340" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="355" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="modeGroup3" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="263" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="341" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="356" startBitIndex="0" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="clockBusFrequency3" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="263" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="341" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="356" startBitIndex="2" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="clockPortEnableGroup3" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="264" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="342" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="357" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="dataPortEnableGroup3" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="265" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="343" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="358" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="modeGroup4" triplicated="true" numberBits="2">
+        <value>3</value>
+        <location startAddress="266" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="344" startBitIndex="0" lastBitIndex="1"/>
+        <location startAddress="359" startBitIndex="0" lastBitIndex="1"/>
+    </Signal>
+    <Signal name="clockBusFrequency4" triplicated="true" numberBits="2">
+        <value>0</value>
+        <location startAddress="266" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="344" startBitIndex="2" lastBitIndex="3"/>
+        <location startAddress="359" startBitIndex="2" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="clockPortEnableGroup4" triplicated="true" numberBits="8">
+        <value>1</value>
+        <location startAddress="267" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="345" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="360" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="dataPortEnableGroup4" triplicated="true" numberBits="8">
+        <value>17</value>
+        <location startAddress="268" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="346" startBitIndex="0" lastBitIndex="7"/>
+        <location startAddress="361" startBitIndex="0" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="driveStrength0" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="327" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="driveStrength1" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="327" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="driveStrength2" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="328" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="driveStrength3" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="328" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="driveStrength4" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="329" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="clkDriveStrength0" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="329" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="clkDriveStrength1" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="330" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="clkDriveStrength2" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="330" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="clkDriveStrength3" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="331" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="clkDriveStrength4" triplicated="false" numberBits="4">
+        <value>8</value>
+        <location startAddress="331" startBitIndex="4" lastBitIndex="7"/>
+    </Signal>
+    <Signal name="Sccset" triplicated="false" numberBits="4">
+        <value>0</value>
+        <location startAddress="273" startBitIndex="0" lastBitIndex="3"/>
+    </Signal>
+    <Signal name="SCenableTermination" triplicated="false" numberBits="1">
+        <value>0</value>
+        <location startAddress="273" startBitIndex="5" lastBitIndex="5"/>
+    </Signal>
+</Signals>

@@ -1,0 +1,4 @@
++incdir+$common_rtl source/rtl/xclk_reg.sv
+source/rtl/regnbit.sv
+source/rtl/reset_strobe.sv
+source/rtl/reset_handler.sv

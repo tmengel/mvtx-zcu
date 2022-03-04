@@ -1,0 +1,11 @@
+../../../source/rtl/mmr_registers/majority_voter.sv
+../../../source/rtl/mmr_registers/majority_voter_array.sv
++incdir+../../../source/rtl/hamming/includes/ ../../../source/rtl/hamming/h3_correct_n_k.sv
+../../../source/rtl/fsm/next_state.sv
+../../../source/rtl/fsm/step_fsm.sv
+../../../source/rtl/fsm/step_fsm_tmr.sv
+../../../source/rtl/fsm/step_fsm_tmr_noio.sv
+../../../source/rtl/fsm/step_fsm_tmr_triplevoter.sv
++incdir+../../../source/rtl/fsm/ ../../../source/rtl/fsm/step_fsm_hammingsec.sv
+../../../source/rtl/fsm/lane_fsm.sv
+../../../source/rtl/fsm/lane_fsm_tmr.sv

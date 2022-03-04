@@ -1,0 +1,2 @@
+source/constraints/xclk_reg.xdc
+source/constraints/sincron_rdack.xdc

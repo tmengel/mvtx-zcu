@@ -1,0 +1,2 @@
+source/bench/i2c_slave_mem.sv
+source/bench/i2c_slave_pu.sv

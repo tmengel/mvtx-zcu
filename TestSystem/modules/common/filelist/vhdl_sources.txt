@@ -1,0 +1,3 @@
+source/rtl/xpm_cdc_components_pkg.vhd
+source/rtl/upcounter_core.vhd
+source/rtl/DNA/dna_read.vhd

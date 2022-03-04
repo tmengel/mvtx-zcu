@@ -1,0 +1,6 @@
+source/rtl/mgt_example_pkg.vhd
+source/rtl/mgt_example_wishbone.vhd
+source/rtl/mgt_example_wrapper.vhd
+source/rtl/gpio_loopback_pkg.vhd
+source/rtl/gpio_loopback.vhd
+source/rtl/ws_gpio_loopback.vhd

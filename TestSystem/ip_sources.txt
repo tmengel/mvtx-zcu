@@ -1,0 +1,3 @@
+/home/ALICE/TestSystem/modules/usb_if/source/ip/fifo32x1024/fifo32x1024.xci
+/home/ALICE/TestSystem/modules/mgt_test/source/ip/gtwizard_ultrascale_0/gtwizard_ultrascale_0.xci
+/home/ALICE/TestSystem/modules/mgt_test/source/ip/gtwizard_ultrascale_0_vio_0/gtwizard_ultrascale_0_vio_0.xci

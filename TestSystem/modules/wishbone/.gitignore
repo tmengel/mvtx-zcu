@@ -1,0 +1,53 @@
+# ML 24.03.17: gitignore for submodule with ncsim sim environment
+# git ls-files --others --exclude-from=.git/info/exclude
+# Lines that start with '#' are comments.
+# For a project mostly in C, the following would be a good set of
+# exclude patterns (uncomment them if you want to use them):
+# *.[oa]
+
+*.a
+*.bak
+*.bit
+*.bkp
+*.btree
+*.cdsvmod
+*.clx.*
+*.csv
+*.err
+*.f
+*.html
+*.inca.*
+*.jou
+*.key
+*.lnx86
+*.log
+*.ltx
+*.o
+*.orig
+*.pak
+*.reinvoke.sim
+*.so
+*.tmp
+*inca.*
+*~
+*~
+.DS_Store
+._*
+\#*
+
+# path for simvision
+*.csvmod
+*.inca.*
+*inca.*
+*simvision*
+irun.*
+sim/*/*/INCA_libs
+sim/*/*/cov_work/
+sim/*/*/run/*.svcf
+sim/*/*/run/*.tcl
+sim/*/libs_ius/*/
+sim/*/libs_questa/*
+sim/*/run/*.svcf
+sim/*/run/*.svwf
+sim/*/run/*.tcl
+waves.*

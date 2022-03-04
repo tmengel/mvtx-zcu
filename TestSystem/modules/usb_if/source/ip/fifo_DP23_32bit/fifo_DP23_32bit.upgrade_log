@@ -1,0 +1,16 @@
+Copyright 1986-2015 Xilinx, Inc. All Rights Reserved.
+------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2015.4 (lin64) Build 1412921 Wed Nov 18 09:44:32 MST 2015
+| Date         : Mon Jul 18 17:10:55 2016
+| Host         : pcphaiddt001 running 64-bit CentOS Linux release 7.2.1511 (Core)
+| Command      : upgrade_ip
+| Device       : xc7k325tffg900-1
+------------------------------------------------------------------------------------
+
+Upgrade Log for IP 'fifo_DP23_32bit'
+
+1. Summary
+----------
+
+SUCCESS in the update of fifo_DP23_32bit (xilinx.com:ip:fifo_generator:13.0 (Rev. 1)) to current project options.
+

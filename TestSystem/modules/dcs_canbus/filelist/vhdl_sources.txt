@@ -1,0 +1,10 @@
+source/rtl/can_controller/can_register_pkg.vhd
+source/rtl/can_hlp/can_hlp_glue_pkg.vhd
+source/rtl/can_hlp/can_hlp_glue.vhd
+source/rtl/can_hlp/can_hlp_pkg.vhd
+source/rtl/can_hlp/can_hlp.vhd
+source/rtl/can_hlp/can_hlp_wb_slave_regs_pkg.vhd
+source/rtl/can_hlp/can_hlp_wb_slave_regs.vhd
+source/rtl/can_hlp/can_hlp_top.vhd
+source/rtl/can_hlp/tmr_wrappers/can_hlp_top_tmr_wrapper.vhd
+

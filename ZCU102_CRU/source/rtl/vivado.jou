@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Sep 24 17:02:46 2021
+# Process ID: 24143
+# Current directory: /home/ALICE/ZCU102_CRU/source/rtl
+# Command line: vivado -mode tcl -source xilinx_tcpserv.tcl
+# Log file: /home/ALICE/ZCU102_CRU/source/rtl/vivado.log
+# Journal file: /home/ALICE/ZCU102_CRU/source/rtl/vivado.jou
+#-----------------------------------------------------------
+source xilinx_tcpserv.tcl

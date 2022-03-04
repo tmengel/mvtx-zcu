@@ -1,0 +1,6 @@
+source/rtl/watchdog.sv
+source/rtl/master/wbmstr_fsm.sv
+source/rtl/slaves/wait/wtmdl.sv
+source/rtl/master/wbmstr_fsm.sv
+source/rtl/master/tmr_wrappers/wbmstr_fsm_tmr_wrapper.sv
+source/rtl/master/wbmstr_tripleoutput.sv

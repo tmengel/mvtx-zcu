@@ -1,0 +1,4 @@
+*.el
+*.aux
+*.pdf
+_region_.tex

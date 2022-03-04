@@ -1,0 +1,645 @@
+\documentclass{scrartcl}
+
+
+\usepackage{gitdags}
+\usepackage{subfigure}
+
+\makeatletter
+\def\verbatim{\footnotesize\@verbatim \frenchspacing\@vobeyspaces \@xverbatim}
+\makeatother
+
+\title{Git restructuring}
+
+\begin{document}
+\maketitle
+
+\abstract{This report is written to describe the restructuring of the
+  WP10 git repository, the motivation behind it, implementation
+  details, and the adapted procedures needed to work with the
+  introduced concept of subtrees. Any comments, extensions or
+  feedback on the procedures is welcome.}
+
+\tableofcontents
+
+\section{Motivation}
+
+With progressing developments the existing structure of the git
+repository shows to be restrictive in terms of extending. This is due
+to several factors
+\begin{itemize}
+\item The emerging of multiple projects (Readout chain, CRU emulator,
+  Radiation testing)
+\item The need to target multiple platforms (RUv0, RUv1)
+\item A common code base to different projects
+\item A shared, code base between different projects, with the need of
+  modifications and specialisations for implementations
+\end{itemize}
+
+To avoid manual copies of sources and the resulting problems of
+merging changes, drifting versions and manual keeping track of
+modifications and bugfixes for all projects, we decided to refine the
+structure of the project repositories. The new structure should be
+able to cope with multiple projects, multiple versions and multiple
+platforms while keeping the shared sources common to each other.
+
+\subsection{List of Requirements}
+\begin{itemize}
+\item Maintaining multiple projects
+\begin{itemize}
+\item Mix of shared and project specific sources
+\item Different target platforms (FPGA, board)
+\end{itemize}
+\item Maintaining shared sources
+  \begin{itemize}
+  \item Synchronisation mechanism between projects
+  \item Possibility to keep different versions for different projects,
+    while still sharing the same base (e.g for introducing bug-fixes
+    and features efficiently)
+  \end{itemize}
+\item Code sharing between projects
+\begin{itemize}
+\item Share code parts with projects outside WP10 (Probecard)
+\end{itemize}
+\end{itemize}
+
+\subsection{Outline}
+The rest of the report is structured as follows: Section\ref{sec:structure} describes the concept and implementation of the
+new structure. Section\ref{sec:working} describes different work
+flows and use cases for working with the new structure.
+
+\section{New Repository Structure}
+\label{sec:structure}
+A new structure of the repository was devised to meet the set
+requirements. This is done via multiple changes.
+
+\subsection{Concept}
+\begin{enumerate}
+\item The source code structure changes to be organized in modules
+  \begin{itemize}
+  \item A Module is a contained collection of related sources (RTL
+    code, testbench code, model code, software, constraints)
+  \item Examples for a module are the alpide frontend, the usb
+    interface, the wishbone or the gbt implementation.
+  \end{itemize}
+\item Modules shared between projects will be moved to a separate git
+  repository.
+\item Each project moves to a separate git repository
+  \begin{itemize}
+  \item Project code is contains project specific sources, plus
+    sources from a module
+\item Using git methodology, a projects embeds module sources into
+  it's repository (while keeping the link/history to the submodule
+  repository)
+\end{itemize}
+\end{enumerate}
+
+\subsection{File and Folder structure}
+The base idea of the existing structure is kept, keeping the
+separation between software an firmware sources. For firmware sourcse,
+the separation of bench, rtl and constraints is kept. Folders for
+simulation and documentation stay the same. The main difference is the
+introduction of a module folder. This folder contains the submodule
+directiories, which have their own folder structure.
+
+\subsubsection{Project structure example}
+The following example is a canonical folder structure of a project.
+\begin{verbatim}
+. (Project top folder)
+|-- README.md
+|-- doc (documentation)
+|-- filelist (List of project specific sources)
+|-- modules (Contains all modules used by this project)
+|   `-- DEPENDENCIES (Define dependencies of this project to its submodules)
+|-- sim (Simulation scripts)
+|-- source (source code)
+|   |-- rtl
+|   |-- bench
+|   |-- constraints
+|   `-- ip
+|-- verification (formal verification scripts)
+|-- vivado (Vivado scripts)
+`-- software (software files, e.g scripts and tools)
+\end{verbatim}
+
+\subsubsection{Module structure example}
+The following example is a canonical folder structure for a module.
+
+\begin{verbatim}
+. (Module top folder)
+|-- README.md
+|-- doc (documentation)
+|-- filelist (List of project specific sources)
+|-- sim (Simulation scripts)
+|-- source (source code)
+|   |-- rtl
+|   |-- bench
+|   |-- constraints
+|   `-- ip
+`-- software (module related software files)
+\end{verbatim}
+
+\subsection{Module dependency file}
+To define which modules are required by a project, a module dependency
+file has to be created. This is used for later generating the full
+filelist of the project, and to define the order of the modules. If
+module B depends on module A, module A needs to be listed before in
+the dependency file. The dependency file must be placed in the modules
+folder with the name \verb|DEPENDENCIES|. The syntax used is a JSON
+key value pair, with the module name as key, and the location as
+value. The following example shows the module \verb|DEPENDENCY| file
+of the \verb|RUv0_RDO| project:
+
+\begin{verbatim}
+{
+    "common":"modules/common",
+    "wishbone":"modules/wishbone",
+    "alpide_frontend": "modules/alpide_frontend",
+    "voltage_control": "modules/voltage_control",
+    "gbt" : "modules/gbt",
+    "i2c" : "modules/i2c",
+    "usb_if" : "modules/usb_if"
+}
+\end{verbatim}
+
+\subsection{File lists}
+The collection of files needed for using a module (both simulation and
+synthesis) are decentralized and bound to the module itself. Each
+module has a folder filelist, which contains filelists for defining
+what sources are needed to use the modules. In addition, each project
+has a filelist folder, which provides the additional files provided by
+the project itself.
+
+The filelist folder contains multiple lists, separated by file type
+and their use (synthesis,simulation).
+
+\begin{description}
+\item[sdc\_sources.txt] List of constraints
+\item[vhdl\_sources.txt] List of VHDL sources
+\item [vlog\_sources.txt] List of (System)Verilog sources
+  \item[ip\_sources.txt] List of Vivado IP sources
+  \item [vhdl\_sources\_sim.txt] List of VHDL sources used in Simulation
+    (but not in synthesis)
+\item [vlog\_sources\_sim.txt] List of (System)Verilog soures used in Simulation
+  (but not in synthesis)
+\end{description}
+
+Each filelist lists one source file per line, using their relative
+path (starting at the top level of the module). For example, the path
+to a file \verb|test.vhd| within the rtl folder of a module would be
+\verb|source/rtl/test.vhd|. Special cases are given for the following
+source lists:
+\begin{description}
+\item[vlog\_sources(\_sim).txt] Include directiories can be added
+  using the usual \verb|+incdir+| structure, but include resolution
+  works differently. To link to a directory, the name of the module
+  has to be prepended, in the form of
+  \verb+$<modulename>_(bench|rtl|ip)+. For example, including the
+  folder \verb|common_includes| within the common module, inside a
+  vlog sourcefile results in the following syntax:
+\begin{verbatim}
++incdir+$common_rtl/common_includes <sourcefile>
+\end{verbatim}
+\item [ip\_sources.txt] For adding IP sources, the \verb|.xci(x)| file of
+  the ip core has to be referenced.
+\end{description}
+
+\subsection{Scripts and Tools}
+
+With separation into modules and the introduction of modules and their
+filelists, the handling of synthesis and simulation scripts was
+changed. Instead of manually maintaining a list of sources needed for
+the different flows, a collective filelist is generated in the top
+folder of the project based on the filelists of the project and each
+module. These filelists are used by the script for creating the vivado
+project as well as simulation scripts. This requires the user
+re-generate the filelist if a structural change is introduced. This is
+handled by a \verb|create_filelist.py| script. The recommended way of
+using this process is to work with the provided Makefiles. These
+handle the re-creation of the filelists automatically before creating
+a project or running simulations. If a manual creation is needed, the
+script can be called from a terminal. It is located in the software
+folder of the common module
+(\verb|software/py/create_filelist.py|). When calling, it needs the
+absolute path to the project top level repository as argument.
+
+\subsection{Git refactoring process and methodology}
+
+The central aspect of the new structure is the splitting of the code
+into multiple repositories: One repository for each project, and one
+repository for each submodule. The central element of this structure
+is to embed repositories within each other while keeping track of the
+modifications, history and the link between repositories.
+
+The concept used to implement this structure is the git subtree flow.
+With git subtrees, the embedded repository gets copied into the parent
+container repository, as if it would be manually moved
+there. Internally, git still keeps track of the remote repository
+used, it's versions and the history between commits. From a project
+point of view, however, this mechanism is hidden from the user. The
+project can be used without having knowledge of the existence of the
+embedded subtrees. Only the person in charge of maintaining a subtree
+needs to know the inner workings and handle the synchronisation
+process between versions of the subtree.
+
+The disadvantage of this workflow is an increase of complexity in the
+process of maintaining and updating modules. This will increase the
+time required to introduce changes to a module, as each modification
+has to be extracted to be moved to a submodule, merged in the
+submodule and then distributed to all other projects. However, as this
+is needed by a limited number of users (mainly the maintainers of the
+project and submodules), the majority of users can work without this
+knowledge.
+
+\section{Working with the new structure}
+\label{sec:working}
+
+The restructuring of the repositories introduces new workflows and
+conventions to be considered when developing and using a project. This
+section is a collection of common workflows and tasks required to work
+with a project or submodules.
+
+\subsection{Working with a container project repository}
+
+Each project is located in a separate git repository. To work with a
+project, it has to be downloaded, or cloned to a local
+folder. Compilation and simulation are provided with the project. The
+following examples will assume to work on the Readout project of RUv0.
+
+\subsubsection{Download, Compiling, simulating}
+The first step is to download the project.
+
+\begin{verbatim}
+$ git clone ssh://git@gitlab.cern.ch:7999/alice-its-wp10-firmware/RUv0_RDO.git
+$ cd RUv0_RDO
+\end{verbatim}
+
+The folder structure of the checked out project is as follows:
+\begin{verbatim}
+.
+|-- doc
+|-- filelist
+|   |-- sdc_sources.txt
+|   |-- vhdl_sources.txt
+|   |-- vlog_includes.txt
+|   `-- vlog_sources_sim.txt
+|-- Makefile
+|-- modules
+|   |-- alpide_frontend
+|   |-- alpide_lightweight
+|   |-- board_support_software
+|   |-- common
+|   |-- common_tmr
+|   |-- DEPENDENCIES
+|   |-- gbt
+|   |-- gbt_fpga
+|   |-- i2c
+|   |-- usb_if
+|   |-- voltage_control
+|   `-- wishbone
+|-- README.md
+|-- sim
+|   |-- libs
+|   |-- libs_ius
+|   |-- Readme.md
+|   |-- run
+|   |-- scripts
+|   `-- src
+|-- software
+|   `-- py
+|-- source
+|   |-- bench
+|   |-- constraints
+|   |-- ip
+|   `-- rtl
+|-- verification
+|   `-- formal
+`-- vivado
+    |-- ila_fsm
+    `-- scripts
+\end{verbatim}
+
+A provided Makefile is used to build the project and perform
+additional steps needed for synthesis or simulation. The first step is
+to check the Paths defined in the Makefile and verify that they are
+correct for the given system. The following variables need to be
+checked:
+
+\begin{description}
+\item [VIVADO\_PATH] The path to the Vivado installation
+\item [MODELSIM] The path to the modelsim installation
+\end{description}
+
+The following targets are provided (a full list of targets is
+described in the Makefile itself).
+
+\begin{description}
+\item[make gui [s/i/b]] Creates a Vivado project and opens the
+  Graphical Vivado program. If the optional parameter (s)ynthesis,
+  (i)mplementation, or (bitstream) is provided, the script runs up
+  past the indicated step.
+\item[make\ compile\_simlib\_ius/compile\_simlib\_modelsim] Create the
+  Vivado simulation libraries required by Cadence IUS simulator or modelsim
+  simulator.
+\end{description}
+
+For simulation, environments for modelsim and Cadence IUS are
+provided. These are located in the \verb|sim| folder. Cadence IUS
+scripts are located in \verb|sim/run|, scripts for Modelsim are
+provided in \verb|sim/scripts|. The Makefiles and tcl scrpits need to
+be checked for proper settings of paths.
+\begin{itemize}
+\item Cadence IUS:
+\begin{verbatim}
+$ cd sim/run
+$ make compile_pALPIDE4
+$ make
+\end{verbatim}
+\item Modelsim:
+\begin{verbatim}
+$ cd sim/scripts
+$ make alpide_lightweight
+$ make
+\end{verbatim}
+\end{itemize}
+
+The testbench in use is located in
+\verb|source/bench/RUv0a_top_tb.sv|. By default, it uses an
+interactive testbench, which is stimulated by a python script. This
+script is located in \verb|software/py/RUv0_regression.py|. When
+running the python script, it tries to communicate with the simulator
+and exchange commands via virtual usb interface. After starting the
+script, the simulation can be run. During execution, the simulation
+can be paused and continued at any time.
+
+Known issue: Due to a race condition, starting of the python script
+might fail the first time as it is missing files created by the
+simulation. When this happens, the simulation has to be started
+first. The simulation will then fail (because it cannot connect to the
+python script). After failing, the simulation can be reset, and the
+python script started normally.
+
+\subsubsection{Making modifications}
+
+Modifications can be made as with any normal repository. Project
+related files are located in the project source folder. New file
+additions need to be added to the local container
+filelists. Modifications within modules can be introduced without
+problems. However, there are a few recommendations for introducing
+changes in modules, which make it easier to merge to the submodule
+repository by the maintainer.
+
+\begin{itemize}
+\item Changes which should be back ported to the submodule should be
+  added in a separate commit, with descriptive commit message. The
+  commit message should start with an indication, e.g
+  \verb|[To submodule_X] <Msg>|.
+\item The maintainer of the submodule should be notified of changes
+  made to the submodule. The modifications should be stable and
+  tested.
+\item Modifications within the submodule, which should not be
+  back ported, should be kept in separate commits, and indicated with a
+  special message, e.g \verb|[DO NOT BACKPORT]|. This simplifies the
+  work for the maintainer.
+\end{itemize}
+
+\subsection{Creating a new project}
+
+For a new project, a new repository needs to be created. Depending on
+the novelty and similarity to existing projects, this can be either
+done from scratch, or as a clone of an existing project. The new
+project needs to adhere to the existing folder and module structure,
+define its module \verb|DEPENDENCY| file, and a Makefile for providing
+the filelist creation.
+
+\subsubsection{Adding an existing submodule to the project}
+
+Adding a new module to a project requires it to be added to the module
+\verb|DEPENDENCY| file, and to physically add the sources to the
+project. For the \verb|DEPENDENCY| file, an additional line, with the
+name and path to the module is added. Existing lines can be copied and
+modified.
+
+Adding the sources of the submodule to the project requires the use of
+the \verb|git subtree| command. The commands to run are executed from
+the project root.
+
+\begin{enumerate}
+\item First, the submodule repository is added as a remote
+repository:
+
+\begin{verbatim}
+$ git remote add submodule_X \
+$ ssh://git@gitlab.cern.ch:7999/alice-its-wp10-firmware/submodule_X.git
+\end{verbatim}
+
+\item Then, the module sources are injected using \verb|git subtree add|
+
+\begin{verbatim}
+$ git subtree add -m \
+$ "submodule injection: inject submodule X into local repository, squash" \
+$ --squash --prefix=modules/X submodule_X master
+\end{verbatim}
+
+  The command defines a commit message, the target folder of the
+  module, and the branch of the module repository to use
+\end{enumerate}
+
+This generates a commit to the local repository, which adds all
+sources of the module repository to the local project, keeping a link
+to the remote.
+
+\subsubsection{Updating a project with a new version of a submodule}
+
+To update the local version of a module to a newer, updated version,
+the \verb|git subtree pull| command is used. This is usually performed
+by the maintainer of the submodule in cooperation with the maintainer
+of a project (to prevent conflicts or broken code). Updating a
+submodule requires the remote of the submodule to be added to the
+local repository, in the same way as for adding a repository. After
+this is done, the action for updating is a single command:
+
+\begin{verbatim}
+$ git subtree pull -m "update submodule X" \
+$ --prefix=firmware/RUv0a/modules/X --squash submodule_X master
+\end{verbatim}
+
+A custom commit message, path to the module and a branch to pull from
+can be provided. This performes a fetch and merge command, similar to
+a normal pull. Local modifications will be merged with modifications
+done in the remote repository. Merge conflicts will arise if local
+modifications clash with remote modifications, and can be resolved
+before commiting the merge.
+
+\subsection{Maintaining a submodule repository}
+
+Maintenance of a submodule involves the introductions of changes from
+a project into the repository of the submodule, and the distribution of
+changes, or new versions to other projects. The steps performed for
+the maintainer of the module are the pushing from a project to the
+module, maintaining the repository of the module (merges, introducing
+changes), and distributing changes to the different projects.
+
+\subsubsection{Filtering modifications}
+
+A project might introduce changes to a module which should not be back
+ported to the baseline of the submodule. These changes must be
+filtered out before the feature branch is merged with the baseline
+master branch of the module. Depending on the kind of these changes
+and their granularity, different approaches can be taken to filter out
+these changes. The smaller and more specific commits of a feature are,
+the easier it is to filter unwanted modifications out. The following
+list provides some suggestions on which git procedures to use to
+achieve the desired result.
+
+\begin{description}
+\item [git cherry-pick] The cherry-pick command is used to apply
+  changes introduced from a specific commit to the existing
+  branch. The canonical workflow would be as follows:
+  \begin{itemize}
+  \item Create a temporary branch, which branches off before the first
+    modification to the module was made
+  \item Cherry pick all commits which should be included in the module
+    update
+  \item push the resulting branch to the submodule remote repository
+  \item delete local branch, switch back to working branch
+  \end{itemize}
+\item [git rebase] When a bigger series of commits is to be kept, and
+  only a few to be excluded, a rebase might be faster. With git
+  rebase, modifications on a branch are reapplied. If this is done
+  interactively, certain commits can be reshuffled or excluded. The
+  canonical way of performing a rebase is as follows:
+  \begin{itemize}
+  \item Create a temporary branch starting at the last commit of the
+    working branch.
+  \item perform an interactive rebase onto the last commit before the
+    module changes were performed
+  \item pick all commits to be applied, remove all commits to be
+    excluded. Only commits touching the module are relevant, others
+    will be ignored when pushing later.
+  \item Push the resulting branch to the submodule remote
+  \item delete local branch, switch back to working branch
+  \end{itemize}
+\item [Corner cases] There might be corner cases or special cases
+  which cannot be solved with cherry-pick or rebase. In these cases, a
+  proper work-flow must still be defined or found out. Git usually
+  provides the tools to rewrite the history as needed, e.g by
+  splitting up commits, reshuffling commits, reverting commits,
+  reapplying changes.
+\item [Worst case, fix in submodule repository] The last resort is to
+  revert modifications or patches in the submodule repository itself,
+  either by reverting commits, excluding commits or simply manual
+  reverting files. This can be done if necessary, but should be
+  avoided if possible.
+\end{description}
+
+
+\subsubsection{Introducing changes to submodules made in a project
+  repository}
+
+Pushing changes to a module is a three-step process. First, the
+modifications are pushed from the project repository to the module
+repository. As with add/pull, this requires the submodule to be
+registered as a remote. The command used for pushing to the module is
+\verb|git subtree push|:
+
+\begin{verbatim}
+$ git subtree push -P firmware/RUv0a/modules/X submodule_X feature_branch
+\end{verbatim}
+
+This will create \verb|feature_branch| on the module repository, and
+contains the modifications introduced within the project since the
+last subtree pull.
+
+The feature branch has to be checked, and when verified, merged to the
+master of the submodule. As last step, the project should update the
+submodule, to update the index to the merged version of the master.
+
+At this point, it has to be decided if the change is beneficial to
+other projects. If so, each project should update its submodule as
+well.
+
+\subsubsection{Creating a new submodule}
+
+New submodules can be extracted from a project when necessary. For new
+developments, the folder structure of modules should be used where
+applicable. Any code part which can be seen as separate block, should
+be created within the modules folder, and implemented as module (using
+the correct structure and folder/files required). It is not necessary
+to extract the folder immediately to a new repository, but keeping the
+correct folder structure simplifies the process. As long as the module
+doesn't need to be shared, it can be kept in the local project
+repository.
+
+\subsubsection{Moving a submodule to a new repository for sharing}
+
+Sharing a module involves extracting it to a new repository. This is
+done by using the \verb|git subtree split| command. The following
+steps have to be performed:
+\begin{enumerate}
+\item Create a new repository for the module
+\item Add the created repository as a remote to the local project
+\item Perform a subtree split
+\begin{verbatim}
+$ git subtree split -P modules/Y -b split-Y
+\end{verbatim}
+  this splits module Y in modules to a local branch \verb|split-Y|
+\item push the split of branch to the remote
+\begin{verbatim}
+$ git push -u submodule_Y split-Y:master
+\end{verbatim}
+  This pushes to remote \verb|submodule_Y| master
+\item delete split-off branch, switch to working branch
+\end{enumerate}
+
+\subsection{State, comments, updates}
+
+This document is not complete. Using this structure for longer time
+will show which work flows need to be adapted and if common practices
+can be extracted. Any helpful procedures are welcome to be added to
+this document, as well as errors, comments, caveats or tips.
+
+\appendix
+\section{Selection git submodules and git subtrees}
+
+Git provides two options to realise a structure of embedded
+repositories from a technical point of view: \emph{Submodules} and
+\emph{Subtrees}.
+
+Git Submodules are a dedicated structure in git which embed a link to
+another repository within the parent repository. The submodule acts as
+a separate entity, with it's own branch history, commit procedure and
+update procedure. The top project only stores a link to the hash of a
+specific commit to the submodule as information.
+
+Git Subtrees, on the other hand, are more a concept than a
+feature. Here, the embedded repository gets copied into the parent
+container repository, as if it would be manually moved
+there. Internally, git still keeps track of the remote repository
+used, it's versions and the history between commits. From a project
+point of view, however, this mechanism is hidden from the user. The
+project can be used without having knowledge of the existence of the
+embedded subtrees. Only the person in charge of maintaining a subtree
+needs to know the inner workings and handle the synchronisation
+process between versions of the subtree.
+
+After evaluating both versions it was decided to use the git subtree
+concept, for the following reasons.
+
+\begin{itemize}
+\item No change in using git for people using the container projects,
+  especially people interested in using the projects read-only.
+\item A more centralised responsibility for a submodule, as it is the
+  responsibility of a maintainer to update the code of a submodule.
+\item A simpler way of introducing modifications on top of the
+  submodule code, without the need of maintaining branches related to
+  a project in a submodule repository. Modifications are still stored
+  in the project repository.
+\end{itemize}
+
+
+\end{document}
+
+%%% Local Variables:
+%%% mode: latex
+%%% TeX-master: t
+%%% End:

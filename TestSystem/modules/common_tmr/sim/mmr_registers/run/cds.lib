@@ -1,0 +1,6 @@
+# ML main cds.lib
+INCLUDE $CDS_INST_DIR/tools/inca/files/cds.lib
+#INCLUDE /opt/Xilinx/Vivado/2016.4/simlib_ius/cds.lib
+#ML added from DTU_block simulations
+define worklib ../libs_ius/worklib
+#DEFINE pALPIDE4_lib ../libs_ius/pALPIDE4_lib

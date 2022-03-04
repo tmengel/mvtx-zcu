@@ -1,0 +1,6 @@
+../../../../common/source/rtl/common/assertions/common_assertions.sv
+../../../source/rtl/mmr_registers/assertions/mmr_general_assertions.sv
+../../../source/rtl/mmr_registers/assertions/majority_voter_assertions.sv
+../../../source/rtl/hamming/assertions/h3_correct_n_k_assertions.sv
+../../../source/bench/fsm/lane_fsm_beh.sv
+../../../source/bench/fsm/step_fsm_tb.sv

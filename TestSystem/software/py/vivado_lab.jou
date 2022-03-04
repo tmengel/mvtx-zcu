@@ -1,0 +1,40 @@
+#-----------------------------------------------------------
+# Vivado Lab Edition v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# 
+# Start of session at: Tue Aug 31 15:59:52 2021
+# Process ID: 6332
+# Current directory: /home/ALICE/TestSystem/software/py
+# Command line: vivado_lab
+# Log file: /home/ALICE/TestSystem/software/py/vivado_lab.log
+# Journal file: /home/ALICE/TestSystem/software/py/vivado_lab.jou
+#-----------------------------------------------------------
+start_gui
+open_hw_manager
+connect_hw_server -allow_non_jtag
+open_hw_target
+set_property PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property FULL_PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property PROGRAM.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.bit} [get_hw_devices xcku060_1]
+program_hw_devices [get_hw_devices xcku060_1]
+refresh_hw_device [lindex [get_hw_devices xcku060_1] 0]
+set_property PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property FULL_PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property PROGRAM.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.bit} [get_hw_devices xcku060_1]
+program_hw_devices [get_hw_devices xcku060_1]
+refresh_hw_device [lindex [get_hw_devices xcku060_1] 0]
+set_property PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property FULL_PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property PROGRAM.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.bit} [get_hw_devices xcku060_1]
+program_hw_devices [get_hw_devices xcku060_1]
+refresh_hw_device [lindex [get_hw_devices xcku060_1] 0]
+set_property PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property FULL_PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property PROGRAM.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.bit} [get_hw_devices xcku060_1]
+program_hw_devices [get_hw_devices xcku060_1]
+refresh_hw_device [lindex [get_hw_devices xcku060_1] 0]
+set_property PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property FULL_PROBES.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.ltx} [get_hw_devices xcku060_1]
+set_property PROGRAM.FILE {/home/ALICE/bitfiles/RUv1_top_191015_0927_bed27b3.bit} [get_hw_devices xcku060_1]
+program_hw_devices [get_hw_devices xcku060_1]
+refresh_hw_device [lindex [get_hw_devices xcku060_1] 0]

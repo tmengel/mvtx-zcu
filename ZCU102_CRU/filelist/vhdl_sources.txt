@@ -1,0 +1,5 @@
+source/rtl/lfsr.vhd
+source/rtl/gbt_pattern_checker.vhd
+source/rtl/gbt_pattern_generator.vhd
+source/rtl/gbtfpga_controller.vhd
+source/rtl/ZCU102_CRU_top.vhd

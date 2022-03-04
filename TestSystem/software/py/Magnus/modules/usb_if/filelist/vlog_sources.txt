@@ -1,0 +1,7 @@
+source/rtl/DP23_fifo.sv
+source/rtl/usb_if_wrpr.sv
+source/rtl/cntnbit.v
+source/rtl/fx3_ctrl.v
+source/rtl/dp_arbtr.v
+source/rtl/dpo_fsm.v
+source/rtl/dpi_fsm.v

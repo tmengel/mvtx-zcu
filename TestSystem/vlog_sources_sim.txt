@@ -1,0 +1,5 @@
+/home/ALICE/TestSystem/modules/common_tmr/source/rtl/mmr_registers/assertions/mmr_general_assertions.sv
+/home/ALICE/TestSystem/modules/common_tmr/source/rtl/mmr_registers/assertions/majority_voter_assertions.sv
++incdir+/home/ALICE/TestSystem/modules/gbt/source/bench/gbtx /home/ALICE/TestSystem/modules/gbt/source/bench/gbtx/gbt_elink_if.sv
+/home/ALICE/TestSystem/modules/gbt/source/bench/LVDS2LVDS_delay.sv
++incdir+/home/ALICE/TestSystem/modules/dcs_canbus/source/bench/can_bfm /home/ALICE/TestSystem/modules/dcs_canbus/source/bench/can_bfm/canbus_if.sv

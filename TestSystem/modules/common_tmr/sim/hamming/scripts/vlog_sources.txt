@@ -1,0 +1,1 @@
+../../../source/rtl/hamming/h3_correct_n_k.sv

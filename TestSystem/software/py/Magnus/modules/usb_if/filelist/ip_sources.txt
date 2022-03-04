@@ -1,0 +1,5 @@
+#source/ip/ila_usbif/ila_usbif.xci
+#source/ip/ila_usb_gpif/ila_usb_gpif.xci
+#source/ip/ila_usb_wb/ila_usb_wb.xci
+source/ip/fifo_DP23_32bit/fifo_DP23_32bit.xci
+source/ip/fifo32x1024/fifo32x1024.xci

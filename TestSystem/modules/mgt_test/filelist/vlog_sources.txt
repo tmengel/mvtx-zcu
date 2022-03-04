@@ -1,0 +1,11 @@
+source/rtl/bit_synchronizer.v
+source/rtl/checking_raw.v
+source/rtl/init.v
+source/rtl/prbs_any.v
+source/rtl/reset_synchronizer.v
+source/rtl/stimulus_raw.v
+source/rtl/top.v
+source/rtl/userclk_rx.v
+source/rtl/userclk_tx.v
+source/rtl/wrapper.v
+source/rtl/wrapper_functions.v

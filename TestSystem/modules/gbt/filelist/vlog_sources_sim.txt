@@ -1,0 +1,2 @@
++incdir+$gbt_bench/gbtx source/bench/gbtx/gbt_elink_if.sv
+source/bench/LVDS2LVDS_delay.sv

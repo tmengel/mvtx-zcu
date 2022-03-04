@@ -1,0 +1,5 @@
+# Wishbone Submodule
+
+## Dependencies
+
+- core

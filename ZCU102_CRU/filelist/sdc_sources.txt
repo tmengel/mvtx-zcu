@@ -1,0 +1,3 @@
+source/constraints/zcu102_gbt_exmpldsgn_io.xdc
+source/constraints/zcu102_gbt_exmpldsgn_timing.xdc
+source/constraints/constraint_manager.tcl

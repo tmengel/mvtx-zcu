@@ -1,0 +1,4 @@
+source/rtl/dp_mux_pkg.vhd
+source/rtl/ws_usb_if_pkg.vhd
+source/rtl/ws_usb_if.vhd
+source/rtl/usb_if.vhd

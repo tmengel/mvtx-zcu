@@ -1,0 +1,3 @@
+../../../source/rtl/mmr_registers/majority_voter_wrapper2.vhd
+../../../source/rtl/mmr_registers/majority_voter_array_wrapper2.vhd
+../../../source/bench/mmr_registers/majority_voter_array_wrapper_tb.vhd

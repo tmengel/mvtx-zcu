@@ -1,0 +1,14 @@
++incdir+$dcs_canbus_rtl/can_controller source/rtl/can_controller/timescale.v
+#source/rtl/can_controller/can_defines.v
+source/rtl/can_controller/can_ibo.v
+source/rtl/can_controller/can_crc.v
+source/rtl/can_controller/can_register.v
+source/rtl/can_controller/can_register_asyn.v
+source/rtl/can_controller/can_register_asyn_syn.v
+#source/rtl/can_controller/can_register_syn.v
+source/rtl/can_controller/can_acf.v
+source/rtl/can_controller/can_bsp.v
+source/rtl/can_controller/can_btl.v
+source/rtl/can_controller/can_fifo.v
+source/rtl/can_controller/can_registers.v
+source/rtl/can_controller/can_top.v

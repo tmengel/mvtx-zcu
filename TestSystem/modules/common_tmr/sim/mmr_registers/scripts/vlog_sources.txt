@@ -1,0 +1,7 @@
+../../../source/rtl/mmr_registers/majority_voter.sv
+#../../../source/rtl/mmr_registers/majority_voter_array.sv
+../../../source/rtl/mmr_registers/base_registers/reg_novote.sv
+../../../source/rtl/mmr_registers/base_registers/reg_mmr1vote.sv
+../../../source/rtl/mmr_registers/base_registers/reg_mmr_cross_vote.sv
+../../../source/rtl/mmr_registers/base_registers/reg_mmr_full_vote.sv
+../../../source/rtl/mmr_registers/mmr_register.sv

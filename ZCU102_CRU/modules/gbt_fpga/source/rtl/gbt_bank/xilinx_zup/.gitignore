@@ -1,0 +1,14 @@
+##################
+# IPs
+##################
+!gbt_rx/gbt_rx/
+gbt_rx/gbt_rx/*
+!gbt_rx/gbt_rx/xlx_zup_rx_dpram.xci
+
+!gbt_tx/gbt_tx/
+gbt_tx/gbt_tx/*
+!gbt_tx/gbt_tx/xlx_zup_tx_dpram.xci
+
+!mgt/mgt_ip_vhd/xlx_zup_mgt_ip/
+mgt/mgt_ip_vhd/xlx_zup_mgt_ip/*
+!mgt/mgt_ip_vhd/xlx_zup_mgt_ip/xlx_zup_mgt_ip.xci

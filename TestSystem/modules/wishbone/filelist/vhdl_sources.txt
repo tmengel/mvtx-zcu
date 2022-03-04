@@ -1,0 +1,17 @@
+source/rtl/intercon_pkg.vhd
+source/rtl/drp_pkg.vhd
+source/rtl/slaves/ws_master_pkg.vhd
+source/rtl/slaves/ws_status_pkg.vhd
+source/rtl/slaves/wait/wishbone_wait_pkg.vhd
+source/rtl/syscon.vhd
+source/rtl/wb_arbiter.vhd
+source/rtl/wb_master_mux.vhd
+source/rtl/intercon_core.vhd
+source/rtl/slaves/ws_reg.vhd
+source/rtl/slaves/ws_status.vhd
+source/rtl/slaves/wait/wishbone_wait.vhd
+source/rtl/slaves/tmr_wrappers/ws_master_config_tmr_wrapper.vhd
+source/rtl/master/wishbone_master_tripleoutput.vhd
+source/rtl/slaves/ws_master_config.vhd
+source/rtl/slaves/drp_bridge/wishbone_drp_bridge.vhd
+source/rtl/tmr/majority_voter_wbs_i.vhd

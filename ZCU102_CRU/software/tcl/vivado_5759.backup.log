@@ -1,0 +1,213 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:47 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Fri Oct  8 15:17:54 2021
+# Process ID: 5759
+# Current directory: /home/ALICE/ZCU102_CRU/software/tcl
+# Command line: vivado -mode tcl -source xilinx_tcpserv.tcl
+# Log file: /home/ALICE/ZCU102_CRU/software/tcl/vivado.log
+# Journal file: /home/ALICE/ZCU102_CRU/software/tcl/vivado.jou
+#-----------------------------------------------------------
+source xilinx_tcpserv.tcl
+# proc GBTFPGA_SOFT_Server {port} {
+#     global forever
+#     set s [socket -server GBTFPGA_SOFTAccept $port]
+#     vwait forever
+# }
+# proc GBTFPGA_SOFTAccept {sock addr port} {
+#     global gbtfpga
+# 
+#     # Record the client's information
+# 
+#     puts "Accept $sock from $addr port $port"
+#     set gbtfpga(addr,$sock) [list $addr $port]
+# 
+#     # Ensure that each "puts" by the server
+#     # results in a network transmission
+# 
+#     fconfigure $sock -buffering line
+# 
+#     # Set up a callback for when the client sends data
+# 
+#     fileevent $sock readable [list LPGBT_SOFT $sock]
+# }
+# proc LPGBT_SOFT {sock} {
+#     global gbtfpga
+#     global forever
+# 
+#     set gpio_rt gpio_rt
+#     set gpio_wt gpio_wt
+# 
+#     # Check end of file or abnormal connection drop,
+#     # then gbtfpga data back to the client.
+# 
+#     if {[eof $sock] || [catch {gets $sock line}]} {
+# 
+#         close $sock
+#         #exit 0
+# 
+#     } else {
+#         ################################ Process Data #################################
+#         puts "line received:"
+#         puts $line
+#         set rcvd_cmd $line
+#         #puts "received command list:"
+#         #puts $rcvd_cmd
+# 
+#         set ope [lindex $rcvd_cmd 0]
+#         set addr [lindex $rcvd_cmd 1]
+#         set data [lindex $rcvd_cmd 2]
+# 
+#         #puts "operator"
+#         #puts $ope
+#         #puts "address"
+#         #puts $addr
+#         #puts "data"
+#         #puts $data
+# 
+#         switch $ope {
+#           "r" {
+#               puts "Read register command"
+#               set_property CMD.ADDR $addr [get_hw_axi_txns $gpio_rt]
+#               run_hw_axi [get_hw_axi_txns $gpio_rt]
+#               set data [get_property DATA [get_hw_axi_txns $gpio_rt]]
+#               puts $sock $data
+#           }
+# 
+#           "w" {
+#               puts "Write register command"
+#               set_property CMD.ADDR $addr [get_hw_axi_txns $gpio_wt]
+#               set_property DATA $data [get_hw_axi_txns $gpio_wt]
+#               run_hw_axi [get_hw_axi_txns $gpio_wt]
+#               puts $sock 1
+#           }
+# 
+#           "wvio" {
+#               puts "Write VIO"
+# 
+#               set dataDec [expr $data]
+# 
+#               startgroup
+#               set_property OUTPUT_VALUE $dataDec [get_hw_probes $addr -of_objects [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]]
+#               commit_hw_vio [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]
+#               endgroup
+# 
+#               puts $sock 1
+#           }
+# 
+#           "rvio" {
+#               puts "Read VIO"
+# 
+#               startgroup
+#               set data [get_property INPUT_VALUE [get_hw_probes $addr]]
+#               endgroup
+# 
+#               puts $sock $data
+#           }
+# 
+#           "ping" {
+#               puts $sock 1
+#           }
+# 
+#           "configure" {
+#               open_project $addr
+#               open_hw_manager
+#               connect_hw_server -url localhost:3121
+# 
+#               open_hw_target
+# 
+#               current_hw_device [lindex [get_hw_devices] 0]
+#               refresh_hw_device [lindex [get_hw_devices] 0]
+# 
+#               set current_hw_device [lindex [get_hw_devices] 0]
+# 
+#               set_property PROGRAM.FILE $data $current_hw_device
+#               program_hw_devices $current_hw_device
+# 
+#               refresh_hw_device [lindex [get_hw_devices] 0]
+#               refresh_hw_vio -update_output_values [get_hw_vios -of_objects [get_hw_devices xczu9_0] -filter {CELL_NAME=~"vio"}]
+#               set gpio_rt gpio_rt
+#               set gpio_wt gpio_wt
+#               create_hw_axi_txn $gpio_rt [get_hw_axis hw_axi_1] -type read -address 0x00000000
+#               create_hw_axi_txn $gpio_wt [get_hw_axis hw_axi_1] -type write -address 0x00000000 -data {00000000}
+# 
+#               puts $sock 1
+# 
+#           }
+# 
+#           "exit" {
+#             exit 0
+#           }
+# 
+#           default {
+#               puts "Command not recognizable"
+#               puts $sock -1
+#           }
+#         }
+# 
+#         ################################# End Process Data #################################
+#         # puts "Finished data processing"
+#         # puts $sock $line
+#         # puts $line
+#     }
+# }
+# puts "############## GTFPGA_SOFT - TEST CONTROL ###############"
+############## GTFPGA_SOFT - TEST CONTROL ###############
+# puts "# Socket Port: 8555                                     #"
+# Socket Port: 8555                                     #
+# puts "# IP Address (localhost): 127.0.0.1                     #"
+# IP Address (localhost): 127.0.0.1                     #
+# puts "#########################################################"
+#########################################################
+# GBTFPGA_SOFT_Server 8555
+Accept sock4 from 127.0.0.1 port 36752
+line received:
+ping
+line received:
+configure /home/ALICE/ZCU102_CRU/vivado/ZCU102_CRU/ZCU102_CRU.xpr /home/ALICE/ZCU102_CRU/ZCU102_CRU_top_210914_1634_a0df77f3.bit
+WARNING: [filemgmt 56-3] Default IP Output Path : Could not find the directory '/home/ALICE/ZCU102_CRU/vivado/ZCU102_CRU/ZCU102_CRU.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/opt/Xilinx/Vivado/2020.2/data/ip'.
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+open_project: Time (s): cpu = 00:01:28 ; elapsed = 00:02:01 . Memory (MB): peak = 2922.859 ; gain = 605.777 ; free physical = 5148 ; free virtual = 13828
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3414] Connected to existing cs_server.
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210308AE6FB4
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 2 ILA core(s).
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 JTAG AXI core(s).
+INFO: [Labtools 27-2302] Device xczu9 (JTAG device index = 0) is programmed with a design that has 1 VIO core(s).
+WARNING: [Labtools 27-1952] VIO hw_probe OUTPUT_VALUE properties for hw_vio(s) [hw_vio_1] differ from output values in the VIO core(s).
+Resolution: 
+To synchronize the hw_probes properties and the VIO core outputs choose one of the following alternatives:
+  1) Execute the command 'Commit Output Values to VIO Core', to write down the hw_probe values to the core.
+  2) Execute the command 'Refresh Input and Output Values from VIO Core', to update the hw_probe properties with the core values.
+  3) First restore initial values in the core with the command 'Reset VIO Core Outputs', and then execute the command 'Refresh Input and Output Values from VIO Core'.
+ERROR: [Labtools 27-2149] File /home/ALICE/ZCU102_CRU/ZCU102_CRU_top_210914_1634_a0df77f3.bit not found. Check file name and file permissions.
+
+    while executing
+"rdi::set_property PROGRAM.FILE /home/ALICE/ZCU102_CRU/ZCU102_CRU_top_210914_1634_a0df77f3.bit xczu9_0"
+    invoked from within
+"set_property PROGRAM.FILE $data $current_hw_device"
+    ("configure" arm line 13)
+    invoked from within
+"switch $ope {
+          "r" {
+              puts "Read register command"
+              set_property CMD.ADDR $addr [get_hw_axi_txns $gpio_rt]
+        ..."
+    invoked from within
+"if {[eof $sock] || [catch {gets $sock line}]} {
+
+        close $sock
+        #exit 0
+
+    } else {
+        ################################ Process Da..."
+    (procedure "LPGBT_SOFT" line 11)
+    invoked from within
+"LPGBT_SOFT sock4"
